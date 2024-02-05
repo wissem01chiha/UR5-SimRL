@@ -1,3 +1,10 @@
-# 1D-Beam-Simulation
-this project focus on using 1 D finite elment method to simulate a bending beam 
+ 
+## simulation of bending  Cantaviler beam
+### Installation
+
+clone the repository : 
+
+     git clone https://github.com/wissem01chiha/Beam
+### 
+ 
  
