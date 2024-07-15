@@ -1,0 +1,11 @@
+<map id="manipulator::Link::contact_friction" name="manipulator::Link::contact_friction">
+<area shape="rect" id="Node000001" title="torque in joint general contact phenomenas at time t," alt="" coords="5,35,134,77"/>
+<area shape="rect" id="Node000002" href="$classfriction_1_1_lu_gre.html#a9e96fe33907abcf8c3d5f2e32f136e89" title="compute the friction torque at time date t" alt="" coords="182,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,43,166,38,166,43,134,49"/>
+<area shape="rect" id="Node000005" href="$classfriction_1_1_lu_gre.html#a762b8f3bf50492a11898f52c7fd3df71" title="intilize the model with null values" alt="" coords="192,72,320,99"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="134,63,178,70,177,76,134,69"/>
+<area shape="rect" id="Node000003" href="$classfriction_1_1_lu_gre.html#ab359d8d0b3a9d490bcae227621f241d9" title="update the avarage deflection state z and it&#39;s first derivative by one step time." alt="" coords="378,5,527,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,24,363,24,363,29,331,29"/>
+<area shape="rect" id="Node000004" href="$classfriction_1_1_lu_gre.html#a12c7fa82e49051c02c28c2c037b61a66" title="compute the stribeck function value." alt="" coords="575,13,725,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="528,24,560,24,560,29,528,29"/>
+</map>
