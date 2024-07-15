@@ -1,5 +1,0 @@
-<map id="friction::Lugre::update_state" name="friction::Lugre::update_state">
-<area shape="rect" id="Node000001" title="update the avarage deflection state z and it&#39;s first derivative by one step time." alt="" coords="5,5,152,48"/>
-<area shape="rect" id="Node000002" href="$classfriction_1_1_lugre.html#a745d70fc29650ed8d54970e09866cca1" title="compute the stribeck function value." alt="" coords="200,13,346,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,24,185,24,185,29,152,29"/>
-</map>

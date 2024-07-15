@@ -1,7 +1,26 @@
 var searchData=
 [
-  ['link_0',['Link',['../classmanipulator_1_1_link.html',1,'manipulator']]],
-  ['luenberger_1',['Luenberger',['../classestimator_1_1_luenberger.html',1,'estimator']]],
-  ['lugre_2',['Lugre',['../classfriction_1_1_lugre.html',1,'friction']]],
-  ['lugretemp_3',['LugreTemp',['../classfriction_1_1_lugre_temp.html',1,'friction']]]
+  ['figure_0',['Figure',['../classsciplot_1_1_figure.html',1,'sciplot']]],
+  ['filledcurvesspecs_1',['FilledCurvesSpecs',['../classsciplot_1_1_filled_curves_specs.html',1,'sciplot']]],
+  ['filledcurvesspecsof_2',['FilledCurvesSpecsOf',['../classsciplot_1_1_filled_curves_specs_of.html',1,'sciplot']]],
+  ['filledcurvesspecsof_3c_20drawspecs_20_3e_3',['FilledCurvesSpecsOf&lt; DrawSpecs &gt;',['../classsciplot_1_1_filled_curves_specs_of.html',1,'sciplot']]],
+  ['filledcurvesspecsof_3c_20filledcurvesspecs_20_3e_4',['FilledCurvesSpecsOf&lt; FilledCurvesSpecs &gt;',['../classsciplot_1_1_filled_curves_specs_of.html',1,'sciplot']]],
+  ['fillspecs_5',['FillSpecs',['../classsciplot_1_1_fill_specs.html',1,'sciplot']]],
+  ['fillspecsof_6',['FillSpecsOf',['../classsciplot_1_1_fill_specs_of.html',1,'sciplot']]],
+  ['fillspecsof_3c_20drawspecs_20_3e_7',['FillSpecsOf&lt; DrawSpecs &gt;',['../classsciplot_1_1_fill_specs_of.html',1,'sciplot']]],
+  ['fillspecsof_3c_20fillspecs_20_3e_8',['FillSpecsOf&lt; FillSpecs &gt;',['../classsciplot_1_1_fill_specs_of.html',1,'sciplot']]],
+  ['fillstylespecs_9',['FillStyleSpecs',['../classsciplot_1_1_fill_style_specs.html',1,'sciplot']]],
+  ['fontspecs_10',['FontSpecs',['../classsciplot_1_1_font_specs.html',1,'sciplot']]],
+  ['fontspecsof_11',['FontSpecsOf',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['fontspecsof_3c_20axislabelspecs_20_3e_12',['FontSpecsOf&lt; AxisLabelSpecs &gt;',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['fontspecsof_3c_20fontspecs_20_3e_13',['FontSpecsOf&lt; FontSpecs &gt;',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['fontspecsof_3c_20legendspecs_20_3e_14',['FontSpecsOf&lt; LegendSpecs &gt;',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['fontspecsof_3c_20textspecs_20_3e_15',['FontSpecsOf&lt; TextSpecs &gt;',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['fontspecsof_3c_20ticsspecs_20_3e_16',['FontSpecsOf&lt; TicsSpecs &gt;',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['fontspecsof_3c_20ticsspecsmajor_20_3e_17',['FontSpecsOf&lt; TicsSpecsMajor &gt;',['../classsciplot_1_1_font_specs_of.html',1,'sciplot']]],
+  ['framespecs_18',['FrameSpecs',['../classsciplot_1_1_frame_specs.html',1,'sciplot']]],
+  ['framespecsof_19',['FrameSpecsOf',['../classsciplot_1_1_frame_specs_of.html',1,'sciplot']]],
+  ['framespecsof_3c_20framespecs_20_3e_20',['FrameSpecsOf&lt; FrameSpecs &gt;',['../classsciplot_1_1_frame_specs_of.html',1,'sciplot']]],
+  ['framespecsof_3c_20legendspecs_20_3e_21',['FrameSpecsOf&lt; LegendSpecs &gt;',['../classsciplot_1_1_frame_specs_of.html',1,'sciplot']]],
+  ['friction_22',['Friction',['../classfriction_1_1_friction.html',1,'friction']]]
 ];

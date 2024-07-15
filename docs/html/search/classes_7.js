@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['maxwell_0',['Maxwell',['../classfriction_1_1_maxwell.html',1,'friction']]]
+  ['gridspecs_0',['GridSpecs',['../classsciplot_1_1_grid_specs.html',1,'sciplot']]],
+  ['gridspecsbase_1',['GridSpecsBase',['../classsciplot_1_1_grid_specs_base.html',1,'sciplot']]]
 ];

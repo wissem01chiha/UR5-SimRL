@@ -1,7 +1,0 @@
-<map id="friction::LuGre::friction_torque" name="friction::LuGre::friction_torque">
-<area shape="rect" id="Node000001" title="compute the friction torque at time date t" alt="" coords="5,5,154,48"/>
-<area shape="rect" id="Node000002" href="$classfriction_1_1_lu_gre.html#ab359d8d0b3a9d490bcae227621f241d9" title="update the avarage deflection state z and it&#39;s first derivative by one step time." alt="" coords="202,5,351,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,24,186,24,186,29,154,29"/>
-<area shape="rect" id="Node000003" href="$classfriction_1_1_lu_gre.html#a12c7fa82e49051c02c28c2c037b61a66" title="compute the stribeck function value." alt="" coords="399,13,548,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,24,384,24,384,29,351,29"/>
-</map>

@@ -5,26 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DynaMapp: dynaMapp/multibody/multibody_dynamics.hpp Source File</title>
+<title>dynamapp: dynaMapp/multibody/multibody_dynamics.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -34,9 +23,9 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DynaMapp
+   <div id="projectname">dynamapp<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">© Dynamium Robotic Dynamic Identification Library</div>
+   <div id="projectbrief">identification library control other stuff</div>
   </td>
  </tr>
  </tbody>
@@ -65,23 +54,6 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('multibody__dynamics_8hpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +75,11 @@ $(function(){initNavTree('multibody__dynamics_8hpp_source.html',''); initResizab
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ce2d150f824e6e0dcc2d141c602db35.html">dynaMapp</a></li><li class="navelem"><a class="el" href="dir_87bf3e0679f0926c4e69b61e96f8603e.html">multibody</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">multibody_dynamics.hpp</div></div>
 </div><!--header-->
@@ -153,16 +130,16 @@ $(function(){initNavTree('multibody__dynamics_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a3a5f4e872ad718e04a33763859148cfb">  106</a></span>    Real <a class="code hl_variable" href="classdynamics_1_1_torque.html#a3a5f4e872ad718e04a33763859148cfb">alpha</a>[ndof];</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a5edf7c8cdc3c6c20758ffc5884c9e325">  107</a></span>    Real <a class="code hl_variable" href="classdynamics_1_1_torque.html#a5edf7c8cdc3c6c20758ffc5884c9e325">m</a>[ndof];</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#ad35a5fb6755947404684d7b4d06932f9">  108</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#ad35a5fb6755947404684d7b4d06932f9">z0</a>;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#ae5c9065f7648aef692b76169ca91d21c">  109</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#ae5c9065f7648aef692b76169ca91d21c">g</a>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a85856ae9ba251880281642a93bef801f">  110</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#a85856ae9ba251880281642a93bef801f">w</a>[ndof], <a class="code hl_variable" href="classdynamics_1_1_torque.html#a399d48ea84e2f2886c7fa5e266e94340">wp</a>[ndof];</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#af1d1823267d5ad30e7d144cad64c7eef">  111</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#af1d1823267d5ad30e7d144cad64c7eef">v</a>[ndof], <a class="code hl_variable" href="classdynamics_1_1_torque.html#a062177c6ba3d31326667e99f29c0b539">vp</a>[ndof];</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a64999a50ee8c11fddf0dc3b10e3ad31e">  112</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#a64999a50ee8c11fddf0dc3b10e3ad31e">vc</a>[ndof];</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a76eb89f09b38eaac7ab89db54cca9a21">  113</a></span>    Matrix&lt;Real,3,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#a76eb89f09b38eaac7ab89db54cca9a21">Ic</a>[ndof];</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a6efa1bcb9f9dad2dd8c488f0ed0e5d9f">  114</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#a4bec187d86a7b706c7b72434fbf26974">N</a>[ndof],<a class="code hl_variable" href="classdynamics_1_1_torque.html#a6304ba1a79eb0813f0ab66edfe287f72">F</a>[ndof],<a class="code hl_variable" href="classdynamics_1_1_torque.html#a6efa1bcb9f9dad2dd8c488f0ed0e5d9f">f</a>[ndof],<a class="code hl_variable" href="classdynamics_1_1_torque.html#aaf5bf86a7402293f38603811920c11c4">n</a>[ndof];</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classdynamics_1_1_torque.html#a8c170df3021f2a24a7140202ebdd7289">  115</a></span>    Vector&lt;Real,3&gt; <a class="code hl_variable" href="classdynamics_1_1_torque.html#a8c170df3021f2a24a7140202ebdd7289">r</a>[ndof];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    Real alpha[ndof];</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    Real m[ndof];</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    Vector&lt;Real,3&gt; z0;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    Vector&lt;Real,3&gt; g;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    Vector&lt;Real,3&gt; w[ndof], wp[ndof];</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    Vector&lt;Real,3&gt; v[ndof], vp[ndof];</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    Vector&lt;Real,3&gt; vc[ndof];</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    Matrix&lt;Real,3,3&gt; Ic[ndof];</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    Vector&lt;Real,3&gt; N[ndof],F[ndof],f[ndof],n[ndof];</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    Vector&lt;Real,3&gt; r[ndof];</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>     </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}; <span class="comment">// class Torque</span></div>
 </div>
@@ -174,42 +151,23 @@ $(function(){initNavTree('multibody__dynamics_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#include &quot;<a class="code" href="multibody__dynamics_8hpp.html">multibody_dynamics.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif </span><span class="comment">// MULTIBODY_DYNAMICS_HPP</span></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html"><div class="ttname"><a href="classdynamics_1_1_torque.html">dynamics::Torque</a></div><div class="ttdoc">Provide multiple implmentattion of computation of joints torques vector, in differents cases and with...</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:22</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a062177c6ba3d31326667e99f29c0b539"><div class="ttname"><a href="classdynamics_1_1_torque.html#a062177c6ba3d31326667e99f29c0b539">dynamics::Torque::vp</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; vp[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:111</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_a152d5a1715bd35c543401ca3ef4c5974"><div class="ttname"><a href="classdynamics_1_1_torque.html#a152d5a1715bd35c543401ca3ef4c5974">dynamics::Torque::general_torque</a></div><div class="ttdeci">Vector&lt; Real, ndof &gt; general_torque(const std::vector&lt; Real &gt; q, const std::vector&lt; Real &gt; qp, const std::vector&lt; Real &gt; qpp) const</div><div class="ttdef"><b>Definition</b> multibody_dynamics.cpp:13</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_a1f52098d4f7b17202b34592d1d4c2d0c"><div class="ttname"><a href="classdynamics_1_1_torque.html#a1f52098d4f7b17202b34592d1d4c2d0c">dynamics::Torque::torque_centrifugal</a></div><div class="ttdeci">Vector&lt; Real, ndof &gt; torque_centrifugal()</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a399d48ea84e2f2886c7fa5e266e94340"><div class="ttname"><a href="classdynamics_1_1_torque.html#a399d48ea84e2f2886c7fa5e266e94340">dynamics::Torque::wp</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; wp[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:110</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a3a5f4e872ad718e04a33763859148cfb"><div class="ttname"><a href="classdynamics_1_1_torque.html#a3a5f4e872ad718e04a33763859148cfb">dynamics::Torque::alpha</a></div><div class="ttdeci">Real alpha[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:106</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a4bec187d86a7b706c7b72434fbf26974"><div class="ttname"><a href="classdynamics_1_1_torque.html#a4bec187d86a7b706c7b72434fbf26974">dynamics::Torque::N</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; N[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:114</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_a52a61d8e24a894c61b6c36735e6856d0"><div class="ttname"><a href="classdynamics_1_1_torque.html#a52a61d8e24a894c61b6c36735e6856d0">dynamics::Torque::torque_no_velocity</a></div><div class="ttdeci">Vector&lt; Real, ndof &gt; torque_no_velocity(const Int j) const</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a5edf7c8cdc3c6c20758ffc5884c9e325"><div class="ttname"><a href="classdynamics_1_1_torque.html#a5edf7c8cdc3c6c20758ffc5884c9e325">dynamics::Torque::m</a></div><div class="ttdeci">Real m[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:107</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a6304ba1a79eb0813f0ab66edfe287f72"><div class="ttname"><a href="classdynamics_1_1_torque.html#a6304ba1a79eb0813f0ab66edfe287f72">dynamics::Torque::F</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; F[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:114</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a64999a50ee8c11fddf0dc3b10e3ad31e"><div class="ttname"><a href="classdynamics_1_1_torque.html#a64999a50ee8c11fddf0dc3b10e3ad31e">dynamics::Torque::vc</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; vc[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:112</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a6efa1bcb9f9dad2dd8c488f0ed0e5d9f"><div class="ttname"><a href="classdynamics_1_1_torque.html#a6efa1bcb9f9dad2dd8c488f0ed0e5d9f">dynamics::Torque::f</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; f[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:114</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a76eb89f09b38eaac7ab89db54cca9a21"><div class="ttname"><a href="classdynamics_1_1_torque.html#a76eb89f09b38eaac7ab89db54cca9a21">dynamics::Torque::Ic</a></div><div class="ttdeci">Matrix&lt; Real, 3, 3 &gt; Ic[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:113</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_a7a6e3fbcb96bee158e84bb079a49d173"><div class="ttname"><a href="classdynamics_1_1_torque.html#a7a6e3fbcb96bee158e84bb079a49d173">dynamics::Torque::linear_torque</a></div><div class="ttdeci">Vector&lt; Real, ndof &gt; linear_torque() const</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a85856ae9ba251880281642a93bef801f"><div class="ttname"><a href="classdynamics_1_1_torque.html#a85856ae9ba251880281642a93bef801f">dynamics::Torque::w</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; w[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:110</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_a8c170df3021f2a24a7140202ebdd7289"><div class="ttname"><a href="classdynamics_1_1_torque.html#a8c170df3021f2a24a7140202ebdd7289">dynamics::Torque::r</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; r[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:115</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_a91de7b7c9fc100d7e0e2d28f353bca0d"><div class="ttname"><a href="classdynamics_1_1_torque.html#a91de7b7c9fc100d7e0e2d28f353bca0d">dynamics::Torque::torque_no_acceleration</a></div><div class="ttdeci">Vector&lt; Real, ndof &gt; torque_no_acceleration() const</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_aaf5bf86a7402293f38603811920c11c4"><div class="ttname"><a href="classdynamics_1_1_torque.html#aaf5bf86a7402293f38603811920c11c4">dynamics::Torque::n</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; n[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:114</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_abc1b168a3d383154f55a032aa523b918"><div class="ttname"><a href="classdynamics_1_1_torque.html#abc1b168a3d383154f55a032aa523b918">dynamics::Torque::gravity_torque</a></div><div class="ttdeci">Vector&lt; Real, ndof &gt; gravity_torque(const std::vector&lt; Real &gt; q) const</div><div class="ttdef"><b>Definition</b> multibody_dynamics.cpp:65</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_ac5a89379cc416b66c96d5828e00b4e9c"><div class="ttname"><a href="classdynamics_1_1_torque.html#ac5a89379cc416b66c96d5828e00b4e9c">dynamics::Torque::cororlis</a></div><div class="ttdeci">Matrix&lt; Real, ndof, ndof &gt; cororlis(const std::vector&lt; Real &gt; q, const std::vector&lt; Real &gt; qp)</div><div class="ttdoc">compute and return the corcolis matrix.</div><div class="ttdef"><b>Definition</b> multibody_dynamics.cpp:88</div></div>
 <div class="ttc" id="aclassdynamics_1_1_torque_html_acf8f2bee6386d9fdb7ee2a3fd9e6aff6"><div class="ttname"><a href="classdynamics_1_1_torque.html#acf8f2bee6386d9fdb7ee2a3fd9e6aff6">dynamics::Torque::Torque</a></div><div class="ttdeci">Torque()</div><div class="ttdoc">class constructor</div><div class="ttdef"><b>Definition</b> multibody_dynamics.cpp:6</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_ad35a5fb6755947404684d7b4d06932f9"><div class="ttname"><a href="classdynamics_1_1_torque.html#ad35a5fb6755947404684d7b4d06932f9">dynamics::Torque::z0</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; z0</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:108</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_ae5c9065f7648aef692b76169ca91d21c"><div class="ttname"><a href="classdynamics_1_1_torque.html#ae5c9065f7648aef692b76169ca91d21c">dynamics::Torque::g</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; g</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:109</div></div>
-<div class="ttc" id="aclassdynamics_1_1_torque_html_af1d1823267d5ad30e7d144cad64c7eef"><div class="ttname"><a href="classdynamics_1_1_torque.html#af1d1823267d5ad30e7d144cad64c7eef">dynamics::Torque::v</a></div><div class="ttdeci">Vector&lt; Real, 3 &gt; v[ndof]</div><div class="ttdef"><b>Definition</b> multibody_dynamics.hpp:111</div></div>
 <div class="ttc" id="aconstant_8hpp_html"><div class="ttname"><a href="constant_8hpp.html">constant.hpp</a></div></div>
 <div class="ttc" id="amultibody__dynamics_8hpp_html"><div class="ttname"><a href="multibody__dynamics_8hpp.html">multibody_dynamics.hpp</a></div></div>
 <div class="ttc" id="amultibody__kinemtics_8hpp_html"><div class="ttname"><a href="multibody__kinemtics_8hpp.html">multibody_kinemtics.hpp</a></div></div>
 <div class="ttc" id="anamespacedynamics_html"><div class="ttname"><a href="namespacedynamics.html">dynamics</a></div><div class="ttdef"><b>Definition</b> multibody_dynamics.cpp:3</div></div>
 <div class="ttc" id="anamespaceinertia_html"><div class="ttname"><a href="namespaceinertia.html">inertia</a></div><div class="ttdef"><b>Definition</b> inertia.py:1</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_6ce2d150f824e6e0dcc2d141c602db35.html">dynaMapp</a></li><li class="navelem"><a class="el" href="dir_87bf3e0679f0926c4e69b61e96f8603e.html">multibody</a></li><li class="navelem"><a class="el" href="multibody__dynamics_8hpp.html">multibody_dynamics.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
 </body>
 </html>

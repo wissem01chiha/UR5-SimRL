@@ -5,26 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DynaMapp: dynaMapp/multibody/lugre_model.cpp Source File</title>
+<title>dynamapp: dynaMapp/multibody/lugre_model.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -34,9 +23,9 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DynaMapp
+   <div id="projectname">dynamapp<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">© Dynamium Robotic Dynamic Identification Library</div>
+   <div id="projectbrief">identification library control other stuff</div>
   </td>
  </tr>
  </tbody>
@@ -65,23 +54,6 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('lugre__model_8cpp_source.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -103,6 +75,11 @@ $(function(){initNavTree('lugre__model_8cpp_source.html',''); initResizable(); }
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6ce2d150f824e6e0dcc2d141c602db35.html">dynaMapp</a></li><li class="navelem"><a class="el" href="dir_87bf3e0679f0926c4e69b61e96f8603e.html">multibody</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">lugre_model.cpp</div></div>
 </div><!--header-->
@@ -173,7 +150,7 @@ $(function(){initNavTree('lugre__model_8cpp_source.html',''); initResizable(); }
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Lugre model is not initialized!&quot;</span>);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    Real g_v = <a class="code hl_function" href="classfriction_1_1_lugre.html#a3775b60729b5f826a0345eb12cd70cdf">Lugre&lt;Real, Int&gt;::stribek_force</a>(velocity);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    this-&gt;z_dot=velocity-this-&gt;sigma0*(abs(this-&gt;velocity))/g_v*this-&gt;z;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    this-&gt;z_dot=velocity-this-&gt;sigma0*(<a class="code hl_function" href="mipp__object_8hxx.html#ac017d3d90481cf0eb728cd0dcf664a77">abs</a>(this-&gt;velocity))/g_v*this-&gt;z;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    this-&gt;z = this-&gt;z + <a class="code hl_variable" href="namespaceconstant.html#a27ba231c8156b61571d8c3641cef8e5b">constant::TIME_STEP&lt;Real&gt;</a> * z_dot;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
@@ -183,7 +160,7 @@ $(function(){initNavTree('lugre__model_8cpp_source.html',''); initResizable(); }
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    Real r = velocity/this-&gt;vs;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> this-&gt;coulomb_force+(this-&gt;stiction_force-this-&gt;coulomb_force)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        *exp(-pow(r,2));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        *<a class="code hl_function" href="mipp__object_8hxx.html#a971c644acad52983a683c48ab122697a">exp</a>(-pow(r,2));</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
@@ -269,17 +246,15 @@ $(function(){initNavTree('lugre__model_8cpp_source.html',''); initResizable(); }
 <div class="ttc" id="aclassfriction_1_1_lugre_temp_html_aaa65e9d86cab9018cdec7f2f1cdfea00"><div class="ttname"><a href="classfriction_1_1_lugre_temp.html#aaa65e9d86cab9018cdec7f2f1cdfea00">friction::LugreTemp::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">intilize the model with null values.</div><div class="ttdef"><b>Definition</b> lugre.cpp:108</div></div>
 <div class="ttc" id="aclassfriction_1_1_lugre_temp_html_ac56318a8f15560ef2510f2d3d1a9ab74"><div class="ttname"><a href="classfriction_1_1_lugre_temp.html#ac56318a8f15560ef2510f2d3d1a9ab74">friction::LugreTemp::LugreTemp</a></div><div class="ttdeci">LugreTemp(Real Te, Real sigma0, Real sigma0e, Real sigma1, Real sigma1e, Real sigma2, Real sigma2e, Real vs, Real coulomb, Real stiction, Real gradT)</div><div class="ttdef"><b>Definition</b> lugre.cpp:92</div></div>
 <div class="ttc" id="alugre__model_8hpp_html"><div class="ttname"><a href="lugre__model_8hpp.html">lugre_model.hpp</a></div></div>
+<div class="ttc" id="amipp__object_8hxx_html_a971c644acad52983a683c48ab122697a"><div class="ttname"><a href="mipp__object_8hxx.html#a971c644acad52983a683c48ab122697a">exp</a></div><div class="ttdeci">Reg&lt; T &gt; exp(const Reg&lt; T &gt; v)</div><div class="ttdef"><b>Definition</b> mipp_object.hxx:814</div></div>
+<div class="ttc" id="amipp__object_8hxx_html_ac017d3d90481cf0eb728cd0dcf664a77"><div class="ttname"><a href="mipp__object_8hxx.html#ac017d3d90481cf0eb728cd0dcf664a77">abs</a></div><div class="ttdeci">Reg&lt; T &gt; abs(const Reg&lt; T &gt; v)</div><div class="ttdef"><b>Definition</b> mipp_object.hxx:810</div></div>
 <div class="ttc" id="anamespaceconstant_html_a27ba231c8156b61571d8c3641cef8e5b"><div class="ttname"><a href="namespaceconstant.html#a27ba231c8156b61571d8c3641cef8e5b">constant::TIME_STEP</a></div><div class="ttdeci">const Real TIME_STEP</div><div class="ttdef"><b>Definition</b> constant.hpp:39</div></div>
 <div class="ttc" id="anamespacefriction_html"><div class="ttname"><a href="namespacefriction.html">friction</a></div><div class="ttdef"><b>Definition</b> friction.py:1</div></div>
 <div class="ttc" id="anamespacevisualization_1_1plot__joint__data_html_ad2075d46a310d7e0f3fd6aaa0f03c77b"><div class="ttname"><a href="namespacevisualization_1_1plot__joint__data.html#ad2075d46a310d7e0f3fd6aaa0f03c77b">visualization.plot_joint_data.torque</a></div><div class="ttdeci">torque</div><div class="ttdef"><b>Definition</b> plot_joint_data.py:76</div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_6ce2d150f824e6e0dcc2d141c602db35.html">dynaMapp</a></li><li class="navelem"><a class="el" href="dir_87bf3e0679f0926c4e69b61e96f8603e.html">multibody</a></li><li class="navelem"><a class="el" href="lugre__model_8cpp.html">lugre_model.cpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
 </body>
 </html>

@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['forward_5fkinematic_0',['forward_kinematic',['../classmanipulator_1_1_robot.html#a77d25ca8960eb2f7c4abf45c56dedcaa',1,'manipulator::Robot::forward_kinematic(const int j) const'],['../classmanipulator_1_1_robot.html#ae5ad4a18fbd74af695dc8753028ab61a',1,'manipulator::Robot::forward_kinematic()'],['../classmanipulator_1_1_robot.html#a2134ddaf5719c4cd6368d435c86fb4ec',1,'manipulator::Robot::forward_kinematic(const int j) const'],['../classmanipulator_1_1_robot.html#ab5e77c44824ab6b1c9c88029da16c8af',1,'manipulator::Robot::forward_kinematic()']]],
-  ['forward_5fkinematics_1',['forward_kinematics',['../namespacekinematics.html#a4f1d99750c0d403ae7bd568a2003e73c',1,'kinematics']]],
-  ['frame_5fposition_2',['frame_position',['../namespacekinematics.html#aac162043b55f091141ad92b4dadcb46b',1,'kinematics']]],
-  ['friction_5ftorque_3',['friction_torque',['../classfriction_1_1_lugre.html#ae372cf5175606864fb810fff6d66142e',1,'friction::Lugre::friction_torque()'],['../classfriction_1_1_lugre_temp.html#a798900005e5635214bd62cb05174968c',1,'friction::LugreTemp::friction_torque()'],['../classmanipulator_1_1_robot.html#a6d0939eddb7e921a0f7d985effb9703a',1,'manipulator::Robot::friction_torque()'],['../classfriction_1_1_lugre.html#ae372cf5175606864fb810fff6d66142e',1,'friction::Lugre::friction_torque()'],['../classfriction_1_1_lugre_temp.html#a798900005e5635214bd62cb05174968c',1,'friction::LugreTemp::friction_torque()'],['../classmanipulator_1_1_robot.html#a6d0939eddb7e921a0f7d985effb9703a',1,'manipulator::Robot::friction_torque()']]],
-  ['from_5fdict_4',['from_dict',['../classtransform_1_1_transformation.html#ab3a8eff6f5595a43a6a5ce967ba0edfa',1,'transform::Transformation']]],
-  ['from_5fmatrix_5',['from_matrix',['../classtransform_1_1_transformation.html#a3c3c553295fba72f4e16ce396c65b55c',1,'transform::Transformation']]]
+  ['empty_0',['empty',['../classsciplot_1_1_fill_style_specs.html#a72ca2620c4eed7cff7307b98d96ba59f',1,'sciplot::FillStyleSpecs']]],
+  ['end_1',['end',['../classsciplot_1_1_tics_specs_major.html#a02114c41f7d3568aa255233e59d7e431',1,'sciplot::TicsSpecsMajor']]],
+  ['enhanced_2',['enhanced',['../classsciplot_1_1_text_specs_of.html#a6f80347620e89df3bd1b70f5099d6d4c',1,'sciplot::TextSpecsOf']]],
+  ['error_3',['error',['../classestimator_1_1_luenberger.html#ac3a9fdca394f1f31c8c5377cc6b5e4c5',1,'estimator::Luenberger']]],
+  ['error_4',['Error',['../classerror_1_1_error.html#affe30c6c98554605935c899ae5a2a0c4',1,'error::Error']]],
+  ['errorbars_5',['errorBars',['../classsciplot_1_1_histogram_style_specs.html#a21671d672916f45a87ce1faa43250de7',1,'sciplot::HistogramStyleSpecs']]],
+  ['errorbarswithgap_6',['errorBarsWithGap',['../classsciplot_1_1_histogram_style_specs.html#aebe75bf2d418a93c16b262433c3f7611',1,'sciplot::HistogramStyleSpecs']]],
+  ['errorbarswithlinewidth_7',['errorBarsWithLineWidth',['../classsciplot_1_1_histogram_style_specs.html#ab71b575552e8f14f89aa9f9fd30438f0',1,'sciplot::HistogramStyleSpecs']]],
+  ['escapeifneeded_8',['escapeIfNeeded',['../namespacesciplot_1_1internal.html#a7a0c10fdecef896dfc20b3c56351faf9',1,'sciplot::internal']]],
+  ['exp_9',['exp',['../class_reg.html#a0df33284b39245a770a600ca38e3d0fb',1,'Reg::exp()'],['../namespacemipp.html#ade7bdb7460b513dc10428486c95428d8',1,'mipp::exp()'],['../mipp__object_8hxx.html#a971c644acad52983a683c48ab122697a',1,'exp():&#160;mipp_object.hxx']]],
+  ['extendedkalman_10',['Extendedkalman',['../classestimator_1_1_extended_kalman.html#a36944736b3af53c45b07fd41ed4b8479',1,'estimator::ExtendedKalman']]]
 ];

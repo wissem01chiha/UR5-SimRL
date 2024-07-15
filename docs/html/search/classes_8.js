@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['particle_0',['Particle',['../classestimator_1_1_particle.html',1,'estimator']]],
-  ['plot2d_1',['Plot2d',['../class_plot2d.html',1,'']]]
+  ['histogramstylespecs_0',['HistogramStyleSpecs',['../classsciplot_1_1_histogram_style_specs.html',1,'sciplot']]]
 ];

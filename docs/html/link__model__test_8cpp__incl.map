@@ -1,7 +1,0 @@
-<map id="dynaMapp/multibody/test/link_model_test.cpp" name="dynaMapp/multibody/test/link_model_test.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="24,5,191,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,100,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,50,72,85,67,82,91,47"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="124,96,202,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,47,148,82,144,85,119,50"/>
-</map>

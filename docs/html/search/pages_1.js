@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_0',['Todo List',['../todo.html',1,'']]]
+  ['installation_0',['installation',['../md_docs_2installation.html',1,'']]]
 ];

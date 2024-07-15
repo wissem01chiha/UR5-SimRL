@@ -1,8 +1,0 @@
-<map id="dynaMapp/multibody/multibody_dynamics.hpp" name="dynaMapp/multibody/multibody_dynamics.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,250,48"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="267,13,274,19,277,27,269,39,251,45,250,40,266,35,271,26,269,22,263,17"/>
-<area shape="rect" id="Node000002" href="$multibody_8hpp.html" title=" " alt="" coords="5,96,147,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,61,98,98,95,94,132,57"/>
-<area shape="rect" id="Node000003" href="$multibody__dynamics_8cpp.html" title=" " alt="" coords="171,96,341,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,57,237,94,233,98,195,61"/>
-</map>

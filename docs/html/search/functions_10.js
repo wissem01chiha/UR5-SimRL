@@ -1,14 +1,18 @@
 var searchData=
 [
-  ['ratio_5fmatrix_0',['ratio_matrix',['../classmanipulator_1_1_robot.html#aaf21107d366caca99d9d767c6e3462e5',1,'manipulator::Robot::ratio_matrix()'],['../classmanipulator_1_1_robot.html#af630af04558f6c1558f288fc373e6756',1,'manipulator::Robot::ratio_matrix()']]],
-  ['recursive_5fnewton_5feuler_1',['recursive_newton_euler',['../namespacerecursive__newton__euler.html#a6b668c25cb663628d1a235da6898b4c8',1,'recursive_newton_euler']]],
-  ['rescale_2',['rescale',['../classinertia_1_1_inertia.html#aa548cee65c64e0d105e0d1b38a295278',1,'inertia::Inertia']]],
-  ['reset_5ftime_3',['reset_time',['../classmanipulator_1_1_link.html#a9ec4d7acdcdf1887d0ecbe0e6f36280d',1,'manipulator::Link::reset_time()'],['../classmanipulator_1_1_link.html#a9ec4d7acdcdf1887d0ecbe0e6f36280d',1,'manipulator::Link::reset_time()']]],
-  ['robot_4',['Robot',['../classmanipulator_1_1_robot.html#ac0766100b32036882e8b5c65994480a7',1,'manipulator::Robot::Robot(const Int joints_type[ndof], const Real q[ndof], const Real d, const Real a, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])'],['../classmanipulator_1_1_robot.html#aa552549b335889af087466d1d1d126e1',1,'manipulator::Robot::Robot(const Int joints_type[ndof], const Real q[ndof], const Real d, const Real a, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])']]],
-  ['robot_5fjoint_5fnum_5',['robot_joint_num',['../namespaceload__robot.html#aa0204b56c29e2078f231fa8893a473a7',1,'load_robot']]],
-  ['robot_5flink_5fnum_6',['robot_link_num',['../namespaceload__robot.html#a216e6c241ee603c9fc147773b27def5e',1,'load_robot']]],
-  ['rotate_7',['rotate',['../classinertia_1_1_inertia.html#ab7767f96abb6835224575c4dd3604de0',1,'inertia::Inertia']]],
-  ['rotation_8',['rotation',['../classtransform_1_1_transformation.html#a17520ac4e341cbabeab19ba5b9fcac1b',1,'transform::Transformation']]],
-  ['rotation_5fmatrix_9',['rotation_matrix',['../classrobot_1_1_robot.html#a62071e7adcdf8ea37e7233e3e9540255',1,'robot::Robot']]],
-  ['rpy_10',['rpy',['../classtransform_1_1_transformation.html#a2aaffdd45422bba0ed187da1b1fd10ab',1,'transform::Transformation']]]
+  ['pack_0',['pack',['../class_reg.html#aeb51df0eb47dee181039eb47a78ecd42',1,'Reg::pack()'],['../namespacemipp.html#ad7c68467b925c8ea089b5b1a61273db5',1,'mipp::pack()'],['../mipp__object_8hxx.html#a5e46a3397bd5d08468c919517c3df455',1,'pack():&#160;mipp_object.hxx']]],
+  ['palette_1',['palette',['../classsciplot_1_1_figure.html#ac041e344966ed7c56f8bd66233ce7799',1,'sciplot::Figure::palette()'],['../classsciplot_1_1_plot.html#adee919f42694ab35769410b3b01a0538',1,'sciplot::Plot::palette()']]],
+  ['palettecmd_2',['palettecmd',['../namespacesciplot_1_1gnuplot.html#abb9496a977385eac8801c2bbd211242d',1,'sciplot::gnuplot']]],
+  ['pattern_3',['pattern',['../classsciplot_1_1_fill_style_specs.html#a2b96ecd39c5bc27478e3c34fbf2cd58d',1,'sciplot::FillStyleSpecs']]],
+  ['pi_4',['pi',['../structsciplot_1_1gnuplot_1_1angle.html#a4b4b8c3ae5dfa345afc439e917c1cc6a',1,'sciplot::gnuplot::angle']]],
+  ['plot_5',['Plot',['../classsciplot_1_1_plot.html#a49afd8b9a71f7551c745111810f7e5a1',1,'sciplot::Plot']]],
+  ['plot2d_6',['Plot2d',['../class_plot2d.html#a45c401a2f44c42f9436dac8a7d8ecdf4',1,'Plot2d']]],
+  ['plot2d_7',['Plot2D',['../classsciplot_1_1_plot2_d.html#a0dbb1fafd5d2c74ce820d80afc86d406',1,'sciplot::Plot2D']]],
+  ['plot3d_8',['Plot3D',['../classsciplot_1_1_plot3_d.html#a14a37dc78eee28e323a180930bcd79ff',1,'sciplot::Plot3D']]],
+  ['pointsize_9',['pointSize',['../classsciplot_1_1_point_specs_of.html#a2dcca9bf0de094c281f48e06e732f0db',1,'sciplot::PointSpecsOf']]],
+  ['pointspecsof_10',['PointSpecsOf',['../classsciplot_1_1_point_specs_of.html#a47f59be7279656d46a3f70951da8e2d5',1,'sciplot::PointSpecsOf']]],
+  ['pointtype_11',['pointType',['../classsciplot_1_1_point_specs_of.html#a2ab4507b7ca5cc456bcef985178f091c',1,'sciplot::PointSpecsOf']]],
+  ['polar_12',['polar',['../classsciplot_1_1_border_specs.html#a483a60b5fe55eed174065d3989fde7f8',1,'sciplot::BorderSpecs']]],
+  ['principal_5fmoments_13',['principal_moments',['../classinertia_1_1_inertia.html#aeccf3000c22adb52706d2e855ff2b1b8',1,'inertia::Inertia']]],
+  ['pwm_14',['PWM',['../namespace_b_l_d_c.html#a5a918fc92eb3093068bbfb2bf3be0ca1',1,'BLDC']]]
 ];

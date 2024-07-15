@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['base_0',['Base',['../class_base.html',1,'']]],
-  ['bldc_1',['BLDC',['../class_b_l_d_c_1_1_b_l_d_c.html',1,'BLDC']]]
+  ['_5freduction_0',['_Reduction',['../structmipp_1_1___reduction.html',1,'mipp']]],
+  ['_5freduction_1',['_reduction',['../structmipp_1_1__reduction.html',1,'mipp']]]
 ];

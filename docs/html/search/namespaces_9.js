@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['recursive_5fnewton_5feuler_0',['recursive_newton_euler',['../namespacerecursive__newton__euler.html',1,'']]],
-  ['robot_1',['robot',['../namespacerobot.html',1,'']]]
+  ['rapidcsv_0',['rapidcsv',['../namespacerapidcsv.html',1,'']]],
+  ['recursive_5fnewton_5feuler_1',['recursive_newton_euler',['../namespacerecursive__newton__euler.html',1,'']]],
+  ['robot_2',['robot',['../namespacerobot.html',1,'']]]
 ];

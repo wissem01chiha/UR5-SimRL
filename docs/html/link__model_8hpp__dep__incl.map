@@ -1,8 +1,0 @@
-<map id="dynaMapp/multibody/link_model.hpp" name="dynaMapp/multibody/link_model.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,48"/>
-<area shape="rect" id="Node000002" href="$link__model_8cpp.html" title=" " alt="" coords="5,96,147,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,63,71,96,66,96,64,64"/>
-<area shape="rect" id="Node000003" href="$multibody_8hpp.html" title=" " alt="" coords="171,96,312,139"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="129,53,204,93,202,98,127,58"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="82,81,81,49,86,48,88,80"/>
-</map>

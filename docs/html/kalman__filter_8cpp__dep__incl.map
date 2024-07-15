@@ -1,8 +1,0 @@
-<map id="DynaMapp/estimator/kalman_filter.cpp" name="DynaMapp/estimator/kalman_filter.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,48"/>
-<area shape="rect" id="Node000002" href="$kalman__filter_8hpp.html" title=" " alt="" coords="5,96,147,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,63,71,96,66,96,64,64"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="82,81,81,49,86,48,88,80"/>
-<area shape="rect" id="Node000003" href="$kalman__filter__test_8cpp.html" title=" " alt="" coords="5,187,147,245"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="79,154,79,186,73,186,73,154"/>
-</map>

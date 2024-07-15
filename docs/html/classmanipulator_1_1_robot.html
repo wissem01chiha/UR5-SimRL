@@ -5,26 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DynaMapp: manipulator::Robot&lt; Real, Int, ndof &gt; Class Template Reference</title>
+<title>dynamapp: manipulator::Robot&lt; Real, Int, ndof &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -34,9 +23,9 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DynaMapp
+   <div id="projectname">dynamapp<span id="projectnumber">&#160;1.0</span>
    </div>
-   <div id="projectbrief">© Dynamium Robotic Dynamic Identification Library</div>
+   <div id="projectbrief">identification library control other stuff</div>
   </td>
  </tr>
  </tbody>
@@ -60,23 +49,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('classmanipulator_1_1_robot.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -98,10 +70,14 @@ $(function(){initNavTree('classmanipulator_1_1_robot.html',''); initResizable();
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacemanipulator.html">manipulator</a></li><li class="navelem"><a class="el" href="classmanipulator_1_1_robot.html">Robot</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmanipulator_1_1_robot-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">manipulator::Robot&lt; Real, Int, ndof &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -112,10 +88,20 @@ $(function(){initNavTree('classmanipulator_1_1_robot.html',''); initResizable();
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="robot_8hpp_source.html">robot.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for manipulator::Robot&lt; Real, Int, ndof &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classmanipulator_1_1_robot.png" usemap="#manipulator::Robot_3C_20Real_2C_20Int_2C_20ndof_20_3E_map" alt=""/>
+  <map id="manipulator::Robot_3C_20Real_2C_20Int_2C_20ndof_20_3E_map" name="manipulator::Robot_3C_20Real_2C_20Int_2C_20ndof_20_3E_map">
+<area href="classmanipulator_1_1kinova.html" alt="manipulator::kinova&lt; Real, Int, ndof &gt;" shape="rect" coords="0,56,225,80"/>
+<area href="classmanipulator_1_1kinova.html" alt="manipulator::kinova&lt; Real, Int, ndof &gt;" shape="rect" coords="235,56,460,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0766100b32036882e8b5c65994480a7" id="r_ac0766100b32036882e8b5c65994480a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0766100b32036882e8b5c65994480a7">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real <a class="el" href="#ab54e6ef2d029041c0573d129fd1e400f">a</a>, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
+<tr class="memitem:ac0766100b32036882e8b5c65994480a7" id="r_ac0766100b32036882e8b5c65994480a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0766100b32036882e8b5c65994480a7">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real a, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
 <tr class="memdesc:ac0766100b32036882e8b5c65994480a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">default class constructor initilize each link paramter based on given args <br  />
   <br /></td></tr>
 <tr class="separator:ac0766100b32036882e8b5c65994480a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,7 +222,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af40be363ca885ef4b7f6c05509757755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03da1844ac4b3bd7eadb9305ab35b308" id="r_a03da1844ac4b3bd7eadb9305ab35b308"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03da1844ac4b3bd7eadb9305ab35b308">state_matrix_D</a> ()</td></tr>
 <tr class="separator:a03da1844ac4b3bd7eadb9305ab35b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa552549b335889af087466d1d1d126e1" id="r_aa552549b335889af087466d1d1d126e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa552549b335889af087466d1d1d126e1">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real <a class="el" href="#ab54e6ef2d029041c0573d129fd1e400f">a</a>, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
+<tr class="memitem:aa552549b335889af087466d1d1d126e1" id="r_aa552549b335889af087466d1d1d126e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa552549b335889af087466d1d1d126e1">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real a, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
 <tr class="memdesc:aa552549b335889af087466d1d1d126e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">default class constructor initilize each link paramter based on given args <br  />
   <br /></td></tr>
 <tr class="separator:aa552549b335889af087466d1d1d126e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,61 +339,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2fa54ef1dcf525a8e54aede828edb875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae860f36e0b72003157391dc5de20fabe" id="r_ae860f36e0b72003157391dc5de20fabe"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae860f36e0b72003157391dc5de20fabe">state_matrix_D</a> ()</td></tr>
 <tr class="separator:ae860f36e0b72003157391dc5de20fabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac7e4e2f810407f98d7171e95ff60dbcc" id="r_ac7e4e2f810407f98d7171e95ff60dbcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmanipulator_1_1_link.html">Link</a>&lt; Real, Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e4e2f810407f98d7171e95ff60dbcc">links</a> [ndof]</td></tr>
-<tr class="separator:ac7e4e2f810407f98d7171e95ff60dbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18ee007ec7679264981c1501e848d11" id="r_ad18ee007ec7679264981c1501e848d11"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad18ee007ec7679264981c1501e848d11">gravity_vector</a></td></tr>
-<tr class="separator:ad18ee007ec7679264981c1501e848d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71e5e6f4f9942e5add70c04959fa051b" id="r_a71e5e6f4f9942e5add70c04959fa051b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71e5e6f4f9942e5add70c04959fa051b">z0</a></td></tr>
-<tr class="separator:a71e5e6f4f9942e5add70c04959fa051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55fa5b2ccf95f036521b5bbb24f0e257" id="r_a55fa5b2ccf95f036521b5bbb24f0e257"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55fa5b2ccf95f036521b5bbb24f0e257">w</a> [ndof]</td></tr>
-<tr class="separator:a55fa5b2ccf95f036521b5bbb24f0e257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfa3ec9475358207307137658204cb08" id="r_acfa3ec9475358207307137658204cb08"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfa3ec9475358207307137658204cb08">wp</a> [ndof]</td></tr>
-<tr class="separator:acfa3ec9475358207307137658204cb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a5ae6f4b87245b46bd05cf98ae15a9" id="r_ad8a5ae6f4b87245b46bd05cf98ae15a9"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a5ae6f4b87245b46bd05cf98ae15a9">vp</a> [ndof]</td></tr>
-<tr class="separator:ad8a5ae6f4b87245b46bd05cf98ae15a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54e6ef2d029041c0573d129fd1e400f" id="r_ab54e6ef2d029041c0573d129fd1e400f"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab54e6ef2d029041c0573d129fd1e400f">a</a> [ndof]</td></tr>
-<tr class="separator:ab54e6ef2d029041c0573d129fd1e400f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32635ddfbb71cdf280a0fc509f44afd1" id="r_a32635ddfbb71cdf280a0fc509f44afd1"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32635ddfbb71cdf280a0fc509f44afd1">f</a> [ndof]</td></tr>
-<tr class="separator:a32635ddfbb71cdf280a0fc509f44afd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b427b0f8ed93871b66797bcccd364d" id="r_a94b427b0f8ed93871b66797bcccd364d"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b427b0f8ed93871b66797bcccd364d">f_nv</a> [ndof]</td></tr>
-<tr class="separator:a94b427b0f8ed93871b66797bcccd364d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3647f1bb765743c5f018c859d3e2d5d" id="r_ae3647f1bb765743c5f018c859d3e2d5d"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3647f1bb765743c5f018c859d3e2d5d">n</a> [ndof]</td></tr>
-<tr class="separator:ae3647f1bb765743c5f018c859d3e2d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec8462aaa69cb4e6467d2e12a2a538b" id="r_acec8462aaa69cb4e6467d2e12a2a538b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec8462aaa69cb4e6467d2e12a2a538b">n_nv</a> [ndof]</td></tr>
-<tr class="separator:acec8462aaa69cb4e6467d2e12a2a538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57d5983086e7705a8282e9121d0b8158" id="r_a57d5983086e7705a8282e9121d0b8158"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57d5983086e7705a8282e9121d0b8158">dn</a> [ndof]</td></tr>
-<tr class="separator:a57d5983086e7705a8282e9121d0b8158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f654f89225e9aa5fdc80673a63a8362" id="r_a5f654f89225e9aa5fdc80673a63a8362"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f654f89225e9aa5fdc80673a63a8362">F</a> [ndof]</td></tr>
-<tr class="separator:a5f654f89225e9aa5fdc80673a63a8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4ff50a1752103d9c5901fd5722fd7b" id="r_a0e4ff50a1752103d9c5901fd5722fd7b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4ff50a1752103d9c5901fd5722fd7b">dF</a> [ndof]</td></tr>
-<tr class="separator:a0e4ff50a1752103d9c5901fd5722fd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a924ea40bad619d1cd7ec0acbb4570074" id="r_a924ea40bad619d1cd7ec0acbb4570074"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a924ea40bad619d1cd7ec0acbb4570074">dp</a> [ndof]</td></tr>
-<tr class="separator:a924ea40bad619d1cd7ec0acbb4570074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7147cff5aa8f633a088bac87b6e28c85" id="r_a7147cff5aa8f633a088bac87b6e28c85"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7147cff5aa8f633a088bac87b6e28c85">p</a> [ndof]</td></tr>
-<tr class="separator:a7147cff5aa8f633a088bac87b6e28c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab586b246a88f210bb4449b054bffd4c9" id="r_ab586b246a88f210bb4449b054bffd4c9"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab586b246a88f210bb4449b054bffd4c9">pp</a> [ndof]</td></tr>
-<tr class="separator:ab586b246a88f210bb4449b054bffd4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7217590e1d05f8d2c44a1be157ceda1" id="r_aa7217590e1d05f8d2c44a1be157ceda1"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7217590e1d05f8d2c44a1be157ceda1">dw</a> [ndof]</td></tr>
-<tr class="separator:aa7217590e1d05f8d2c44a1be157ceda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379119fbc036b860d0ba058abf7532be" id="r_a379119fbc036b860d0ba058abf7532be"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a379119fbc036b860d0ba058abf7532be">dwp</a> [ndof]</td></tr>
-<tr class="separator:a379119fbc036b860d0ba058abf7532be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3245cb30ca6b5c377528708111ba4758" id="r_a3245cb30ca6b5c377528708111ba4758"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3245cb30ca6b5c377528708111ba4758">dvp</a> [ndof]</td></tr>
-<tr class="separator:a3245cb30ca6b5c377528708111ba4758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afafd67ba666496cfd8dda42cb2451aa6" id="r_afafd67ba666496cfd8dda42cb2451aa6"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afafd67ba666496cfd8dda42cb2451aa6">da</a> [ndof]</td></tr>
-<tr class="separator:afafd67ba666496cfd8dda42cb2451aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8542ae1f72627fbfab355031ce276ff" id="r_af8542ae1f72627fbfab355031ce276ff"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8542ae1f72627fbfab355031ce276ff">df</a> [ndof]</td></tr>
-<tr class="separator:af8542ae1f72627fbfab355031ce276ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508e8047fd8785d1060d6232deb072d2" id="r_a508e8047fd8785d1060d6232deb072d2"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a508e8047fd8785d1060d6232deb072d2">N</a> [ndof]</td></tr>
-<tr class="separator:a508e8047fd8785d1060d6232deb072d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a582be2cf6f2b89226fea907c43538458" id="r_a582be2cf6f2b89226fea907c43538458"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a582be2cf6f2b89226fea907c43538458">dN</a> [ndof]</td></tr>
-<tr class="separator:a582be2cf6f2b89226fea907c43538458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b29422dcd62fdda3946b7d29d1f44ea" id="r_a8b29422dcd62fdda3946b7d29d1f44ea"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b29422dcd62fdda3946b7d29d1f44ea">R</a></td></tr>
-<tr class="separator:a8b29422dcd62fdda3946b7d29d1f44ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893466ffaf7d085e5d5bd8e0c0317102" id="r_a893466ffaf7d085e5d5bd8e0c0317102"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a893466ffaf7d085e5d5bd8e0c0317102">intilizied</a> = false</td></tr>
-<tr class="separator:a893466ffaf7d085e5d5bd8e0c0317102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Real, typename Int, size_t ndof&gt;<br />
@@ -2512,631 +2443,6 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab54e6ef2d029041c0573d129fd1e400f" name="ab54e6ef2d029041c0573d129fd1e400f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab54e6ef2d029041c0573d129fd1e400f">&#9670;&#160;</a></span>a</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::a</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afafd67ba666496cfd8dda42cb2451aa6" name="afafd67ba666496cfd8dda42cb2451aa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afafd67ba666496cfd8dda42cb2451aa6">&#9670;&#160;</a></span>da</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::da</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0e4ff50a1752103d9c5901fd5722fd7b" name="a0e4ff50a1752103d9c5901fd5722fd7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e4ff50a1752103d9c5901fd5722fd7b">&#9670;&#160;</a></span>dF</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dF</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af8542ae1f72627fbfab355031ce276ff" name="af8542ae1f72627fbfab355031ce276ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8542ae1f72627fbfab355031ce276ff">&#9670;&#160;</a></span>df</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::df</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57d5983086e7705a8282e9121d0b8158" name="a57d5983086e7705a8282e9121d0b8158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57d5983086e7705a8282e9121d0b8158">&#9670;&#160;</a></span>dn</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dn</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a582be2cf6f2b89226fea907c43538458" name="a582be2cf6f2b89226fea907c43538458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a582be2cf6f2b89226fea907c43538458">&#9670;&#160;</a></span>dN</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dN</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a924ea40bad619d1cd7ec0acbb4570074" name="a924ea40bad619d1cd7ec0acbb4570074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a924ea40bad619d1cd7ec0acbb4570074">&#9670;&#160;</a></span>dp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3245cb30ca6b5c377528708111ba4758" name="a3245cb30ca6b5c377528708111ba4758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3245cb30ca6b5c377528708111ba4758">&#9670;&#160;</a></span>dvp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dvp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa7217590e1d05f8d2c44a1be157ceda1" name="aa7217590e1d05f8d2c44a1be157ceda1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7217590e1d05f8d2c44a1be157ceda1">&#9670;&#160;</a></span>dw</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dw</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a379119fbc036b860d0ba058abf7532be" name="a379119fbc036b860d0ba058abf7532be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a379119fbc036b860d0ba058abf7532be">&#9670;&#160;</a></span>dwp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dwp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a32635ddfbb71cdf280a0fc509f44afd1" name="a32635ddfbb71cdf280a0fc509f44afd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32635ddfbb71cdf280a0fc509f44afd1">&#9670;&#160;</a></span>f</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5f654f89225e9aa5fdc80673a63a8362" name="a5f654f89225e9aa5fdc80673a63a8362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f654f89225e9aa5fdc80673a63a8362">&#9670;&#160;</a></span>F</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::F</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a94b427b0f8ed93871b66797bcccd364d" name="a94b427b0f8ed93871b66797bcccd364d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94b427b0f8ed93871b66797bcccd364d">&#9670;&#160;</a></span>f_nv</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::f_nv</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad18ee007ec7679264981c1501e848d11" name="ad18ee007ec7679264981c1501e848d11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad18ee007ec7679264981c1501e848d11">&#9670;&#160;</a></span>gravity_vector</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::gravity_vector</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a893466ffaf7d085e5d5bd8e0c0317102" name="a893466ffaf7d085e5d5bd8e0c0317102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a893466ffaf7d085e5d5bd8e0c0317102">&#9670;&#160;</a></span>intilizied</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::intilizied = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac7e4e2f810407f98d7171e95ff60dbcc" name="ac7e4e2f810407f98d7171e95ff60dbcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7e4e2f810407f98d7171e95ff60dbcc">&#9670;&#160;</a></span>links</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmanipulator_1_1_link.html">Link</a>&lt; Real, Int &gt; <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::links</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae3647f1bb765743c5f018c859d3e2d5d" name="ae3647f1bb765743c5f018c859d3e2d5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3647f1bb765743c5f018c859d3e2d5d">&#9670;&#160;</a></span>n</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::n</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a508e8047fd8785d1060d6232deb072d2" name="a508e8047fd8785d1060d6232deb072d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a508e8047fd8785d1060d6232deb072d2">&#9670;&#160;</a></span>N</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::N</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acec8462aaa69cb4e6467d2e12a2a538b" name="acec8462aaa69cb4e6467d2e12a2a538b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec8462aaa69cb4e6467d2e12a2a538b">&#9670;&#160;</a></span>n_nv</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::n_nv</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7147cff5aa8f633a088bac87b6e28c85" name="a7147cff5aa8f633a088bac87b6e28c85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7147cff5aa8f633a088bac87b6e28c85">&#9670;&#160;</a></span>p</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::p</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab586b246a88f210bb4449b054bffd4c9" name="ab586b246a88f210bb4449b054bffd4c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab586b246a88f210bb4449b054bffd4c9">&#9670;&#160;</a></span>pp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::pp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8b29422dcd62fdda3946b7d29d1f44ea" name="a8b29422dcd62fdda3946b7d29d1f44ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b29422dcd62fdda3946b7d29d1f44ea">&#9670;&#160;</a></span>R</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::R</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad8a5ae6f4b87245b46bd05cf98ae15a9" name="ad8a5ae6f4b87245b46bd05cf98ae15a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a5ae6f4b87245b46bd05cf98ae15a9">&#9670;&#160;</a></span>vp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::vp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55fa5b2ccf95f036521b5bbb24f0e257" name="a55fa5b2ccf95f036521b5bbb24f0e257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55fa5b2ccf95f036521b5bbb24f0e257">&#9670;&#160;</a></span>w</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::w</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acfa3ec9475358207307137658204cb08" name="acfa3ec9475358207307137658204cb08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfa3ec9475358207307137658204cb08">&#9670;&#160;</a></span>wp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::wp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a71e5e6f4f9942e5add70c04959fa051b" name="a71e5e6f4f9942e5add70c04959fa051b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e5e6f4f9942e5add70c04959fa051b">&#9670;&#160;</a></span>z0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Real , typename Int , size_t ndof&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::z0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>dynaMapp/manipulator/<a class="el" href="robot_8hpp_source.html">robot.hpp</a></li>
 <li>dynaMapp/multibody/<a class="el" href="robot__model_8hpp_source.html">robot_model.hpp</a></li>
@@ -3144,13 +2450,9 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 <li>dynaMapp/multibody/<a class="el" href="robot__model_8cpp.html">robot_model.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespacemanipulator.html">manipulator</a></li><li class="navelem"><a class="el" href="classmanipulator_1_1_robot.html">Robot</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
 </body>
 </html>
