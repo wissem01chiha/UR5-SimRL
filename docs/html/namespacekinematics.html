@@ -99,9 +99,239 @@ $(function(){initNavTree('namespacekinematics.html',''); initResizable(); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">kinematics Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a01b114434399bf49955021be7ff3220b" id="r_a01b114434399bf49955021be7ff3220b"><td class="memTemplParams" colspan="2">template&lt;typename Real &gt; </td></tr>
+<tr class="memitem:a01b114434399bf49955021be7ff3220b"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; Real, 3, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a01b114434399bf49955021be7ff3220b">orthogonal_rotation</a> (const Real theta, const Real alpha)</td></tr>
+<tr class="memdesc:a01b114434399bf49955021be7ff3220b"><td class="mdescLeft">&#160;</td><td class="mdescRight">orthogonal rotation matrix which transforms a vector in the (i-1)st coordinate frame to a coordinate frame which is parallel to the i-th coordinate frame.  <br /></td></tr>
+<tr class="separator:a01b114434399bf49955021be7ff3220b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac162043b55f091141ad92b4dadcb46b" id="r_aac162043b55f091141ad92b4dadcb46b"><td class="memTemplParams" colspan="2">template&lt;typename Real &gt; </td></tr>
+<tr class="memitem:aac162043b55f091141ad92b4dadcb46b"><td class="memTemplItemLeft" align="right" valign="top">Vector&lt; Real, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aac162043b55f091141ad92b4dadcb46b">frame_position</a> (const Real alpha, const Real d, const Real a)</td></tr>
+<tr class="memdesc:aac162043b55f091141ad92b4dadcb46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">position of the i-th coordinate frame with respect to the (i— 1)st coordinate frame.  <br /></td></tr>
+<tr class="separator:aac162043b55f091141ad92b4dadcb46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f99486a82a2e14129a4373a7c3a199c" id="r_a8f99486a82a2e14129a4373a7c3a199c"><td class="memTemplParams" colspan="2">template&lt;typename Real &gt; </td></tr>
+<tr class="memitem:a8f99486a82a2e14129a4373a7c3a199c"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; Real, 3, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8f99486a82a2e14129a4373a7c3a199c">diff_orthogonal_rotation</a> (const Real theta, const Real alpha)</td></tr>
+<tr class="memdesc:a8f99486a82a2e14129a4373a7c3a199c"><td class="mdescLeft">&#160;</td><td class="mdescRight">differential form of the orthogonal rotation matrix respect to joint variable.  <br /></td></tr>
+<tr class="separator:a8f99486a82a2e14129a4373a7c3a199c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3979bf493559a36cf823a52d0bacf68" id="r_aa3979bf493559a36cf823a52d0bacf68"><td class="memTemplParams" colspan="2">template&lt;typename Real , size_t N&gt; </td></tr>
+<tr class="memitem:aa3979bf493559a36cf823a52d0bacf68"><td class="memTemplItemLeft" align="right" valign="top">Vector&lt; Real, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa3979bf493559a36cf823a52d0bacf68">kinematic_partial_derivative</a> ()</td></tr>
+<tr class="separator:aa3979bf493559a36cf823a52d0bacf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e752508e6a72eff93d226eb97f7fe9f" id="r_a6e752508e6a72eff93d226eb97f7fe9f"><td class="memTemplParams" colspan="2">template&lt;typename Real &gt; </td></tr>
+<tr class="memitem:a6e752508e6a72eff93d226eb97f7fe9f"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; Real, 4, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6e752508e6a72eff93d226eb97f7fe9f">homogenus_transformation</a> (const Real theta, const Real alpha, const Real a, const Real d)</td></tr>
+<tr class="separator:a6e752508e6a72eff93d226eb97f7fe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1d99750c0d403ae7bd568a2003e73c" id="r_a4f1d99750c0d403ae7bd568a2003e73c"><td class="memTemplParams" colspan="2">template&lt;typename Real , typename Int &gt; </td></tr>
+<tr class="memitem:a4f1d99750c0d403ae7bd568a2003e73c"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; Real, 4, 4 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4f1d99750c0d403ae7bd568a2003e73c">forward_kinematics</a> (const std::vector&lt; Real &gt; theta, const std::vector&lt; Real &gt; alpha, const std::vector&lt; Real &gt; a, const std::vector&lt; Real &gt; d, const Int j)</td></tr>
+<tr class="memdesc:a4f1d99750c0d403ae7bd568a2003e73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the forward kinematic form until link "j" starting from base link.  <br /></td></tr>
+<tr class="separator:a4f1d99750c0d403ae7bd568a2003e73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dfa0171dc57adea0c0078bff386e20" id="r_a42dfa0171dc57adea0c0078bff386e20"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42dfa0171dc57adea0c0078bff386e20">jacobien</a> (const int n)</td></tr>
+<tr class="separator:a42dfa0171dc57adea0c0078bff386e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a8f99486a82a2e14129a4373a7c3a199c" name="a8f99486a82a2e14129a4373a7c3a199c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f99486a82a2e14129a4373a7c3a199c">&#9670;&#160;</a></span>diff_orthogonal_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix&lt; Real, 3, 3 &gt; kinematics::diff_orthogonal_rotation </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>theta</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>differential form of the orthogonal rotation matrix respect to joint variable. </p>
+
+</div>
+</div>
+<a id="a4f1d99750c0d403ae7bd568a2003e73c" name="a4f1d99750c0d403ae7bd568a2003e73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1d99750c0d403ae7bd568a2003e73c">&#9670;&#160;</a></span>forward_kinematics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix&lt; Real, 4, 4 &gt; kinematics::forward_kinematics </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; Real &gt;</td>          <td class="paramname"><span class="paramname"><em>theta</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; Real &gt;</td>          <td class="paramname"><span class="paramname"><em>alpha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; Real &gt;</td>          <td class="paramname"><span class="paramname"><em>a</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; Real &gt;</td>          <td class="paramname"><span class="paramname"><em>d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Int</td>          <td class="paramname"><span class="paramname"><em>j</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the forward kinematic form until link "j" starting from base link. </p>
+<dl class="section return"><dt>Returns</dt><dd>the homogenus transformation matrix until link "j". </dd></dl>
+
+</div>
+</div>
+<a id="aac162043b55f091141ad92b4dadcb46b" name="aac162043b55f091141ad92b4dadcb46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac162043b55f091141ad92b4dadcb46b">&#9670;&#160;</a></span>frame_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector&lt; Real, 3 &gt; kinematics::frame_position </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>alpha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>position of the i-th coordinate frame with respect to the (i— 1)st coordinate frame. </p>
+
+</div>
+</div>
+<a id="a6e752508e6a72eff93d226eb97f7fe9f" name="a6e752508e6a72eff93d226eb97f7fe9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e752508e6a72eff93d226eb97f7fe9f">&#9670;&#160;</a></span>homogenus_transformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix&lt; Real, 4, 4 &gt; kinematics::homogenus_transformation </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>theta</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>alpha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>a</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the homgenus transformation matrix betwwen link "i" and link "i-1" </dd></dl>
+
+</div>
+</div>
+<a id="a42dfa0171dc57adea0c0078bff386e20" name="a42dfa0171dc57adea0c0078bff386e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42dfa0171dc57adea0c0078bff386e20">&#9670;&#160;</a></span>jacobien()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd kinematics::jacobien </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa3979bf493559a36cf823a52d0bacf68" name="aa3979bf493559a36cf823a52d0bacf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3979bf493559a36cf823a52d0bacf68">&#9670;&#160;</a></span>kinematic_partial_derivative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , size_t N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector&lt; Real, N &gt; kinematics::kinematic_partial_derivative </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the partial derivative of the forward kinematics. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">N</td><td>- number of the multibody links </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01b114434399bf49955021be7ff3220b" name="a01b114434399bf49955021be7ff3220b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b114434399bf49955021be7ff3220b">&#9670;&#160;</a></span>orthogonal_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix&lt; Real, 3, 3 &gt; kinematics::orthogonal_rotation </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>theta</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>alpha</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>orthogonal rotation matrix which transforms a vector in the (i-1)st coordinate frame to a coordinate frame which is parallel to the i-th coordinate frame. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

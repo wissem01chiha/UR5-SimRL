@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['installation_2emd_0',['installation.md',['../installation_8md.html',1,'']]]
+  ['error_2ehpp_0',['error.hpp',['../error_8hpp.html',1,'']]],
+  ['error_5ftest_2ecpp_1',['error_test.cpp',['../error__test_8cpp.html',1,'']]],
+  ['estimator_2ehpp_2',['estimator.hpp',['../estimator_8hpp.html',1,'']]]
 ];

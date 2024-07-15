@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['a_0',['A',['../classestimator_1_1_kalman.html#aec98b8748f6e04f0e1ba603e00186d92',1,'estimator::Kalman::A'],['../classestimator_1_1_luenberger.html#aa71a001fd30a291d77925298a2942c88',1,'estimator::Luenberger::A']]],
-  ['a_1',['a',['../classmanipulator_1_1_link.html#aaf357fce720ad4308df47979bf40113e',1,'manipulator::Link::a'],['../classmanipulator_1_1_robot.html#a5f937089978113f7a28354dbe9a2cdd5',1,'manipulator::Robot::a']]],
-  ['a0_2',['a0',['../classmanipulator_1_1_link.html#a370ca2fc8752b146debc4a7744e9e788',1,'manipulator::Link']]],
-  ['a1_3',['a1',['../classmanipulator_1_1_link.html#ace53726c48e54c6b7771b15143719508',1,'manipulator::Link']]],
-  ['a2_4',['a2',['../classmanipulator_1_1_link.html#a0bd95daa7386a956ce18ddd282a9b2a1',1,'manipulator::Link']]],
-  ['acceleration_5',['acceleration',['../classmanipulator_1_1_robot.html#ae278981fedc27600b40a65e1f4ee745d',1,'manipulator::Robot::acceleration(const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;tau_)[ndof], const Real(&amp;Next_)[ndof])'],['../classmanipulator_1_1_robot.html#a93cf6545fcb1b097e4793b953771db45',1,'manipulator::Robot::acceleration(const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof])']]],
-  ['alpha_6',['alpha',['../classmanipulator_1_1_link.html#aca71dd6882401b897a058aee80770b4e',1,'manipulator::Link']]]
+  ['_5f_5fadd_5f_5f_0',['__add__',['../classinertia_1_1_inertia.html#a33bbe8f8170ed2f3e7409ab2c4c09384',1,'inertia::Inertia']]],
+  ['_5f_5feq_5f_5f_1',['__eq__',['../classinertia_1_1_inertia.html#a8cec5d919d74743af3aff30db6cce4c5',1,'inertia::Inertia']]],
+  ['_5f_5finit_5f_5f_2',['__init__',['../class_b_l_d_c_1_1_b_l_d_c.html#a32ab33b0138194b0032a1c4493a93c14',1,'BLDC.BLDC.__init__()'],['../classconstraint_1_1_constraint.html#add1f807fdc7378f343aa1841f71223aa',1,'constraint.Constraint.__init__()'],['../classfriction_1_1_friction.html#a041111de435b0c454f8d66f09bb9f5dc',1,'friction.Friction.__init__()'],['../classinertia_1_1_inertia.html#aca67f72e60304b8a22623badec5d257d',1,'inertia.Inertia.__init__()'],['../classrobot_1_1_robot.html#ac2f10653d325b832866279d0cad25f95',1,'robot.Robot.__init__()'],['../classtransform_1_1_transformation.html#aa0680f3f0226af30cce16ad6991de2cb',1,'transform.Transformation.__init__()'],['../classtransmission_1_1_transmission.html#a75a20f1d4c0b27435a1332c199fae8b4',1,'transmission.Transmission.__init__()']]],
+  ['_5f_5finit_5f_5f_2epy_3',['__init__.py',['../____init_____8py.html',1,'']]],
+  ['_5f_5fstr_5f_5f_4',['__str__',['../classinertia_1_1_inertia.html#a0260adcdd37070c5f984e7a0185d1e52',1,'inertia.Inertia.__str__()'],['../classrobot_1_1_robot.html#a45481d86d8042ff38fef7b0a8a9dca4b',1,'robot.Robot.__str__()'],['../classtransform_1_1_transformation.html#a281150aa17a770b76313da82c488cba7',1,'transform.Transformation.__str__()']]],
+  ['_5finit_5f_5fcontroller_5',['_init__controller',['../class_b_l_d_c_1_1_b_l_d_c.html#a06a15b5dca64bf6aaf52f2c6408500e4',1,'BLDC::BLDC']]],
+  ['_5finit_5f_5fstate_6',['_init__state',['../class_b_l_d_c_1_1_b_l_d_c.html#aaa7c39889949face1b376b911d7a613e',1,'BLDC::BLDC']]],
+  ['_5finit_5fdefault_7',['_init_default',['../classtransform_1_1_transformation.html#ae806fb331530a62302b5d143076f7fb8',1,'transform::Transformation']]],
+  ['_5fstr_5fitems_8',['_str_items',['../classinertia_1_1_inertia.html#ab1aff93612b372899774fb7b993b3ed5',1,'inertia.Inertia._str_items()'],['../classrobot_1_1_robot.html#abe564a87c2c078802c4984d97e909f40',1,'robot.Robot._str_items()']]]
 ];

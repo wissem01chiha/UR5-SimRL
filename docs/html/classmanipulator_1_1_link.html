@@ -216,6 +216,112 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ca0e50edffb01ddb5da1a14462a465d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df8778977ac41b35fe9b0291840b696" id="r_a2df8778977ac41b35fe9b0291840b696"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2df8778977ac41b35fe9b0291840b696">compute_stiffness</a> (Real current, Real voltage)</td></tr>
 <tr class="separator:a2df8778977ac41b35fe9b0291840b696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c0bb344cb10cb324b7ef05f03c1a8f" id="r_ac4c0bb344cb10cb324b7ef05f03c1a8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4c0bb344cb10cb324b7ef05f03c1a8f">Link</a> (const Real <a class="el" href="#aaa025c552db75b3f3c73d93796123755">q</a>, const Real <a class="el" href="#a7725458a80184fb2b9af3dff22104208">d</a>, const Real <a class="el" href="#aaf357fce720ad4308df47979bf40113e">a</a>, const Real <a class="el" href="#aca71dd6882401b897a058aee80770b4e">alpha</a>, const Real <a class="el" href="#a23175631fd1ae35d5309d6ec03ae256a">mass</a>, const Vector3d <a class="el" href="#adfc2969f4d4d641492d4ad40a0964246">r</a>, const Matrix3d <a class="el" href="#a3a31934769b8cfb34fef673581d263c9">I</a>, const Int <a class="el" href="#ac9adcccec47d1319ffd6e4cc5dc5ce2a">ratio</a>, const Real couloumb, const Real <a class="el" href="#adb533de8766532c37a87f357ccf98108">stribek</a>, const Real <a class="el" href="#af750a8d9e78e8f818ab936cff43bc022">damping</a>, const bool <a class="el" href="#a1b48a5e387a8b60dbe670cd3278e5490">static_</a>=false, const Real mx, const Real my, const Real mz, const Real <a class="el" href="#a535f299ac7645ad553e32270a0de8ee9">q_max</a>, const Real <a class="el" href="#af00b76a2dac1ab38e573f087bbb7c441">q_min</a>, const Real <a class="el" href="#a71592a28292bb5b0f950d2ca7d83d051">joint_offset</a>, const Real <a class="el" href="#ae623a7e4cfa603b86d4818662ba79817">Jm</a>, const Real <a class="el" href="#a10e9149447a4a929922d4566246c5729">temperature</a>)</td></tr>
+<tr class="memdesc:ac4c0bb344cb10cb324b7ef05f03c1a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">class constructor with minimal given paramters.  <br /></td></tr>
+<tr class="separator:ac4c0bb344cb10cb324b7ef05f03c1a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f831bd977a675f821f8a5f6fe8651a3" id="r_a2f831bd977a675f821f8a5f6fe8651a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f831bd977a675f821f8a5f6fe8651a3">init</a> ()</td></tr>
+<tr class="memdesc:a2f831bd977a675f821f8a5f6fe8651a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">initlize model with default values.  <br /></td></tr>
+<tr class="separator:a2f831bd977a675f821f8a5f6fe8651a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa870f9c1106573143616db03cf324ee2" id="r_aa870f9c1106573143616db03cf324ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa870f9c1106573143616db03cf324ee2">transform</a> (const Real &amp;q_)</td></tr>
+<tr class="memdesc:aa870f9c1106573143616db03cf324ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">this functions is used to reset the rotation matrix  <br /></td></tr>
+<tr class="separator:aa870f9c1106573143616db03cf324ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aaa276da421fb7bbc1f9f84be890cd7" id="r_a9aaa276da421fb7bbc1f9f84be890cd7"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aaa276da421fb7bbc1f9f84be890cd7">get_alpha</a> () const</td></tr>
+<tr class="separator:a9aaa276da421fb7bbc1f9f84be890cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040380b951960835a33b44e96161045b" id="r_a040380b951960835a33b44e96161045b"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a040380b951960835a33b44e96161045b">get_d</a> () const</td></tr>
+<tr class="separator:a040380b951960835a33b44e96161045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1dd68c3780d89c1c79c6d307eb5e45" id="r_a7d1dd68c3780d89c1c79c6d307eb5e45"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d1dd68c3780d89c1c79c6d307eb5e45">get_q</a> () const</td></tr>
+<tr class="separator:a7d1dd68c3780d89c1c79c6d307eb5e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90190abfc1c14233342bcf0652a376d1" id="r_a90190abfc1c14233342bcf0652a376d1"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90190abfc1c14233342bcf0652a376d1">get_q_min</a> () const</td></tr>
+<tr class="separator:a90190abfc1c14233342bcf0652a376d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dc0c4af876db5b2a16f990412303d4" id="r_af0dc0c4af876db5b2a16f990412303d4"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0dc0c4af876db5b2a16f990412303d4">get_q_max</a> () const</td></tr>
+<tr class="separator:af0dc0c4af876db5b2a16f990412303d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa853aa280c539cc5880730c4c217caf5" id="r_aa853aa280c539cc5880730c4c217caf5"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa853aa280c539cc5880730c4c217caf5">get_ratio</a> () const</td></tr>
+<tr class="separator:aa853aa280c539cc5880730c4c217caf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3f16e68dc724b68162fe79ab0c7de8" id="r_a2a3f16e68dc724b68162fe79ab0c7de8"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a3f16e68dc724b68162fe79ab0c7de8">get_stiffness</a> ()</td></tr>
+<tr class="separator:a2a3f16e68dc724b68162fe79ab0c7de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f7af74d256a3d2cca3912e34ff1e1f" id="r_ae8f7af74d256a3d2cca3912e34ff1e1f"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8f7af74d256a3d2cca3912e34ff1e1f">get_temperature</a> ()</td></tr>
+<tr class="separator:ae8f7af74d256a3d2cca3912e34ff1e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeaa2aae105bb22d42b79a5e4e2b92bd" id="r_aeeaa2aae105bb22d42b79a5e4e2b92bd"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeaa2aae105bb22d42b79a5e4e2b92bd">get_joint_offset</a> ()</td></tr>
+<tr class="separator:aeeaa2aae105bb22d42b79a5e4e2b92bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20346db37974eae8f36429271b35da9" id="r_ac20346db37974eae8f36429271b35da9"><td class="memItemLeft" align="right" valign="top">Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac20346db37974eae8f36429271b35da9">get_joint_type</a> ()</td></tr>
+<tr class="separator:ac20346db37974eae8f36429271b35da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd24fffce16ee0c17c95771477d4d967" id="r_abd24fffce16ee0c17c95771477d4d967"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd24fffce16ee0c17c95771477d4d967">get_mass</a> ()</td></tr>
+<tr class="separator:abd24fffce16ee0c17c95771477d4d967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff0d03124d14af5d6fc442b8e9967f0" id="r_a2ff0d03124d14af5d6fc442b8e9967f0"><td class="memItemLeft" align="right" valign="top">Matrix&lt; Real, 3, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ff0d03124d14af5d6fc442b8e9967f0">get_inertia</a> ()</td></tr>
+<tr class="separator:a2ff0d03124d14af5d6fc442b8e9967f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab792bb0d4db2364e2ff1591dc4ac6caf" id="r_ab792bb0d4db2364e2ff1591dc4ac6caf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab792bb0d4db2364e2ff1591dc4ac6caf">is_static</a> ()</td></tr>
+<tr class="separator:ab792bb0d4db2364e2ff1591dc4ac6caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4e0b120763cfdb91ccbff47ea14a8b" id="r_a4e4e0b120763cfdb91ccbff47ea14a8b"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e4e0b120763cfdb91ccbff47ea14a8b">get_qm</a> ()</td></tr>
+<tr class="separator:a4e4e0b120763cfdb91ccbff47ea14a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88d5364c701287b90dcfe97b189807c" id="r_af88d5364c701287b90dcfe97b189807c"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af88d5364c701287b90dcfe97b189807c">get_qpm</a> ()</td></tr>
+<tr class="separator:af88d5364c701287b90dcfe97b189807c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea84487fc25a3d86565bbec4b92decf9" id="r_aea84487fc25a3d86565bbec4b92decf9"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea84487fc25a3d86565bbec4b92decf9">get_delta_q</a> ()</td></tr>
+<tr class="separator:aea84487fc25a3d86565bbec4b92decf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a3e362ee012de88e39f54543ebf8fa" id="r_a22a3e362ee012de88e39f54543ebf8fa"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22a3e362ee012de88e39f54543ebf8fa">get_time</a> ()</td></tr>
+<tr class="separator:a22a3e362ee012de88e39f54543ebf8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c53ecedad3072e071175abff0799386" id="r_a4c53ecedad3072e071175abff0799386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c53ecedad3072e071175abff0799386">set_joint_position</a> (Real <a class="el" href="#aaa025c552db75b3f3c73d93796123755">q</a>)</td></tr>
+<tr class="memdesc:a4c53ecedad3072e071175abff0799386"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the link joint generalised variable  <br /></td></tr>
+<tr class="separator:a4c53ecedad3072e071175abff0799386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f32366b2938f97ddb3c08079344f0e" id="r_a76f32366b2938f97ddb3c08079344f0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76f32366b2938f97ddb3c08079344f0e">set_kv</a> (Real <a class="el" href="#a71864d69c8eab377d4886b2642fb6d43">kv</a>)</td></tr>
+<tr class="memdesc:a76f32366b2938f97ddb3c08079344f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">DC-Brushed motor constants defalu value = 1.02.  <br /></td></tr>
+<tr class="separator:a76f32366b2938f97ddb3c08079344f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f8d5cac771de738b956e1b44e6a740" id="r_a80f8d5cac771de738b956e1b44e6a740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80f8d5cac771de738b956e1b44e6a740">set_kt</a> (Real <a class="el" href="#a0c53a95f8ec8ebb281fb0d8a1ce19083">kt</a>)</td></tr>
+<tr class="memdesc:a80f8d5cac771de738b956e1b44e6a740"><td class="mdescLeft">&#160;</td><td class="mdescRight">DC-Brushed motor constants.  <br /></td></tr>
+<tr class="separator:a80f8d5cac771de738b956e1b44e6a740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef55bd1f241ef9037058347dbcfe0ffb" id="r_aef55bd1f241ef9037058347dbcfe0ffb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef55bd1f241ef9037058347dbcfe0ffb">set_temperature</a> (Real temperature_)</td></tr>
+<tr class="memdesc:aef55bd1f241ef9037058347dbcfe0ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">set manully the joint temperature, if the "temperature_depandancy" is set to false this will not ovverite the temperature value  <br /></td></tr>
+<tr class="separator:aef55bd1f241ef9037058347dbcfe0ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4c32b733c0cb9dd4a84ff3e3430c71" id="r_a1b4c32b733c0cb9dd4a84ff3e3430c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b4c32b733c0cb9dd4a84ff3e3430c71">set_sensor_stiffness</a> (Real value)</td></tr>
+<tr class="memdesc:a1b4c32b733c0cb9dd4a84ff3e3430c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of the sensor stiffness value.  <br /></td></tr>
+<tr class="separator:a1b4c32b733c0cb9dd4a84ff3e3430c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15aeb3a6cc93bf28c11cdca1ccddde80" id="r_a15aeb3a6cc93bf28c11cdca1ccddde80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15aeb3a6cc93bf28c11cdca1ccddde80">set_transmision_stiffness</a> (Real <a class="el" href="#a370ca2fc8752b146debc4a7744e9e788">a0</a>, Real <a class="el" href="#ace53726c48e54c6b7771b15143719508">a1</a>, Real <a class="el" href="#a0bd95daa7386a956ce18ddd282a9b2a1">a2</a>)</td></tr>
+<tr class="memdesc:a15aeb3a6cc93bf28c11cdca1ccddde80"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of harmonic drive reducer stiffness coefficents.  <br /></td></tr>
+<tr class="separator:a15aeb3a6cc93bf28c11cdca1ccddde80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c59b7ba925e461088093d83d1daf20" id="r_ac4c59b7ba925e461088093d83d1daf20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4c59b7ba925e461088093d83d1daf20">set_transmission_stiffness</a> (Real value)</td></tr>
+<tr class="memdesc:ac4c59b7ba925e461088093d83d1daf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of  <br /></td></tr>
+<tr class="separator:ac4c59b7ba925e461088093d83d1daf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd54d1182150c242777f2e65e6529b4" id="r_abbd54d1182150c242777f2e65e6529b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbd54d1182150c242777f2e65e6529b4">set_temperature_depandancy</a> (const bool status)</td></tr>
+<tr class="memdesc:abbd54d1182150c242777f2e65e6529b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">enable temperture depandent computations  <br /></td></tr>
+<tr class="separator:abbd54d1182150c242777f2e65e6529b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f17679d53852e69cb32eed8c9ad4e5" id="r_a48f17679d53852e69cb32eed8c9ad4e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48f17679d53852e69cb32eed8c9ad4e5">set_mc</a> (const Real mx, const Real my, const Real mz)</td></tr>
+<tr class="memdesc:a48f17679d53852e69cb32eed8c9ad4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the link center of mass coordinates vector  <br /></td></tr>
+<tr class="separator:a48f17679d53852e69cb32eed8c9ad4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dbc629c61a4fa570267a1320e8f9a6" id="r_ab9dbc629c61a4fa570267a1320e8f9a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9dbc629c61a4fa570267a1320e8f9a6">set_inertia</a> (const Real <a class="el" href="#ae623a7e4cfa603b86d4818662ba79817">Jm</a>)</td></tr>
+<tr class="memdesc:ab9dbc629c61a4fa570267a1320e8f9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the joint global inertia  <br /></td></tr>
+<tr class="separator:ab9dbc629c61a4fa570267a1320e8f9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e6e95485bb16de45fbe84193305ed7" id="r_a71e6e95485bb16de45fbe84193305ed7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71e6e95485bb16de45fbe84193305ed7">set_inertia_tensor</a> (const Matrix3d I_)</td></tr>
+<tr class="memdesc:a71e6e95485bb16de45fbe84193305ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the link inertia tensor  <br /></td></tr>
+<tr class="separator:a71e6e95485bb16de45fbe84193305ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7374dfa2943e1c7fe30376960829f42a" id="r_a7374dfa2943e1c7fe30376960829f42a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7374dfa2943e1c7fe30376960829f42a">set_static</a> (const bool status)</td></tr>
+<tr class="memdesc:a7374dfa2943e1c7fe30376960829f42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the link satuts to static  <br /></td></tr>
+<tr class="separator:a7374dfa2943e1c7fe30376960829f42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598538427e8ddf574ccd2abce175f03b" id="r_a598538427e8ddf574ccd2abce175f03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a598538427e8ddf574ccd2abce175f03b">update_time</a> ()</td></tr>
+<tr class="memdesc:a598538427e8ddf574ccd2abce175f03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">update time state by one time step  <br /></td></tr>
+<tr class="separator:a598538427e8ddf574ccd2abce175f03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec4d7acdcdf1887d0ecbe0e6f36280d" id="r_a9ec4d7acdcdf1887d0ecbe0e6f36280d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ec4d7acdcdf1887d0ecbe0e6f36280d">reset_time</a> ()</td></tr>
+<tr class="memdesc:a9ec4d7acdcdf1887d0ecbe0e6f36280d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set time to t0  <br /></td></tr>
+<tr class="separator:a9ec4d7acdcdf1887d0ecbe0e6f36280d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec8c8a468bf1e1b30c11a0f79f269a6" id="r_aaec8c8a468bf1e1b30c11a0f79f269a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaec8c8a468bf1e1b30c11a0f79f269a6">update_qpm</a> (Real current, Real voltage)</td></tr>
+<tr class="memdesc:aaec8c8a468bf1e1b30c11a0f79f269a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the motor shaft angular spped (RPM) given the voltage and current values  <br /></td></tr>
+<tr class="separator:aaec8c8a468bf1e1b30c11a0f79f269a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c56d047d5dad1f2b46ce3265aab5b3" id="r_af6c56d047d5dad1f2b46ce3265aab5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6c56d047d5dad1f2b46ce3265aab5b3">update_qm</a> (Real current, Real voltage)</td></tr>
+<tr class="memdesc:af6c56d047d5dad1f2b46ce3265aab5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the angular position at motor shaft from state k to state k+1 given the qpm at state k <br  />
+  <br /></td></tr>
+<tr class="separator:af6c56d047d5dad1f2b46ce3265aab5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4c860525383f47845795c473881b12" id="r_a5e4c860525383f47845795c473881b12"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e4c860525383f47845795c473881b12">compute_motor_torque</a> (Real current, Real volatge)</td></tr>
+<tr class="memdesc:a5e4c860525383f47845795c473881b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the motor output torque  <br /></td></tr>
+<tr class="separator:a5e4c860525383f47845795c473881b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2111696b8d0f114b1fdd3e1c4e89e31" id="r_ae2111696b8d0f114b1fdd3e1c4e89e31"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2111696b8d0f114b1fdd3e1c4e89e31">contact_friction_torque</a> ()</td></tr>
+<tr class="memdesc:ae2111696b8d0f114b1fdd3e1c4e89e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">torque in joint general contact phenomenas at time date t.  <br /></td></tr>
+<tr class="separator:ae2111696b8d0f114b1fdd3e1c4e89e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e0cbfb3d5b262c2ae89bff79a27bc5" id="r_a32e0cbfb3d5b262c2ae89bff79a27bc5"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32e0cbfb3d5b262c2ae89bff79a27bc5">motor_friction</a> (Real current, Real volatge)</td></tr>
+<tr class="memdesc:a32e0cbfb3d5b262c2ae89bff79a27bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the DC-brushed motor friction torque  <br /></td></tr>
+<tr class="separator:a32e0cbfb3d5b262c2ae89bff79a27bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca0e50edffb01ddb5da1a14462a465d" id="r_a6ca0e50edffb01ddb5da1a14462a465d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca0e50edffb01ddb5da1a14462a465d">update_delta_q</a> (Real current, Real volatge)</td></tr>
+<tr class="memdesc:a6ca0e50edffb01ddb5da1a14462a465d"><td class="mdescLeft">&#160;</td><td class="mdescRight">estimates the joint torsinal angle  <br /></td></tr>
+<tr class="separator:a6ca0e50edffb01ddb5da1a14462a465d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df8778977ac41b35fe9b0291840b696" id="r_a2df8778977ac41b35fe9b0291840b696"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2df8778977ac41b35fe9b0291840b696">compute_stiffness</a> (Real current, Real voltage)</td></tr>
+<tr class="separator:a2df8778977ac41b35fe9b0291840b696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -355,20 +461,10 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Real, typename Int&gt;<br />
 class manipulator::Link&lt; Real, Int &gt;</div><p><a class="el" href="classmanipulator_1_1_link.html" title="Link a genral class template for manipulator link model.">Link</a> a genral class template for manipulator link model. </p>
-<p>A n degree of freedom (dof) serial manipulator is composed of n links. This class describe the property of a link. A n dof robot has n instance of the class <a class="el" href="classmanipulator_1_1_link.html" title="Link a genral class template for manipulator link model.">Link</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">joint_type</td><td>= 1 for revolute and 0 for prismatric </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>we use in this ifrst implmentation a simple lugre friction model for contact friction</dd></dl>
-<p>[1] Understanding and Modeling the Behavior of a Harmonic Drive Gear Transmission Timothy D.Tuttlie - MIT Artificial Intelligence Lab 1993</p>
-<p>[2] Modeling, Identification, and Compensation of Friction in Harmonic Drives, P.S. Gandhi, F.H. Ghorbel, J. Dabney, IEEE 2002</p>
-<p>[3] </p>
+<p>Genral class template for multibody link. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1e89f030936b92c8633503848cbc6578" name="a1e89f030936b92c8633503848cbc6578"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e89f030936b92c8633503848cbc6578">&#9670;&#160;</a></span>Link()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e89f030936b92c8633503848cbc6578">&#9670;&#160;</a></span>Link() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,9 +612,149 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="ac4c0bb344cb10cb324b7ef05f03c1a8f" name="ac4c0bb344cb10cb324b7ef05f03c1a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c0bb344cb10cb324b7ef05f03c1a8f">&#9670;&#160;</a></span>Link() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::Link </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>q</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>a</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>alpha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mass</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector3d</td>          <td class="paramname"><span class="paramname"><em>r</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix3d</td>          <td class="paramname"><span class="paramname"><em>I</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Int</td>          <td class="paramname"><span class="paramname"><em>ratio</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>couloumb</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>stribek</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>damping</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>static_</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>my</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mz</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>q_max</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>q_min</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>joint_offset</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>Jm</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>temperature</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>class constructor with minimal given paramters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joint_type</td><td>= 1 for revolute and 0 for prismatric. </td></tr>
+    <tr><td class="paramname">a,d,q,alpha</td><td>link DH paramters. </td></tr>
+    <tr><td class="paramname">mx,my,mz</td><td>link center of mass coordinates respect to joint local frame </td></tr>
+    <tr><td class="paramname">I</td><td>link inertia tensor matrix respect to joint local frame. </td></tr>
+    <tr><td class="paramname">q_max,q_min</td><td>link joint position limits. </td></tr>
+    <tr><td class="paramname">tau_min,tau_max</td><td>link joint actuator torque limits bounds. </td></tr>
+    <tr><td class="paramname">qp_min,qp_max</td><td>link joint velocity limits. </td></tr>
+    <tr><td class="paramname">joint_offset</td><td>link joint offset value at initial time. </td></tr>
+    <tr><td class="paramname">friction_model</td><td>= "lugre" , "coulomb", "stribeck", "maxwell". </td></tr>
+    <tr><td class="paramname">temperature</td><td></td></tr>
+    <tr><td class="paramname">damping</td><td>link joint damping coefficent (usully very small value). </td></tr>
+    <tr><td class="paramname">static</td><td>if "True" the link associated joint is considered fixed. all parameter values will be "reset". </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5e4c860525383f47845795c473881b12" name="a5e4c860525383f47845795c473881b12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e4c860525383f47845795c473881b12">&#9670;&#160;</a></span>compute_motor_torque()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4c860525383f47845795c473881b12">&#9670;&#160;</a></span>compute_motor_torque() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,8 +786,33 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a5e4c860525383f47845795c473881b12" name="a5e4c860525383f47845795c473881b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4c860525383f47845795c473881b12">&#9670;&#160;</a></span>compute_motor_torque() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::compute_motor_torque </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>volatge</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the motor output torque </p>
+
+</div>
+</div>
 <a id="a2df8778977ac41b35fe9b0291840b696" name="a2df8778977ac41b35fe9b0291840b696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2df8778977ac41b35fe9b0291840b696">&#9670;&#160;</a></span>compute_stiffness()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df8778977ac41b35fe9b0291840b696">&#9670;&#160;</a></span>compute_stiffness() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,6 +832,31 @@ template&lt;typename Real , typename Int &gt; </div>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the link joint overhaull stiffness <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a2df8778977ac41b35fe9b0291840b696" name="a2df8778977ac41b35fe9b0291840b696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df8778977ac41b35fe9b0291840b696">&#9670;&#160;</a></span>compute_stiffness() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::compute_stiffness </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>voltage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the link joint overhall stiffness <br  />
  </dd></dl>
 
 </div>
@@ -605,8 +891,65 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="ae2111696b8d0f114b1fdd3e1c4e89e31" name="ae2111696b8d0f114b1fdd3e1c4e89e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2111696b8d0f114b1fdd3e1c4e89e31">&#9670;&#160;</a></span>contact_friction_torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::contact_friction_torque </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>torque in joint general contact phenomenas at time date t. </p>
+
+</div>
+</div>
 <a id="a9aaa276da421fb7bbc1f9f84be890cd7" name="a9aaa276da421fb7bbc1f9f84be890cd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aaa276da421fb7bbc1f9f84be890cd7">&#9670;&#160;</a></span>get_alpha()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aaa276da421fb7bbc1f9f84be890cd7">&#9670;&#160;</a></span>get_alpha() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_alpha </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>link DH parmter alpha </dd></dl>
+
+</div>
+</div>
+<a id="a9aaa276da421fb7bbc1f9f84be890cd7" name="a9aaa276da421fb7bbc1f9f84be890cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aaa276da421fb7bbc1f9f84be890cd7">&#9670;&#160;</a></span>get_alpha() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,7 +977,35 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a040380b951960835a33b44e96161045b" name="a040380b951960835a33b44e96161045b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040380b951960835a33b44e96161045b">&#9670;&#160;</a></span>get_d()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a040380b951960835a33b44e96161045b">&#9670;&#160;</a></span>get_d() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_d </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>link DH paramter d </dd></dl>
+
+</div>
+</div>
+<a id="a040380b951960835a33b44e96161045b" name="a040380b951960835a33b44e96161045b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040380b951960835a33b44e96161045b">&#9670;&#160;</a></span>get_d() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +1033,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="aea84487fc25a3d86565bbec4b92decf9" name="aea84487fc25a3d86565bbec4b92decf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea84487fc25a3d86565bbec4b92decf9">&#9670;&#160;</a></span>get_delta_q()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aea84487fc25a3d86565bbec4b92decf9">&#9670;&#160;</a></span>get_delta_q() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -688,8 +1059,36 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="aea84487fc25a3d86565bbec4b92decf9" name="aea84487fc25a3d86565bbec4b92decf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea84487fc25a3d86565bbec4b92decf9">&#9670;&#160;</a></span>get_delta_q() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_delta_q </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a4b2af00e4ddaa8ed24e16a0bd9d4640a" name="a4b2af00e4ddaa8ed24e16a0bd9d4640a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2af00e4ddaa8ed24e16a0bd9d4640a">&#9670;&#160;</a></span>get_inertia()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2af00e4ddaa8ed24e16a0bd9d4640a">&#9670;&#160;</a></span>get_inertia() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -716,8 +1115,65 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a2ff0d03124d14af5d6fc442b8e9967f0" name="a2ff0d03124d14af5d6fc442b8e9967f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff0d03124d14af5d6fc442b8e9967f0">&#9670;&#160;</a></span>get_inertia() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix&lt; Real, 3, 3 &gt; <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_inertia </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>joint global inertia </dd></dl>
+
+</div>
+</div>
 <a id="aeeaa2aae105bb22d42b79a5e4e2b92bd" name="aeeaa2aae105bb22d42b79a5e4e2b92bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeaa2aae105bb22d42b79a5e4e2b92bd">&#9670;&#160;</a></span>get_joint_offset()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeaa2aae105bb22d42b79a5e4e2b92bd">&#9670;&#160;</a></span>get_joint_offset() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_joint_offset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>joint offset <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="aeeaa2aae105bb22d42b79a5e4e2b92bd" name="aeeaa2aae105bb22d42b79a5e4e2b92bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeaa2aae105bb22d42b79a5e4e2b92bd">&#9670;&#160;</a></span>get_joint_offset() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -746,7 +1202,35 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="ac20346db37974eae8f36429271b35da9" name="ac20346db37974eae8f36429271b35da9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac20346db37974eae8f36429271b35da9">&#9670;&#160;</a></span>get_joint_type()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20346db37974eae8f36429271b35da9">&#9670;&#160;</a></span>get_joint_type() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_joint_type </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>joint typ "revolute" 0 "prismatic "1" </dd></dl>
+
+</div>
+</div>
+<a id="ac20346db37974eae8f36429271b35da9" name="ac20346db37974eae8f36429271b35da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20346db37974eae8f36429271b35da9">&#9670;&#160;</a></span>get_joint_type() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -774,7 +1258,35 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="abd24fffce16ee0c17c95771477d4d967" name="abd24fffce16ee0c17c95771477d4d967"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd24fffce16ee0c17c95771477d4d967">&#9670;&#160;</a></span>get_mass()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd24fffce16ee0c17c95771477d4d967">&#9670;&#160;</a></span>get_mass() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_mass </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>link mass </dd></dl>
+
+</div>
+</div>
+<a id="abd24fffce16ee0c17c95771477d4d967" name="abd24fffce16ee0c17c95771477d4d967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd24fffce16ee0c17c95771477d4d967">&#9670;&#160;</a></span>get_mass() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,7 +1314,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a7d1dd68c3780d89c1c79c6d307eb5e45" name="a7d1dd68c3780d89c1c79c6d307eb5e45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d1dd68c3780d89c1c79c6d307eb5e45">&#9670;&#160;</a></span>get_q()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1dd68c3780d89c1c79c6d307eb5e45">&#9670;&#160;</a></span>get_q() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -821,8 +1333,55 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a7d1dd68c3780d89c1c79c6d307eb5e45" name="a7d1dd68c3780d89c1c79c6d307eb5e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1dd68c3780d89c1c79c6d307eb5e45">&#9670;&#160;</a></span>get_q() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_q </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>link joint genralized variable </dd></dl>
+
+</div>
+</div>
+<a id="af0dc0c4af876db5b2a16f990412303d4" name="af0dc0c4af876db5b2a16f990412303d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dc0c4af876db5b2a16f990412303d4">&#9670;&#160;</a></span>get_q_max()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_q_max </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90190abfc1c14233342bcf0652a376d1" name="a90190abfc1c14233342bcf0652a376d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90190abfc1c14233342bcf0652a376d1">&#9670;&#160;</a></span>get_q_min()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90190abfc1c14233342bcf0652a376d1">&#9670;&#160;</a></span>get_q_min() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,8 +1408,64 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a90190abfc1c14233342bcf0652a376d1" name="a90190abfc1c14233342bcf0652a376d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90190abfc1c14233342bcf0652a376d1">&#9670;&#160;</a></span>get_q_min() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_q_min </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>minimun bound of joint variable. </dd></dl>
+
+</div>
+</div>
 <a id="a4e4e0b120763cfdb91ccbff47ea14a8b" name="a4e4e0b120763cfdb91ccbff47ea14a8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e4e0b120763cfdb91ccbff47ea14a8b">&#9670;&#160;</a></span>get_qm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4e0b120763cfdb91ccbff47ea14a8b">&#9670;&#160;</a></span>get_qm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_qm </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the joint veclocity at output </dd></dl>
+
+</div>
+</div>
+<a id="a4e4e0b120763cfdb91ccbff47ea14a8b" name="a4e4e0b120763cfdb91ccbff47ea14a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4e0b120763cfdb91ccbff47ea14a8b">&#9670;&#160;</a></span>get_qm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,7 +1493,35 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="af88d5364c701287b90dcfe97b189807c" name="af88d5364c701287b90dcfe97b189807c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af88d5364c701287b90dcfe97b189807c">&#9670;&#160;</a></span>get_qpm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af88d5364c701287b90dcfe97b189807c">&#9670;&#160;</a></span>get_qpm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_qpm </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the joint velocity at motor shaft </dd></dl>
+
+</div>
+</div>
+<a id="af88d5364c701287b90dcfe97b189807c" name="af88d5364c701287b90dcfe97b189807c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88d5364c701287b90dcfe97b189807c">&#9670;&#160;</a></span>get_qpm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -906,7 +1549,35 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="aa853aa280c539cc5880730c4c217caf5" name="aa853aa280c539cc5880730c4c217caf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa853aa280c539cc5880730c4c217caf5">&#9670;&#160;</a></span>get_ratio()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa853aa280c539cc5880730c4c217caf5">&#9670;&#160;</a></span>get_ratio() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_ratio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>joint reduction system ratio </dd></dl>
+
+</div>
+</div>
+<a id="aa853aa280c539cc5880730c4c217caf5" name="aa853aa280c539cc5880730c4c217caf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa853aa280c539cc5880730c4c217caf5">&#9670;&#160;</a></span>get_ratio() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -934,7 +1605,36 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a2a3f16e68dc724b68162fe79ab0c7de8" name="a2a3f16e68dc724b68162fe79ab0c7de8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a3f16e68dc724b68162fe79ab0c7de8">&#9670;&#160;</a></span>get_stiffness()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3f16e68dc724b68162fe79ab0c7de8">&#9670;&#160;</a></span>get_stiffness() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_stiffness </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>joint stiffness <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a2a3f16e68dc724b68162fe79ab0c7de8" name="a2a3f16e68dc724b68162fe79ab0c7de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3f16e68dc724b68162fe79ab0c7de8">&#9670;&#160;</a></span>get_stiffness() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -963,7 +1663,36 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="ae8f7af74d256a3d2cca3912e34ff1e1f" name="ae8f7af74d256a3d2cca3912e34ff1e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8f7af74d256a3d2cca3912e34ff1e1f">&#9670;&#160;</a></span>get_temperature()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f7af74d256a3d2cca3912e34ff1e1f">&#9670;&#160;</a></span>get_temperature() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_temperature </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>link joint tempertaure </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>if the variable "temperature_depandancy" is set to false then it will return the initial temperature given at class constructor </dd></dl>
+
+</div>
+</div>
+<a id="ae8f7af74d256a3d2cca3912e34ff1e1f" name="ae8f7af74d256a3d2cca3912e34ff1e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f7af74d256a3d2cca3912e34ff1e1f">&#9670;&#160;</a></span>get_temperature() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -992,7 +1721,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a22a3e362ee012de88e39f54543ebf8fa" name="a22a3e362ee012de88e39f54543ebf8fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22a3e362ee012de88e39f54543ebf8fa">&#9670;&#160;</a></span>get_time()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a3e362ee012de88e39f54543ebf8fa">&#9670;&#160;</a></span>get_time() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1019,8 +1748,57 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a22a3e362ee012de88e39f54543ebf8fa" name="a22a3e362ee012de88e39f54543ebf8fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a3e362ee012de88e39f54543ebf8fa">&#9670;&#160;</a></span>get_time() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::get_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>time date </dd></dl>
+
+</div>
+</div>
+<a id="a2f831bd977a675f821f8a5f6fe8651a3" name="a2f831bd977a675f821f8a5f6fe8651a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f831bd977a675f821f8a5f6fe8651a3">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initlize model with default values. </p>
+
+</div>
+</div>
 <a id="ab792bb0d4db2364e2ff1591dc4ac6caf" name="ab792bb0d4db2364e2ff1591dc4ac6caf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab792bb0d4db2364e2ff1591dc4ac6caf">&#9670;&#160;</a></span>is_static()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab792bb0d4db2364e2ff1591dc4ac6caf">&#9670;&#160;</a></span>is_static() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1047,8 +1825,36 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="ab792bb0d4db2364e2ff1591dc4ac6caf" name="ab792bb0d4db2364e2ff1591dc4ac6caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab792bb0d4db2364e2ff1591dc4ac6caf">&#9670;&#160;</a></span>is_static() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::is_static </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true is the link is considred static. </dd></dl>
+
+</div>
+</div>
 <a id="a32e0cbfb3d5b262c2ae89bff79a27bc5" name="a32e0cbfb3d5b262c2ae89bff79a27bc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32e0cbfb3d5b262c2ae89bff79a27bc5">&#9670;&#160;</a></span>motor_friction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e0cbfb3d5b262c2ae89bff79a27bc5">&#9670;&#160;</a></span>motor_friction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1074,8 +1880,56 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a32e0cbfb3d5b262c2ae89bff79a27bc5" name="a32e0cbfb3d5b262c2ae89bff79a27bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e0cbfb3d5b262c2ae89bff79a27bc5">&#9670;&#160;</a></span>motor_friction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::motor_friction </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>volatge</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the DC-brushed motor friction torque </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>add a guard to assert that the friction torque do not excced a ..% value <br  />
+ </dd></dl>
+
+</div>
+</div>
 <a id="a9ec4d7acdcdf1887d0ecbe0e6f36280d" name="a9ec4d7acdcdf1887d0ecbe0e6f36280d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec4d7acdcdf1887d0ecbe0e6f36280d">&#9670;&#160;</a></span>reset_time()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec4d7acdcdf1887d0ecbe0e6f36280d">&#9670;&#160;</a></span>reset_time() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::reset_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set time to t0 </p>
+
+</div>
+</div>
+<a id="a9ec4d7acdcdf1887d0ecbe0e6f36280d" name="a9ec4d7acdcdf1887d0ecbe0e6f36280d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec4d7acdcdf1887d0ecbe0e6f36280d">&#9670;&#160;</a></span>reset_time() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1096,7 +1950,28 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="ab9dbc629c61a4fa570267a1320e8f9a6" name="ab9dbc629c61a4fa570267a1320e8f9a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9dbc629c61a4fa570267a1320e8f9a6">&#9670;&#160;</a></span>set_inertia()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9dbc629c61a4fa570267a1320e8f9a6">&#9670;&#160;</a></span>set_inertia() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_inertia </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>Jm</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the joint global inertia </p>
+
+</div>
+</div>
+<a id="ab9dbc629c61a4fa570267a1320e8f9a6" name="ab9dbc629c61a4fa570267a1320e8f9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9dbc629c61a4fa570267a1320e8f9a6">&#9670;&#160;</a></span>set_inertia() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1117,7 +1992,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a71e6e95485bb16de45fbe84193305ed7" name="a71e6e95485bb16de45fbe84193305ed7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71e6e95485bb16de45fbe84193305ed7">&#9670;&#160;</a></span>set_inertia_tensor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e6e95485bb16de45fbe84193305ed7">&#9670;&#160;</a></span>set_inertia_tensor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1137,8 +2012,50 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a71e6e95485bb16de45fbe84193305ed7" name="a71e6e95485bb16de45fbe84193305ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e6e95485bb16de45fbe84193305ed7">&#9670;&#160;</a></span>set_inertia_tensor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_inertia_tensor </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix3d</td>          <td class="paramname"><span class="paramname"><em>I_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the link inertia tensor </p>
+
+</div>
+</div>
+<a id="a4c53ecedad3072e071175abff0799386" name="a4c53ecedad3072e071175abff0799386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c53ecedad3072e071175abff0799386">&#9670;&#160;</a></span>set_joint_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_joint_position </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>q</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the link joint generalised variable </p>
+
+</div>
+</div>
 <a id="a80f8d5cac771de738b956e1b44e6a740" name="a80f8d5cac771de738b956e1b44e6a740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80f8d5cac771de738b956e1b44e6a740">&#9670;&#160;</a></span>set_kt()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f8d5cac771de738b956e1b44e6a740">&#9670;&#160;</a></span>set_kt() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1156,8 +2073,50 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a80f8d5cac771de738b956e1b44e6a740" name="a80f8d5cac771de738b956e1b44e6a740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f8d5cac771de738b956e1b44e6a740">&#9670;&#160;</a></span>set_kt() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_kt </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>kt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DC-Brushed motor constants. </p>
+
+</div>
+</div>
 <a id="a76f32366b2938f97ddb3c08079344f0e" name="a76f32366b2938f97ddb3c08079344f0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76f32366b2938f97ddb3c08079344f0e">&#9670;&#160;</a></span>set_kv()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f32366b2938f97ddb3c08079344f0e">&#9670;&#160;</a></span>set_kv() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_kv </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>kv</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DC-Brushed motor constants defalu value = 1.02. </p>
+
+</div>
+</div>
+<a id="a76f32366b2938f97ddb3c08079344f0e" name="a76f32366b2938f97ddb3c08079344f0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f32366b2938f97ddb3c08079344f0e">&#9670;&#160;</a></span>set_kv() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1178,7 +2137,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a48f17679d53852e69cb32eed8c9ad4e5" name="a48f17679d53852e69cb32eed8c9ad4e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48f17679d53852e69cb32eed8c9ad4e5">&#9670;&#160;</a></span>set_mc()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f17679d53852e69cb32eed8c9ad4e5">&#9670;&#160;</a></span>set_mc() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1207,6 +2166,36 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a48f17679d53852e69cb32eed8c9ad4e5" name="a48f17679d53852e69cb32eed8c9ad4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f17679d53852e69cb32eed8c9ad4e5">&#9670;&#160;</a></span>set_mc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_mc </td>
+          <td>(</td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>my</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mz</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the link center of mass coordinates vector </p>
+
+</div>
+</div>
 <a id="ab2210a63fe14b7923a1a8bf32700366e" name="ab2210a63fe14b7923a1a8bf32700366e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2210a63fe14b7923a1a8bf32700366e">&#9670;&#160;</a></span>set_q()</h2>
 
@@ -1229,7 +2218,28 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a1b4c32b733c0cb9dd4a84ff3e3430c71" name="a1b4c32b733c0cb9dd4a84ff3e3430c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b4c32b733c0cb9dd4a84ff3e3430c71">&#9670;&#160;</a></span>set_sensor_stiffness()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4c32b733c0cb9dd4a84ff3e3430c71">&#9670;&#160;</a></span>set_sensor_stiffness() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_sensor_stiffness </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set of the sensor stiffness value. </p>
+
+</div>
+</div>
+<a id="a1b4c32b733c0cb9dd4a84ff3e3430c71" name="a1b4c32b733c0cb9dd4a84ff3e3430c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4c32b733c0cb9dd4a84ff3e3430c71">&#9670;&#160;</a></span>set_sensor_stiffness() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1250,7 +2260,28 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a7374dfa2943e1c7fe30376960829f42a" name="a7374dfa2943e1c7fe30376960829f42a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7374dfa2943e1c7fe30376960829f42a">&#9670;&#160;</a></span>set_static()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7374dfa2943e1c7fe30376960829f42a">&#9670;&#160;</a></span>set_static() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_static </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the link satuts to static </p>
+
+</div>
+</div>
+<a id="a7374dfa2943e1c7fe30376960829f42a" name="a7374dfa2943e1c7fe30376960829f42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7374dfa2943e1c7fe30376960829f42a">&#9670;&#160;</a></span>set_static() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1271,7 +2302,28 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="aef55bd1f241ef9037058347dbcfe0ffb" name="aef55bd1f241ef9037058347dbcfe0ffb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef55bd1f241ef9037058347dbcfe0ffb">&#9670;&#160;</a></span>set_temperature()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef55bd1f241ef9037058347dbcfe0ffb">&#9670;&#160;</a></span>set_temperature() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_temperature </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>temperature_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set manully the joint temperature, if the "temperature_depandancy" is set to false this will not ovverite the temperature value </p>
+
+</div>
+</div>
+<a id="aef55bd1f241ef9037058347dbcfe0ffb" name="aef55bd1f241ef9037058347dbcfe0ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef55bd1f241ef9037058347dbcfe0ffb">&#9670;&#160;</a></span>set_temperature() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1292,7 +2344,28 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="abbd54d1182150c242777f2e65e6529b4" name="abbd54d1182150c242777f2e65e6529b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbd54d1182150c242777f2e65e6529b4">&#9670;&#160;</a></span>set_temperature_depandancy()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd54d1182150c242777f2e65e6529b4">&#9670;&#160;</a></span>set_temperature_depandancy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_temperature_depandancy </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>enable temperture depandent computations </p>
+
+</div>
+</div>
+<a id="abbd54d1182150c242777f2e65e6529b4" name="abbd54d1182150c242777f2e65e6529b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd54d1182150c242777f2e65e6529b4">&#9670;&#160;</a></span>set_temperature_depandancy() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1313,7 +2386,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a15aeb3a6cc93bf28c11cdca1ccddde80" name="a15aeb3a6cc93bf28c11cdca1ccddde80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15aeb3a6cc93bf28c11cdca1ccddde80">&#9670;&#160;</a></span>set_transmision_stiffness()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a15aeb3a6cc93bf28c11cdca1ccddde80">&#9670;&#160;</a></span>set_transmision_stiffness() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1342,8 +2415,90 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a15aeb3a6cc93bf28c11cdca1ccddde80" name="a15aeb3a6cc93bf28c11cdca1ccddde80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15aeb3a6cc93bf28c11cdca1ccddde80">&#9670;&#160;</a></span>set_transmision_stiffness() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_transmision_stiffness </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>a0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>a1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>a2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set of harmonic drive reducer stiffness coefficents. </p>
+
+</div>
+</div>
+<a id="ac4c59b7ba925e461088093d83d1daf20" name="ac4c59b7ba925e461088093d83d1daf20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c59b7ba925e461088093d83d1daf20">&#9670;&#160;</a></span>set_transmission_stiffness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::set_transmission_stiffness </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set of </p>
+
+</div>
+</div>
 <a id="aa870f9c1106573143616db03cf324ee2" name="aa870f9c1106573143616db03cf324ee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa870f9c1106573143616db03cf324ee2">&#9670;&#160;</a></span>transform()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa870f9c1106573143616db03cf324ee2">&#9670;&#160;</a></span>transform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::transform </td>
+          <td>(</td>
+          <td class="paramtype">const Real &amp;</td>          <td class="paramname"><span class="paramname"><em>q_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>this functions is used to reset the rotation matrix </p>
+<p>and the vector p is the link joint is prismatic <br  />
+ </p>
+
+</div>
+</div>
+<a id="aa870f9c1106573143616db03cf324ee2" name="aa870f9c1106573143616db03cf324ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa870f9c1106573143616db03cf324ee2">&#9670;&#160;</a></span>transform() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1374,7 +2529,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a6ca0e50edffb01ddb5da1a14462a465d" name="a6ca0e50edffb01ddb5da1a14462a465d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ca0e50edffb01ddb5da1a14462a465d">&#9670;&#160;</a></span>update_delta_q()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca0e50edffb01ddb5da1a14462a465d">&#9670;&#160;</a></span>update_delta_q() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1406,8 +2561,59 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a6ca0e50edffb01ddb5da1a14462a465d" name="a6ca0e50edffb01ddb5da1a14462a465d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca0e50edffb01ddb5da1a14462a465d">&#9670;&#160;</a></span>update_delta_q() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::update_delta_q </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>volatge</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>estimates the joint torsinal angle </p>
+
+</div>
+</div>
 <a id="af6c56d047d5dad1f2b46ce3265aab5b3" name="af6c56d047d5dad1f2b46ce3265aab5b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6c56d047d5dad1f2b46ce3265aab5b3">&#9670;&#160;</a></span>update_qm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c56d047d5dad1f2b46ce3265aab5b3">&#9670;&#160;</a></span>update_qm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::update_qm </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>voltage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update the angular position at motor shaft from state k to state k+1 given the qpm at state k <br  />
+ </p>
+
+</div>
+</div>
+<a id="af6c56d047d5dad1f2b46ce3265aab5b3" name="af6c56d047d5dad1f2b46ce3265aab5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c56d047d5dad1f2b46ce3265aab5b3">&#9670;&#160;</a></span>update_qm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1433,7 +2639,32 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="aaec8c8a468bf1e1b30c11a0f79f269a6" name="aaec8c8a468bf1e1b30c11a0f79f269a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaec8c8a468bf1e1b30c11a0f79f269a6">&#9670;&#160;</a></span>update_qpm()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec8c8a468bf1e1b30c11a0f79f269a6">&#9670;&#160;</a></span>update_qpm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::update_qpm </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>current</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>voltage</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update the motor shaft angular spped (RPM) given the voltage and current values </p>
+
+</div>
+</div>
+<a id="aaec8c8a468bf1e1b30c11a0f79f269a6" name="aaec8c8a468bf1e1b30c11a0f79f269a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec8c8a468bf1e1b30c11a0f79f269a6">&#9670;&#160;</a></span>update_qpm() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1458,7 +2689,28 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a598538427e8ddf574ccd2abce175f03b" name="a598538427e8ddf574ccd2abce175f03b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a598538427e8ddf574ccd2abce175f03b">&#9670;&#160;</a></span>update_time()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a598538427e8ddf574ccd2abce175f03b">&#9670;&#160;</a></span>update_time() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_link.html">manipulator::Link</a>&lt; Real, Int &gt;::update_time </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update time state by one time step </p>
+
+</div>
+</div>
+<a id="a598538427e8ddf574ccd2abce175f03b" name="a598538427e8ddf574ccd2abce175f03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a598538427e8ddf574ccd2abce175f03b">&#9670;&#160;</a></span>update_time() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1676,6 +2928,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div><div class="memdoc">
 
 <p>friction coefficents in the DC-Brushedd motor, consntes from datasheet </p>
+<p>friction coefficents in the DC-Brushedd motor, consntes given by datasheets </p>
 
 </div>
 </div>
@@ -2244,6 +3497,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div><div class="memdoc">
 
 <p>Position of center of mass respect link coordinate system (min_para=F). </p>
+<p>Position of center of link mass respect to global coordinate system. </p>
 
 </div>
 </div>
@@ -2296,6 +3550,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div><div class="memdoc">
 
 <p>joint torque sensor stiffness, consta value from datasheet </p>
+<p>joint torque sensor stiffness, constant given by datasheets </p>
 
 </div>
 </div>
@@ -2595,8 +3850,10 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>DynaMapp/manipulator/<a class="el" href="link_8hpp_source.html">link.hpp</a></li>
-<li>DynaMapp/manipulator/<a class="el" href="link_8cpp.html">link.cpp</a></li>
+<li>dynaMapp/manipulator/<a class="el" href="link_8hpp_source.html">link.hpp</a></li>
+<li>dynaMapp/multibody/<a class="el" href="link__model_8hpp_source.html">link_model.hpp</a></li>
+<li>dynaMapp/manipulator/<a class="el" href="link_8cpp.html">link.cpp</a></li>
+<li>dynaMapp/multibody/<a class="el" href="link__model_8cpp_source.html">link_model.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

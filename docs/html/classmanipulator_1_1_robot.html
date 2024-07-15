@@ -108,14 +108,14 @@ $(function(){initNavTree('classmanipulator_1_1_robot.html',''); initResizable();
 <div class="contents">
 
 <p>a template interface for reprsenting general structure <br  />
- robot manipulators model with this class conati implmentation of the folowing dynamics models : linerized dynamic model RNE recursive newtom euler alogrithm  
+ robot manipulators model with  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="robot_8hpp_source.html">robot.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0766100b32036882e8b5c65994480a7" id="r_ac0766100b32036882e8b5c65994480a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0766100b32036882e8b5c65994480a7">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real <a class="el" href="#a5f937089978113f7a28354dbe9a2cdd5">a</a>, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
+<tr class="memitem:ac0766100b32036882e8b5c65994480a7" id="r_ac0766100b32036882e8b5c65994480a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0766100b32036882e8b5c65994480a7">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real <a class="el" href="#ab54e6ef2d029041c0573d129fd1e400f">a</a>, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
 <tr class="memdesc:ac0766100b32036882e8b5c65994480a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">default class constructor initilize each link paramter based on given args <br  />
   <br /></td></tr>
 <tr class="separator:ac0766100b32036882e8b5c65994480a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,57 +236,174 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af40be363ca885ef4b7f6c05509757755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03da1844ac4b3bd7eadb9305ab35b308" id="r_a03da1844ac4b3bd7eadb9305ab35b308"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03da1844ac4b3bd7eadb9305ab35b308">state_matrix_D</a> ()</td></tr>
 <tr class="separator:a03da1844ac4b3bd7eadb9305ab35b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa552549b335889af087466d1d1d126e1" id="r_aa552549b335889af087466d1d1d126e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa552549b335889af087466d1d1d126e1">Robot</a> (const Int joints_type[ndof], const Real q[ndof], const Real d, const Real <a class="el" href="#ab54e6ef2d029041c0573d129fd1e400f">a</a>, const Real alpha, const Real mass[ndof], const Vector3d r[ndof], const Matrix3d I[ndof], const Int ratio[ndof], const Real couloumb[ndof], const Real stribek[ndof], const Real damping[ndof], const bool static_[ndof], const Real mx[ndof], const Real my[ndof], const Real mz[ndof], const Real q_max[ndof], const Real q_min[ndof], const Real joint_offset[ndof], const Real Jm[ndof], const Real temperature[ndof], const Real temperature_dependancy[ndof])</td></tr>
+<tr class="memdesc:aa552549b335889af087466d1d1d126e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">default class constructor initilize each link paramter based on given args <br  />
+  <br /></td></tr>
+<tr class="separator:aa552549b335889af087466d1d1d126e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254cea40f0502c1ed1cf75c038368ab0" id="r_a254cea40f0502c1ed1cf75c038368ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a254cea40f0502c1ed1cf75c038368ab0">init</a> ()</td></tr>
+<tr class="memdesc:a254cea40f0502c1ed1cf75c038368ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">intilize the model time depend paramters set all initial values to zero.  <br /></td></tr>
+<tr class="separator:a254cea40f0502c1ed1cf75c038368ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ae09075c56d54ece20b2ddd85aee6e" id="r_a83ae09075c56d54ece20b2ddd85aee6e"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83ae09075c56d54ece20b2ddd85aee6e">get_joint_position</a> (const Int &amp;i)</td></tr>
+<tr class="memdesc:a83ae09075c56d54ece20b2ddd85aee6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the robot joint "i" variable  <br /></td></tr>
+<tr class="separator:a83ae09075c56d54ece20b2ddd85aee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e67f031b87ddbb4d61a63fba07d9b7" id="r_a71e67f031b87ddbb4d61a63fba07d9b7"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71e67f031b87ddbb4d61a63fba07d9b7">get_joint_velocity</a> (const Int &amp;i)</td></tr>
+<tr class="separator:a71e67f031b87ddbb4d61a63fba07d9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad420992b08b938160fde82fc2189e394" id="r_ad420992b08b938160fde82fc2189e394"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad420992b08b938160fde82fc2189e394">get_joint_acceleration</a> (const Int &amp;i)</td></tr>
+<tr class="memdesc:ad420992b08b938160fde82fc2189e394"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the robot joint "i" acceleration  <br /></td></tr>
+<tr class="separator:ad420992b08b938160fde82fc2189e394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4bf3867b1bbd19ad6b1cc445e4d2bb4" id="r_aa4bf3867b1bbd19ad6b1cc445e4d2bb4"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4bf3867b1bbd19ad6b1cc445e4d2bb4">get_joint_position</a> () const</td></tr>
+<tr class="separator:aa4bf3867b1bbd19ad6b1cc445e4d2bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b42b312003b271751027d62b3cba78" id="r_a33b42b312003b271751027d62b3cba78"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33b42b312003b271751027d62b3cba78">get_joint_velocity</a> ()</td></tr>
+<tr class="memdesc:a33b42b312003b271751027d62b3cba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the robot joints velocity vector  <br /></td></tr>
+<tr class="separator:a33b42b312003b271751027d62b3cba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37521353a93ed4f2c3b5fe6da34e7be" id="r_aa37521353a93ed4f2c3b5fe6da34e7be"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37521353a93ed4f2c3b5fe6da34e7be">get_joint_acceleration</a> ()</td></tr>
+<tr class="memdesc:aa37521353a93ed4f2c3b5fe6da34e7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the robot joints acceleration vector  <br /></td></tr>
+<tr class="separator:aa37521353a93ed4f2c3b5fe6da34e7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3689a806122de07a874b8ad2e31dd3" id="r_abb3689a806122de07a874b8ad2e31dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb3689a806122de07a874b8ad2e31dd3">set_joint_poistion</a> (const Int &amp;i, const Real &amp;qi_)</td></tr>
+<tr class="memdesc:abb3689a806122de07a874b8ad2e31dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the robot joint "i" variable value <br  />
+  <br /></td></tr>
+<tr class="separator:abb3689a806122de07a874b8ad2e31dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c57803f4f19c4919ba83924a52ddb44" id="r_a1c57803f4f19c4919ba83924a52ddb44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c57803f4f19c4919ba83924a52ddb44">set_joint_velocity</a> (const Int &amp;i, const Real &amp;qpi_)</td></tr>
+<tr class="memdesc:a1c57803f4f19c4919ba83924a52ddb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the joint "i" velocity value  <br /></td></tr>
+<tr class="separator:a1c57803f4f19c4919ba83924a52ddb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6c770807e31b0fc53734ec9e493ea3" id="r_a2d6c770807e31b0fc53734ec9e493ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d6c770807e31b0fc53734ec9e493ea3">set_joint_acceleration</a> (const Int &amp;i, const Real &amp;qppi_)</td></tr>
+<tr class="memdesc:a2d6c770807e31b0fc53734ec9e493ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the robot joint "i" acceleration value  <br /></td></tr>
+<tr class="separator:a2d6c770807e31b0fc53734ec9e493ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5cababef969f0614972906ad1e403f" id="r_acb5cababef969f0614972906ad1e403f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb5cababef969f0614972906ad1e403f">set_joint_poistion</a> (const Real(&amp;qpp_)[ndof])</td></tr>
+<tr class="memdesc:acb5cababef969f0614972906ad1e403f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set full joint variable vector  <br /></td></tr>
+<tr class="separator:acb5cababef969f0614972906ad1e403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444c0f749f8f747796055e402fdb100c" id="r_a444c0f749f8f747796055e402fdb100c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a444c0f749f8f747796055e402fdb100c">set_joint_velocity</a> (const Real(&amp;qpp_)[ndof])</td></tr>
+<tr class="memdesc:a444c0f749f8f747796055e402fdb100c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set full joint velocity vector  <br /></td></tr>
+<tr class="separator:a444c0f749f8f747796055e402fdb100c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa878c51668a3c3cd2e2c44e7358f92df" id="r_aa878c51668a3c3cd2e2c44e7358f92df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa878c51668a3c3cd2e2c44e7358f92df">set_joint_acceleration</a> (const Real(&amp;qpp_)[ndof])</td></tr>
+<tr class="memdesc:aa878c51668a3c3cd2e2c44e7358f92df"><td class="mdescLeft">&#160;</td><td class="mdescRight">set full joint accelartion vector  <br /></td></tr>
+<tr class="separator:aa878c51668a3c3cd2e2c44e7358f92df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacfaf060b20817e4138b2f85835b087" id="r_adacfaf060b20817e4138b2f85835b087"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adacfaf060b20817e4138b2f85835b087">set_joint_status</a> (const Int i)</td></tr>
+<tr class="memdesc:adacfaf060b20817e4138b2f85835b087"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the joint "i" static  <br /></td></tr>
+<tr class="separator:adacfaf060b20817e4138b2f85835b087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2134ddaf5719c4cd6368d435c86fb4ec" id="r_a2134ddaf5719c4cd6368d435c86fb4ec"><td class="memItemLeft" align="right" valign="top">Matrix4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2134ddaf5719c4cd6368d435c86fb4ec">forward_kinematic</a> (const int j) const</td></tr>
+<tr class="memdesc:a2134ddaf5719c4cd6368d435c86fb4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the forward kinematic form until link "j" starting from base link  <br /></td></tr>
+<tr class="separator:a2134ddaf5719c4cd6368d435c86fb4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e77c44824ab6b1c9c88029da16c8af" id="r_ab5e77c44824ab6b1c9c88029da16c8af"><td class="memItemLeft" align="right" valign="top">Matrix4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5e77c44824ab6b1c9c88029da16c8af">forward_kinematic</a> ()</td></tr>
+<tr class="memdesc:ab5e77c44824ab6b1c9c88029da16c8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the forward kinematic chain form until the end-effector link <br  />
+  <br /></td></tr>
+<tr class="separator:ab5e77c44824ab6b1c9c88029da16c8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ae3be7f11334ad39b5fcef07de23ea" id="r_a85ae3be7f11334ad39b5fcef07de23ea"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85ae3be7f11334ad39b5fcef07de23ea">jacobian</a> (const Real(&amp;qpp_)[ndof])</td></tr>
+<tr class="memdesc:a85ae3be7f11334ad39b5fcef07de23ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the robot jacobian matrix  <br /></td></tr>
+<tr class="separator:a85ae3be7f11334ad39b5fcef07de23ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a069bbbde97c14941df381cb209c62d" id="r_a7a069bbbde97c14941df381cb209c62d"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a069bbbde97c14941df381cb209c62d">inverse_kinematic</a> ()</td></tr>
+<tr class="memdesc:a7a069bbbde97c14941df381cb209c62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the inverse kinmatics for a given position  <br /></td></tr>
+<tr class="separator:a7a069bbbde97c14941df381cb209c62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eed5a2516f268173dd60ee910a940b4" id="r_a5eed5a2516f268173dd60ee910a940b4"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eed5a2516f268173dd60ee910a940b4">torque</a> (const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;qpp_)[ndof], const Real(&amp;Fext_)[ndof], const Real(&amp;Next_)[ndof])</td></tr>
+<tr class="memdesc:a5eed5a2516f268173dd60ee910a940b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint torque based on Recursive Newton-Euler (RNE) formulation. extenal forces and torques are taken into account. <br  />
+  <br /></td></tr>
+<tr class="separator:a5eed5a2516f268173dd60ee910a940b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f984d32be96aca81ac205663a3c0da5" id="r_a8f984d32be96aca81ac205663a3c0da5"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f984d32be96aca81ac205663a3c0da5">torque</a> (const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;qpp_)[ndof])</td></tr>
+<tr class="memdesc:a8f984d32be96aca81ac205663a3c0da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint torque, without contact force, based on Recursive Newton-Euler formulation (RNE).  <br /></td></tr>
+<tr class="separator:a8f984d32be96aca81ac205663a3c0da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f63f6ff62b3c03eb163cbd16f96ac38" id="r_a7f63f6ff62b3c03eb163cbd16f96ac38"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f63f6ff62b3c03eb163cbd16f96ac38">torque_novelocity</a> (const Real(&amp;q_)[ndof])</td></tr>
+<tr class="memdesc:a7f63f6ff62b3c03eb163cbd16f96ac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint torques. when joint velocity is 0, based on Recursive Newton-Euler formulation.(RNE).  <br /></td></tr>
+<tr class="separator:a7f63f6ff62b3c03eb163cbd16f96ac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941971c362a882f79d1ed38d3056f4c9" id="r_a941971c362a882f79d1ed38d3056f4c9"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a941971c362a882f79d1ed38d3056f4c9">inertia_matrix</a> (Real(&amp;q_)[ndof])</td></tr>
+<tr class="memdesc:a941971c362a882f79d1ed38d3056f4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function use the torque_nonvelocity function  <br /></td></tr>
+<tr class="separator:a941971c362a882f79d1ed38d3056f4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6a46ad89358c64f4c356a868880bc3" id="r_a5b6a46ad89358c64f4c356a868880bc3"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b6a46ad89358c64f4c356a868880bc3">inertia_matrix_RNE</a> (Real(&amp;q_)[ndof])</td></tr>
+<tr class="memdesc:a5b6a46ad89358c64f4c356a868880bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the robot inertia matrix, iusing the ful recursive RNE described in Walker. and Orin. paper  <br /></td></tr>
+<tr class="separator:a5b6a46ad89358c64f4c356a868880bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95faa538f8aec710ade93a445dfcff32" id="r_a95faa538f8aec710ade93a445dfcff32"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95faa538f8aec710ade93a445dfcff32">coriolis_matrix</a> (Real(&amp;q_)[ndof], Real(&amp;qp_)[ndof])</td></tr>
+<tr class="memdesc:a95faa538f8aec710ade93a445dfcff32"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the coriolis matrix term, regrouping centrefugal and coriolis effects, using inertia_matrix coefficents  <br /></td></tr>
+<tr class="separator:a95faa538f8aec710ade93a445dfcff32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0f456b53f70eeedb5ab42758b44b3d" id="r_a8a0f456b53f70eeedb5ab42758b44b3d"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a0f456b53f70eeedb5ab42758b44b3d">acceleration</a> (const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;tau_)[ndof], const Real(&amp;Next_)[ndof])</td></tr>
+<tr class="memdesc:a8a0f456b53f70eeedb5ab42758b44b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joints acceleration with contact forces.  <br /></td></tr>
+<tr class="separator:a8a0f456b53f70eeedb5ab42758b44b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf62654a171413ba6ef36b1da377116" id="r_a1bf62654a171413ba6ef36b1da377116"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bf62654a171413ba6ef36b1da377116">acceleration</a> (const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof])</td></tr>
+<tr class="separator:a1bf62654a171413ba6ef36b1da377116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fbee85202eab0a883b4530874c8c38" id="r_a66fbee85202eab0a883b4530874c8c38"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66fbee85202eab0a883b4530874c8c38">torque_gravity</a> ()</td></tr>
+<tr class="memdesc:a66fbee85202eab0a883b4530874c8c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint torque due to gravity based on Recursive Newton-Euler formulation (RNE).  <br /></td></tr>
+<tr class="separator:a66fbee85202eab0a883b4530874c8c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd793fb5122c8afa3a05711e7d0a880" id="r_adcd793fb5122c8afa3a05711e7d0a880"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcd793fb5122c8afa3a05711e7d0a880">torque_centrifugal</a> (const Real(&amp;qp_)[ndof])</td></tr>
+<tr class="memdesc:adcd793fb5122c8afa3a05711e7d0a880"><td class="mdescLeft">&#160;</td><td class="mdescRight">oint torque due to centrifugal and Corriolis based on Recursive Newton-Euler formulation.  <br /></td></tr>
+<tr class="separator:adcd793fb5122c8afa3a05711e7d0a880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0939eddb7e921a0f7d985effb9703a" id="r_a6d0939eddb7e921a0f7d985effb9703a"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d0939eddb7e921a0f7d985effb9703a">friction_torque</a> (const Real(&amp;qp_)[ndof])</td></tr>
+<tr class="memdesc:a6d0939eddb7e921a0f7d985effb9703a"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the joints friction torque applied by the transmission system and contact pehonema all included  <br /></td></tr>
+<tr class="separator:a6d0939eddb7e921a0f7d985effb9703a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4371ccca4634a37ccdab09c6502e8371" id="r_a4371ccca4634a37ccdab09c6502e8371"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4371ccca4634a37ccdab09c6502e8371">delta_torques</a> ()</td></tr>
+<tr class="memdesc:a4371ccca4634a37ccdab09c6502e8371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the.  <br /></td></tr>
+<tr class="separator:a4371ccca4634a37ccdab09c6502e8371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637ce4138fdbe4a19e85358afc677d4c" id="r_a637ce4138fdbe4a19e85358afc677d4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a637ce4138fdbe4a19e85358afc677d4c">delta_torque</a> (const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;qpp_)[ndof], const Real(&amp;dq_)[ndof], const Real(&amp;dqp_)[ndof], const Real(&amp;dqpp_)[ndof], const Real(&amp;torque_)[ndof], const Real(&amp;dtorque_)[ndof])</td></tr>
+<tr class="memdesc:a637ce4138fdbe4a19e85358afc677d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the differentifel of the torque vector <br  />
+  <br /></td></tr>
+<tr class="separator:a637ce4138fdbe4a19e85358afc677d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6ad2473fbec4e69f77c2f6cb4d7748" id="r_ade6ad2473fbec4e69f77c2f6cb4d7748"><td class="memItemLeft" align="right" valign="top">VectorXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade6ad2473fbec4e69f77c2f6cb4d7748">dq_torque</a> ()</td></tr>
+<tr class="memdesc:ade6ad2473fbec4e69f77c2f6cb4d7748"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the the term S(q,qdot,qddot)delta_q  <br /></td></tr>
+<tr class="separator:ade6ad2473fbec4e69f77c2f6cb4d7748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2b7fc890848987f974ffca5bb5507e" id="r_a5d2b7fc890848987f974ffca5bb5507e"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d2b7fc890848987f974ffca5bb5507e">stiffness_matrix</a> (const Real(&amp;q_)[ndof])</td></tr>
+<tr class="memdesc:a5d2b7fc890848987f974ffca5bb5507e"><td class="mdescLeft">&#160;</td><td class="mdescRight">retun the diagonal matrix of joints stiffness  <br /></td></tr>
+<tr class="separator:a5d2b7fc890848987f974ffca5bb5507e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af630af04558f6c1558f288fc373e6756" id="r_af630af04558f6c1558f288fc373e6756"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af630af04558f6c1558f288fc373e6756">ratio_matrix</a> ()</td></tr>
+<tr class="memdesc:af630af04558f6c1558f288fc373e6756"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the Ng  <br /></td></tr>
+<tr class="separator:af630af04558f6c1558f288fc373e6756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107af6fa091bce0dad70bcff5e010b77" id="r_a107af6fa091bce0dad70bcff5e010b77"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a107af6fa091bce0dad70bcff5e010b77">state_matrix_A</a> ()</td></tr>
+<tr class="memdesc:a107af6fa091bce0dad70bcff5e010b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the state space dynamic model paramters of the robot  <br /></td></tr>
+<tr class="separator:a107af6fa091bce0dad70bcff5e010b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81797f6084f808c5ad1b63d5e0c86e5e" id="r_a81797f6084f808c5ad1b63d5e0c86e5e"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81797f6084f808c5ad1b63d5e0c86e5e">state_matrix_C</a> ()</td></tr>
+<tr class="memdesc:a81797f6084f808c5ad1b63d5e0c86e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">state matrix C  <br /></td></tr>
+<tr class="separator:a81797f6084f808c5ad1b63d5e0c86e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa54ef1dcf525a8e54aede828edb875" id="r_a2fa54ef1dcf525a8e54aede828edb875"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa54ef1dcf525a8e54aede828edb875">state_matrix_B</a> ()</td></tr>
+<tr class="separator:a2fa54ef1dcf525a8e54aede828edb875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae860f36e0b72003157391dc5de20fabe" id="r_ae860f36e0b72003157391dc5de20fabe"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae860f36e0b72003157391dc5de20fabe">state_matrix_D</a> ()</td></tr>
+<tr class="separator:ae860f36e0b72003157391dc5de20fabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a88690b62e04d732e105ec1964eda8b54" id="r_a88690b62e04d732e105ec1964eda8b54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmanipulator_1_1_link.html">Link</a>&lt; Real, Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88690b62e04d732e105ec1964eda8b54">links</a> [ndof]</td></tr>
-<tr class="separator:a88690b62e04d732e105ec1964eda8b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e4e2f810407f98d7171e95ff60dbcc" id="r_ac7e4e2f810407f98d7171e95ff60dbcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmanipulator_1_1_link.html">Link</a>&lt; Real, Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e4e2f810407f98d7171e95ff60dbcc">links</a> [ndof]</td></tr>
+<tr class="separator:ac7e4e2f810407f98d7171e95ff60dbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18ee007ec7679264981c1501e848d11" id="r_ad18ee007ec7679264981c1501e848d11"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad18ee007ec7679264981c1501e848d11">gravity_vector</a></td></tr>
 <tr class="separator:ad18ee007ec7679264981c1501e848d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e5e6f4f9942e5add70c04959fa051b" id="r_a71e5e6f4f9942e5add70c04959fa051b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71e5e6f4f9942e5add70c04959fa051b">z0</a></td></tr>
 <tr class="separator:a71e5e6f4f9942e5add70c04959fa051b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a214d39852b7e276f3e0b104bdb99ee7e" id="r_a214d39852b7e276f3e0b104bdb99ee7e"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a214d39852b7e276f3e0b104bdb99ee7e">w</a> [ndof]</td></tr>
-<tr class="separator:a214d39852b7e276f3e0b104bdb99ee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a9037b5ea2ceb5e2c134b9fdd31e57" id="r_a70a9037b5ea2ceb5e2c134b9fdd31e57"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70a9037b5ea2ceb5e2c134b9fdd31e57">wp</a> [ndof]</td></tr>
-<tr class="separator:a70a9037b5ea2ceb5e2c134b9fdd31e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9864bf17f84384db75885693118bb61f" id="r_a9864bf17f84384db75885693118bb61f"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9864bf17f84384db75885693118bb61f">vp</a> [ndof]</td></tr>
-<tr class="separator:a9864bf17f84384db75885693118bb61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f937089978113f7a28354dbe9a2cdd5" id="r_a5f937089978113f7a28354dbe9a2cdd5"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f937089978113f7a28354dbe9a2cdd5">a</a> [ndof]</td></tr>
-<tr class="separator:a5f937089978113f7a28354dbe9a2cdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d77c22bd1ee8350a53dd77f23b9f813" id="r_a1d77c22bd1ee8350a53dd77f23b9f813"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d77c22bd1ee8350a53dd77f23b9f813">f</a> [ndof]</td></tr>
-<tr class="separator:a1d77c22bd1ee8350a53dd77f23b9f813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1086c77bdd29d68848e6f4b61939edd" id="r_ac1086c77bdd29d68848e6f4b61939edd"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1086c77bdd29d68848e6f4b61939edd">f_nv</a> [ndof]</td></tr>
-<tr class="separator:ac1086c77bdd29d68848e6f4b61939edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4acdcbaf612d7743917bf4f7428e3b9b" id="r_a4acdcbaf612d7743917bf4f7428e3b9b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4acdcbaf612d7743917bf4f7428e3b9b">n</a> [ndof]</td></tr>
-<tr class="separator:a4acdcbaf612d7743917bf4f7428e3b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa339ef2891f12a91b7d95328ac5a01c0" id="r_aa339ef2891f12a91b7d95328ac5a01c0"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa339ef2891f12a91b7d95328ac5a01c0">n_nv</a> [ndof]</td></tr>
-<tr class="separator:aa339ef2891f12a91b7d95328ac5a01c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1141198c98f85591dcc8d08223f32b" id="r_aef1141198c98f85591dcc8d08223f32b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef1141198c98f85591dcc8d08223f32b">dn</a> [ndof]</td></tr>
-<tr class="separator:aef1141198c98f85591dcc8d08223f32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ba20e365a9412cb297a3b93d34ebfe" id="r_a92ba20e365a9412cb297a3b93d34ebfe"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ba20e365a9412cb297a3b93d34ebfe">F</a> [ndof]</td></tr>
-<tr class="separator:a92ba20e365a9412cb297a3b93d34ebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8942186233fe2a87e55505c37ee0ac1d" id="r_a8942186233fe2a87e55505c37ee0ac1d"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8942186233fe2a87e55505c37ee0ac1d">dF</a> [ndof]</td></tr>
-<tr class="separator:a8942186233fe2a87e55505c37ee0ac1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77eea3fe0220f78d014716761f7ade49" id="r_a77eea3fe0220f78d014716761f7ade49"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77eea3fe0220f78d014716761f7ade49">dp</a> [ndof]</td></tr>
-<tr class="separator:a77eea3fe0220f78d014716761f7ade49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75412fec29dc003a24d427786ee9e794" id="r_a75412fec29dc003a24d427786ee9e794"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75412fec29dc003a24d427786ee9e794">p</a> [ndof]</td></tr>
-<tr class="separator:a75412fec29dc003a24d427786ee9e794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef564acacf78963f08b48179ce1d4a1" id="r_adef564acacf78963f08b48179ce1d4a1"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adef564acacf78963f08b48179ce1d4a1">pp</a> [ndof]</td></tr>
-<tr class="separator:adef564acacf78963f08b48179ce1d4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13526f50e7c5c9846060728834f52963" id="r_a13526f50e7c5c9846060728834f52963"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13526f50e7c5c9846060728834f52963">dw</a> [ndof]</td></tr>
-<tr class="separator:a13526f50e7c5c9846060728834f52963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d91f74a0ede2c22d9a192894d381932" id="r_a2d91f74a0ede2c22d9a192894d381932"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d91f74a0ede2c22d9a192894d381932">dwp</a> [ndof]</td></tr>
-<tr class="separator:a2d91f74a0ede2c22d9a192894d381932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ad8ae169580dcb89c4d619d90f899d" id="r_a02ad8ae169580dcb89c4d619d90f899d"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02ad8ae169580dcb89c4d619d90f899d">dvp</a> [ndof]</td></tr>
-<tr class="separator:a02ad8ae169580dcb89c4d619d90f899d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dafd07b1ee56f104d5137cec712c477" id="r_a8dafd07b1ee56f104d5137cec712c477"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dafd07b1ee56f104d5137cec712c477">da</a> [ndof]</td></tr>
-<tr class="separator:a8dafd07b1ee56f104d5137cec712c477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a6ce16b285688e51f68119607b8666" id="r_ac0a6ce16b285688e51f68119607b8666"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a6ce16b285688e51f68119607b8666">df</a> [ndof]</td></tr>
-<tr class="separator:ac0a6ce16b285688e51f68119607b8666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03d6fb48764fc089bdda2626925acfd" id="r_af03d6fb48764fc089bdda2626925acfd"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af03d6fb48764fc089bdda2626925acfd">N</a> [ndof]</td></tr>
-<tr class="separator:af03d6fb48764fc089bdda2626925acfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f87a7f21ab7dae29f15a0d7ae72b98" id="r_a96f87a7f21ab7dae29f15a0d7ae72b98"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96f87a7f21ab7dae29f15a0d7ae72b98">dN</a> [ndof]</td></tr>
-<tr class="separator:a96f87a7f21ab7dae29f15a0d7ae72b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fa5b2ccf95f036521b5bbb24f0e257" id="r_a55fa5b2ccf95f036521b5bbb24f0e257"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55fa5b2ccf95f036521b5bbb24f0e257">w</a> [ndof]</td></tr>
+<tr class="separator:a55fa5b2ccf95f036521b5bbb24f0e257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa3ec9475358207307137658204cb08" id="r_acfa3ec9475358207307137658204cb08"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfa3ec9475358207307137658204cb08">wp</a> [ndof]</td></tr>
+<tr class="separator:acfa3ec9475358207307137658204cb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a5ae6f4b87245b46bd05cf98ae15a9" id="r_ad8a5ae6f4b87245b46bd05cf98ae15a9"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8a5ae6f4b87245b46bd05cf98ae15a9">vp</a> [ndof]</td></tr>
+<tr class="separator:ad8a5ae6f4b87245b46bd05cf98ae15a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54e6ef2d029041c0573d129fd1e400f" id="r_ab54e6ef2d029041c0573d129fd1e400f"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab54e6ef2d029041c0573d129fd1e400f">a</a> [ndof]</td></tr>
+<tr class="separator:ab54e6ef2d029041c0573d129fd1e400f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32635ddfbb71cdf280a0fc509f44afd1" id="r_a32635ddfbb71cdf280a0fc509f44afd1"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32635ddfbb71cdf280a0fc509f44afd1">f</a> [ndof]</td></tr>
+<tr class="separator:a32635ddfbb71cdf280a0fc509f44afd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b427b0f8ed93871b66797bcccd364d" id="r_a94b427b0f8ed93871b66797bcccd364d"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b427b0f8ed93871b66797bcccd364d">f_nv</a> [ndof]</td></tr>
+<tr class="separator:a94b427b0f8ed93871b66797bcccd364d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3647f1bb765743c5f018c859d3e2d5d" id="r_ae3647f1bb765743c5f018c859d3e2d5d"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3647f1bb765743c5f018c859d3e2d5d">n</a> [ndof]</td></tr>
+<tr class="separator:ae3647f1bb765743c5f018c859d3e2d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec8462aaa69cb4e6467d2e12a2a538b" id="r_acec8462aaa69cb4e6467d2e12a2a538b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec8462aaa69cb4e6467d2e12a2a538b">n_nv</a> [ndof]</td></tr>
+<tr class="separator:acec8462aaa69cb4e6467d2e12a2a538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d5983086e7705a8282e9121d0b8158" id="r_a57d5983086e7705a8282e9121d0b8158"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57d5983086e7705a8282e9121d0b8158">dn</a> [ndof]</td></tr>
+<tr class="separator:a57d5983086e7705a8282e9121d0b8158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f654f89225e9aa5fdc80673a63a8362" id="r_a5f654f89225e9aa5fdc80673a63a8362"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f654f89225e9aa5fdc80673a63a8362">F</a> [ndof]</td></tr>
+<tr class="separator:a5f654f89225e9aa5fdc80673a63a8362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4ff50a1752103d9c5901fd5722fd7b" id="r_a0e4ff50a1752103d9c5901fd5722fd7b"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4ff50a1752103d9c5901fd5722fd7b">dF</a> [ndof]</td></tr>
+<tr class="separator:a0e4ff50a1752103d9c5901fd5722fd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a924ea40bad619d1cd7ec0acbb4570074" id="r_a924ea40bad619d1cd7ec0acbb4570074"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a924ea40bad619d1cd7ec0acbb4570074">dp</a> [ndof]</td></tr>
+<tr class="separator:a924ea40bad619d1cd7ec0acbb4570074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7147cff5aa8f633a088bac87b6e28c85" id="r_a7147cff5aa8f633a088bac87b6e28c85"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7147cff5aa8f633a088bac87b6e28c85">p</a> [ndof]</td></tr>
+<tr class="separator:a7147cff5aa8f633a088bac87b6e28c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab586b246a88f210bb4449b054bffd4c9" id="r_ab586b246a88f210bb4449b054bffd4c9"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab586b246a88f210bb4449b054bffd4c9">pp</a> [ndof]</td></tr>
+<tr class="separator:ab586b246a88f210bb4449b054bffd4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7217590e1d05f8d2c44a1be157ceda1" id="r_aa7217590e1d05f8d2c44a1be157ceda1"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7217590e1d05f8d2c44a1be157ceda1">dw</a> [ndof]</td></tr>
+<tr class="separator:aa7217590e1d05f8d2c44a1be157ceda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379119fbc036b860d0ba058abf7532be" id="r_a379119fbc036b860d0ba058abf7532be"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a379119fbc036b860d0ba058abf7532be">dwp</a> [ndof]</td></tr>
+<tr class="separator:a379119fbc036b860d0ba058abf7532be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3245cb30ca6b5c377528708111ba4758" id="r_a3245cb30ca6b5c377528708111ba4758"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3245cb30ca6b5c377528708111ba4758">dvp</a> [ndof]</td></tr>
+<tr class="separator:a3245cb30ca6b5c377528708111ba4758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafd67ba666496cfd8dda42cb2451aa6" id="r_afafd67ba666496cfd8dda42cb2451aa6"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afafd67ba666496cfd8dda42cb2451aa6">da</a> [ndof]</td></tr>
+<tr class="separator:afafd67ba666496cfd8dda42cb2451aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8542ae1f72627fbfab355031ce276ff" id="r_af8542ae1f72627fbfab355031ce276ff"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8542ae1f72627fbfab355031ce276ff">df</a> [ndof]</td></tr>
+<tr class="separator:af8542ae1f72627fbfab355031ce276ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508e8047fd8785d1060d6232deb072d2" id="r_a508e8047fd8785d1060d6232deb072d2"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a508e8047fd8785d1060d6232deb072d2">N</a> [ndof]</td></tr>
+<tr class="separator:a508e8047fd8785d1060d6232deb072d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582be2cf6f2b89226fea907c43538458" id="r_a582be2cf6f2b89226fea907c43538458"><td class="memItemLeft" align="right" valign="top">Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a582be2cf6f2b89226fea907c43538458">dN</a> [ndof]</td></tr>
+<tr class="separator:a582be2cf6f2b89226fea907c43538458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b29422dcd62fdda3946b7d29d1f44ea" id="r_a8b29422dcd62fdda3946b7d29d1f44ea"><td class="memItemLeft" align="right" valign="top">MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b29422dcd62fdda3946b7d29d1f44ea">R</a></td></tr>
 <tr class="separator:a8b29422dcd62fdda3946b7d29d1f44ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893466ffaf7d085e5d5bd8e0c0317102" id="r_a893466ffaf7d085e5d5bd8e0c0317102"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a893466ffaf7d085e5d5bd8e0c0317102">intilizied</a> = false</td></tr>
@@ -295,11 +412,15 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Real, typename Int, size_t ndof&gt;<br />
 class manipulator::Robot&lt; Real, Int, ndof &gt;</div><p>a template interface for reprsenting general structure <br  />
- robot manipulators model with this class conati implmentation of the folowing dynamics models : linerized dynamic model RNE recursive newtom euler alogrithm </p>
+ robot manipulators model with </p>
+<p>a template interface for reprsenting general structure <br  />
+ robot manipulators model with this class conati implmentation of the folowing dynamics models : linerized dynamic model RNE recursive newtom euler alogrithm</p>
+<p>class conati implmentation of the folowing dynamics models : linerized dynamic model RNE recursive newtom euler alogrithm</p>
+<p>[1] "Elment de robotique" G.clement- Laval University -2021 Walker and Orin</p>
 <p>[1] "Elment de robotique" G.clement- Laval University -2021 Walker and Orin </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac0766100b32036882e8b5c65994480a7" name="ac0766100b32036882e8b5c65994480a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0766100b32036882e8b5c65994480a7">&#9670;&#160;</a></span>Robot()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0766100b32036882e8b5c65994480a7">&#9670;&#160;</a></span>Robot() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,9 +545,135 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="aa552549b335889af087466d1d1d126e1" name="aa552549b335889af087466d1d1d126e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa552549b335889af087466d1d1d126e1">&#9670;&#160;</a></span>Robot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::Robot </td>
+          <td>(</td>
+          <td class="paramtype">const Int</td>          <td class="paramname"><span class="paramname"><em>joints_type</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>q</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>d</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>a</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>alpha</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mass</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector3d</td>          <td class="paramname"><span class="paramname"><em>r</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix3d</td>          <td class="paramname"><span class="paramname"><em>I</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Int</td>          <td class="paramname"><span class="paramname"><em>ratio</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>couloumb</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>stribek</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>damping</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>static_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mx</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>my</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>mz</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>q_max</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>q_min</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>joint_offset</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>Jm</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>temperature</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real</td>          <td class="paramname"><span class="paramname"><em>temperature_dependancy</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default class constructor initilize each link paramter based on given args <br  />
+ </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a93cf6545fcb1b097e4793b953771db45" name="a93cf6545fcb1b097e4793b953771db45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93cf6545fcb1b097e4793b953771db45">&#9670;&#160;</a></span>acceleration() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93cf6545fcb1b097e4793b953771db45">&#9670;&#160;</a></span>acceleration() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -449,8 +696,32 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a1bf62654a171413ba6ef36b1da377116" name="a1bf62654a171413ba6ef36b1da377116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf62654a171413ba6ef36b1da377116">&#9670;&#160;</a></span>acceleration() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Joints acceleration without contact forces. </dd></dl>
+
+</div>
+</div>
 <a id="ae278981fedc27600b40a65e1f4ee745d" name="ae278981fedc27600b40a65e1f4ee745d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae278981fedc27600b40a65e1f4ee745d">&#9670;&#160;</a></span>acceleration() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae278981fedc27600b40a65e1f4ee745d">&#9670;&#160;</a></span>acceleration() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,8 +755,43 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a8a0f456b53f70eeedb5ab42758b44b3d" name="a8a0f456b53f70eeedb5ab42758b44b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0f456b53f70eeedb5ab42758b44b3d">&#9670;&#160;</a></span>acceleration() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>tau_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>Next_</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Joints acceleration with contact forces. </p>
+
+</div>
+</div>
 <a id="a71ad85636cb58e845d247c766e8f3662" name="a71ad85636cb58e845d247c766e8f3662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71ad85636cb58e845d247c766e8f3662">&#9670;&#160;</a></span>coriolis_matrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ad85636cb58e845d247c766e8f3662">&#9670;&#160;</a></span>coriolis_matrix() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -509,8 +815,89 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a95faa538f8aec710ade93a445dfcff32" name="a95faa538f8aec710ade93a445dfcff32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95faa538f8aec710ade93a445dfcff32">&#9670;&#160;</a></span>coriolis_matrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::coriolis_matrix </td>
+          <td>(</td>
+          <td class="paramtype">Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the coriolis matrix term, regrouping centrefugal and coriolis effects, using inertia_matrix coefficents </p>
+
+</div>
+</div>
 <a id="a637ce4138fdbe4a19e85358afc677d4c" name="a637ce4138fdbe4a19e85358afc677d4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a637ce4138fdbe4a19e85358afc677d4c">&#9670;&#160;</a></span>delta_torque()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a637ce4138fdbe4a19e85358afc677d4c">&#9670;&#160;</a></span>delta_torque() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::delta_torque </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>dq_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>dqp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>dqpp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>torque_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>dtorque_</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the differentifel of the torque vector <br  />
+ </p>
+
+</div>
+</div>
+<a id="a637ce4138fdbe4a19e85358afc677d4c" name="a637ce4138fdbe4a19e85358afc677d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637ce4138fdbe4a19e85358afc677d4c">&#9670;&#160;</a></span>delta_torque() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,7 +953,28 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <a id="a4371ccca4634a37ccdab09c6502e8371" name="a4371ccca4634a37ccdab09c6502e8371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4371ccca4634a37ccdab09c6502e8371">&#9670;&#160;</a></span>delta_torques()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4371ccca4634a37ccdab09c6502e8371">&#9670;&#160;</a></span>delta_torques() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::delta_torques </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the. </p>
+
+</div>
+</div>
+<a id="a4371ccca4634a37ccdab09c6502e8371" name="a4371ccca4634a37ccdab09c6502e8371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4371ccca4634a37ccdab09c6502e8371">&#9670;&#160;</a></span>delta_torques() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -587,7 +995,28 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <a id="ade6ad2473fbec4e69f77c2f6cb4d7748" name="ade6ad2473fbec4e69f77c2f6cb4d7748"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade6ad2473fbec4e69f77c2f6cb4d7748">&#9670;&#160;</a></span>dq_torque()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6ad2473fbec4e69f77c2f6cb4d7748">&#9670;&#160;</a></span>dq_torque() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dq_torque </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the the term S(q,qdot,qddot)delta_q </p>
+
+</div>
+</div>
+<a id="ade6ad2473fbec4e69f77c2f6cb4d7748" name="ade6ad2473fbec4e69f77c2f6cb4d7748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6ad2473fbec4e69f77c2f6cb4d7748">&#9670;&#160;</a></span>dq_torque() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +1058,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <a id="ae5ad4a18fbd74af695dc8753028ab61a" name="ae5ad4a18fbd74af695dc8753028ab61a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5ad4a18fbd74af695dc8753028ab61a">&#9670;&#160;</a></span>forward_kinematic() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ad4a18fbd74af695dc8753028ab61a">&#9670;&#160;</a></span>forward_kinematic() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -650,8 +1079,30 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="ab5e77c44824ab6b1c9c88029da16c8af" name="ab5e77c44824ab6b1c9c88029da16c8af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e77c44824ab6b1c9c88029da16c8af">&#9670;&#160;</a></span>forward_kinematic() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix4d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::forward_kinematic </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the forward kinematic chain form until the end-effector link <br  />
+ </p>
+
+</div>
+</div>
 <a id="a77d25ca8960eb2f7c4abf45c56dedcaa" name="a77d25ca8960eb2f7c4abf45c56dedcaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77d25ca8960eb2f7c4abf45c56dedcaa">&#9670;&#160;</a></span>forward_kinematic() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d25ca8960eb2f7c4abf45c56dedcaa">&#9670;&#160;</a></span>forward_kinematic() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,8 +1123,30 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a2134ddaf5719c4cd6368d435c86fb4ec" name="a2134ddaf5719c4cd6368d435c86fb4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2134ddaf5719c4cd6368d435c86fb4ec">&#9670;&#160;</a></span>forward_kinematic() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix4d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::forward_kinematic </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>j</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the forward kinematic form until link "j" starting from base link </p>
+<dl class="section return"><dt>Returns</dt><dd>the homogenus transformation matrix until link "j". </dd></dl>
+
+</div>
+</div>
 <a id="a6d0939eddb7e921a0f7d985effb9703a" name="a6d0939eddb7e921a0f7d985effb9703a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d0939eddb7e921a0f7d985effb9703a">&#9670;&#160;</a></span>friction_torque()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0939eddb7e921a0f7d985effb9703a">&#9670;&#160;</a></span>friction_torque() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,6 +1165,152 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 <p>compute the joints friction torque applied by the transmission system and contact pehonema all included </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo</a></b></dt><dd>temperature depandancy ! this version implment no temp depandzncy ! <br  />
  </dd></dl>
+
+</div>
+</div>
+<a id="a6d0939eddb7e921a0f7d985effb9703a" name="a6d0939eddb7e921a0f7d985effb9703a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0939eddb7e921a0f7d985effb9703a">&#9670;&#160;</a></span>friction_torque() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::friction_torque </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the joints friction torque applied by the transmission system and contact pehonema all included </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>temperature depandancy ! this version implment no temp depandzncy ! <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="aa37521353a93ed4f2c3b5fe6da34e7be" name="aa37521353a93ed4f2c3b5fe6da34e7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37521353a93ed4f2c3b5fe6da34e7be">&#9670;&#160;</a></span>get_joint_acceleration() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd Robot::get_joint_acceleration </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the robot joints acceleration vector </p>
+
+</div>
+</div>
+<a id="ad420992b08b938160fde82fc2189e394" name="ad420992b08b938160fde82fc2189e394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad420992b08b938160fde82fc2189e394">&#9670;&#160;</a></span>get_joint_acceleration() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real Robot::get_joint_acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const Int &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the robot joint "i" acceleration </p>
+
+</div>
+</div>
+<a id="aa4bf3867b1bbd19ad6b1cc445e4d2bb4" name="aa4bf3867b1bbd19ad6b1cc445e4d2bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4bf3867b1bbd19ad6b1cc445e4d2bb4">&#9670;&#160;</a></span>get_joint_position() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd Robot::get_joint_position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the robot joints variable vector </dd></dl>
+
+</div>
+</div>
+<a id="a83ae09075c56d54ece20b2ddd85aee6e" name="a83ae09075c56d54ece20b2ddd85aee6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ae09075c56d54ece20b2ddd85aee6e">&#9670;&#160;</a></span>get_joint_position() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real Robot::get_joint_position </td>
+          <td>(</td>
+          <td class="paramtype">const Int &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the robot joint "i" variable </p>
+
+</div>
+</div>
+<a id="a33b42b312003b271751027d62b3cba78" name="a33b42b312003b271751027d62b3cba78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b42b312003b271751027d62b3cba78">&#9670;&#160;</a></span>get_joint_velocity() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd Robot::get_joint_velocity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the robot joints velocity vector </p>
+
+</div>
+</div>
+<a id="a71e67f031b87ddbb4d61a63fba07d9b7" name="a71e67f031b87ddbb4d61a63fba07d9b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e67f031b87ddbb4d61a63fba07d9b7">&#9670;&#160;</a></span>get_joint_velocity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real Robot::get_joint_velocity </td>
+          <td>(</td>
+          <td class="paramtype">const Int &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -819,7 +1438,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <a id="a709dc6854652b74bd8a7067391933d32" name="a709dc6854652b74bd8a7067391933d32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a709dc6854652b74bd8a7067391933d32">&#9670;&#160;</a></span>inertia_matrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a709dc6854652b74bd8a7067391933d32">&#9670;&#160;</a></span>inertia_matrix() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -848,8 +1467,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a941971c362a882f79d1ed38d3056f4c9" name="a941971c362a882f79d1ed38d3056f4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941971c362a882f79d1ed38d3056f4c9">&#9670;&#160;</a></span>inertia_matrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::inertia_matrix </td>
+          <td>(</td>
+          <td class="paramtype">Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>this function use the torque_nonvelocity function </p>
+
+</div>
+</div>
 <a id="a44bde5a23fc5d164d503f08e6c455a0c" name="a44bde5a23fc5d164d503f08e6c455a0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44bde5a23fc5d164d503f08e6c455a0c">&#9670;&#160;</a></span>inertia_matrix_RNE()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bde5a23fc5d164d503f08e6c455a0c">&#9670;&#160;</a></span>inertia_matrix_RNE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -869,8 +1509,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a5b6a46ad89358c64f4c356a868880bc3" name="a5b6a46ad89358c64f4c356a868880bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6a46ad89358c64f4c356a868880bc3">&#9670;&#160;</a></span>inertia_matrix_RNE() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::inertia_matrix_RNE </td>
+          <td>(</td>
+          <td class="paramtype">Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the robot inertia matrix, iusing the ful recursive RNE described in Walker. and Orin. paper </p>
+
+</div>
+</div>
 <a id="a990e86a39cb249629a0985e71211fa2e" name="a990e86a39cb249629a0985e71211fa2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a990e86a39cb249629a0985e71211fa2e">&#9670;&#160;</a></span>init()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a990e86a39cb249629a0985e71211fa2e">&#9670;&#160;</a></span>init() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -898,8 +1559,37 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a254cea40f0502c1ed1cf75c038368ab0" name="a254cea40f0502c1ed1cf75c038368ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a254cea40f0502c1ed1cf75c038368ab0">&#9670;&#160;</a></span>init() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>intilize the model time depend paramters set all initial values to zero. </p>
+
+</div>
+</div>
 <a id="a62050043cce811fc25b91aa041951163" name="a62050043cce811fc25b91aa041951163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62050043cce811fc25b91aa041951163">&#9670;&#160;</a></span>inverse_kinematic()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a62050043cce811fc25b91aa041951163">&#9670;&#160;</a></span>inverse_kinematic() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,8 +1609,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a7a069bbbde97c14941df381cb209c62d" name="a7a069bbbde97c14941df381cb209c62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a069bbbde97c14941df381cb209c62d">&#9670;&#160;</a></span>inverse_kinematic() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::inverse_kinematic </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the inverse kinmatics for a given position </p>
+
+</div>
+</div>
 <a id="a352bc15e01f85c7a18164ca39e37b53e" name="a352bc15e01f85c7a18164ca39e37b53e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a352bc15e01f85c7a18164ca39e37b53e">&#9670;&#160;</a></span>jacobian()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a352bc15e01f85c7a18164ca39e37b53e">&#9670;&#160;</a></span>jacobian() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -940,8 +1651,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a85ae3be7f11334ad39b5fcef07de23ea" name="a85ae3be7f11334ad39b5fcef07de23ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ae3be7f11334ad39b5fcef07de23ea">&#9670;&#160;</a></span>jacobian() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::jacobian </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the robot jacobian matrix </p>
+
+</div>
+</div>
 <a id="aaf21107d366caca99d9d767c6e3462e5" name="aaf21107d366caca99d9d767c6e3462e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf21107d366caca99d9d767c6e3462e5">&#9670;&#160;</a></span>ratio_matrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf21107d366caca99d9d767c6e3462e5">&#9670;&#160;</a></span>ratio_matrix() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -958,6 +1690,189 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div><div class="memdoc">
 
 <p>return the Ng </p>
+
+</div>
+</div>
+<a id="af630af04558f6c1558f288fc373e6756" name="af630af04558f6c1558f288fc373e6756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af630af04558f6c1558f288fc373e6756">&#9670;&#160;</a></span>ratio_matrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::ratio_matrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the Ng </p>
+
+</div>
+</div>
+<a id="a2d6c770807e31b0fc53734ec9e493ea3" name="a2d6c770807e31b0fc53734ec9e493ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6c770807e31b0fc53734ec9e493ea3">&#9670;&#160;</a></span>set_joint_acceleration() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const Int &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real &amp;</td>          <td class="paramname"><span class="paramname"><em>qppi_</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the robot joint "i" acceleration value </p>
+
+</div>
+</div>
+<a id="aa878c51668a3c3cd2e2c44e7358f92df" name="aa878c51668a3c3cd2e2c44e7358f92df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa878c51668a3c3cd2e2c44e7358f92df">&#9670;&#160;</a></span>set_joint_acceleration() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set full joint accelartion vector </p>
+
+</div>
+</div>
+<a id="abb3689a806122de07a874b8ad2e31dd3" name="abb3689a806122de07a874b8ad2e31dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb3689a806122de07a874b8ad2e31dd3">&#9670;&#160;</a></span>set_joint_poistion() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_poistion </td>
+          <td>(</td>
+          <td class="paramtype">const Int &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real &amp;</td>          <td class="paramname"><span class="paramname"><em>qi_</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the robot joint "i" variable value <br  />
+ </p>
+
+</div>
+</div>
+<a id="acb5cababef969f0614972906ad1e403f" name="acb5cababef969f0614972906ad1e403f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5cababef969f0614972906ad1e403f">&#9670;&#160;</a></span>set_joint_poistion() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_poistion </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set full joint variable vector </p>
+
+</div>
+</div>
+<a id="adacfaf060b20817e4138b2f85835b087" name="adacfaf060b20817e4138b2f85835b087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacfaf060b20817e4138b2f85835b087">&#9670;&#160;</a></span>set_joint_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_status </td>
+          <td>(</td>
+          <td class="paramtype">const Int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the joint "i" static </p>
+<dl class="section note"><dt>Note</dt><dd>if already static , will skip <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a1c57803f4f19c4919ba83924a52ddb44" name="a1c57803f4f19c4919ba83924a52ddb44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c57803f4f19c4919ba83924a52ddb44">&#9670;&#160;</a></span>set_joint_velocity() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_velocity </td>
+          <td>(</td>
+          <td class="paramtype">const Int &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real &amp;</td>          <td class="paramname"><span class="paramname"><em>qpi_</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set the joint "i" velocity value </p>
+
+</div>
+</div>
+<a id="a444c0f749f8f747796055e402fdb100c" name="a444c0f749f8f747796055e402fdb100c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444c0f749f8f747796055e402fdb100c">&#9670;&#160;</a></span>set_joint_velocity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Robot::set_joint_velocity </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set full joint velocity vector </p>
 
 </div>
 </div>
@@ -1124,7 +2039,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <a id="a46e9c75b068d6054418e903fbf3e8d7e" name="a46e9c75b068d6054418e903fbf3e8d7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46e9c75b068d6054418e903fbf3e8d7e">&#9670;&#160;</a></span>state_matrix_A()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e9c75b068d6054418e903fbf3e8d7e">&#9670;&#160;</a></span>state_matrix_A() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1144,8 +2059,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a107af6fa091bce0dad70bcff5e010b77" name="a107af6fa091bce0dad70bcff5e010b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107af6fa091bce0dad70bcff5e010b77">&#9670;&#160;</a></span>state_matrix_A() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::state_matrix_A </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the state space dynamic model paramters of the robot </p>
+
+</div>
+</div>
 <a id="af40be363ca885ef4b7f6c05509757755" name="af40be363ca885ef4b7f6c05509757755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af40be363ca885ef4b7f6c05509757755">&#9670;&#160;</a></span>state_matrix_B()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af40be363ca885ef4b7f6c05509757755">&#9670;&#160;</a></span>state_matrix_B() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1164,8 +2100,28 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a2fa54ef1dcf525a8e54aede828edb875" name="a2fa54ef1dcf525a8e54aede828edb875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa54ef1dcf525a8e54aede828edb875">&#9670;&#160;</a></span>state_matrix_B() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::state_matrix_B </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>state matrix B </dd></dl>
+
+</div>
+</div>
 <a id="a8fb9cc89c143d8f03bc95e069024eba3" name="a8fb9cc89c143d8f03bc95e069024eba3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fb9cc89c143d8f03bc95e069024eba3">&#9670;&#160;</a></span>state_matrix_C()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb9cc89c143d8f03bc95e069024eba3">&#9670;&#160;</a></span>state_matrix_C() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1185,8 +2141,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a81797f6084f808c5ad1b63d5e0c86e5e" name="a81797f6084f808c5ad1b63d5e0c86e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81797f6084f808c5ad1b63d5e0c86e5e">&#9670;&#160;</a></span>state_matrix_C() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::state_matrix_C </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>state matrix C </p>
+
+</div>
+</div>
 <a id="a03da1844ac4b3bd7eadb9305ab35b308" name="a03da1844ac4b3bd7eadb9305ab35b308"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03da1844ac4b3bd7eadb9305ab35b308">&#9670;&#160;</a></span>state_matrix_D()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a03da1844ac4b3bd7eadb9305ab35b308">&#9670;&#160;</a></span>state_matrix_D() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1205,8 +2182,28 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="ae860f36e0b72003157391dc5de20fabe" name="ae860f36e0b72003157391dc5de20fabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae860f36e0b72003157391dc5de20fabe">&#9670;&#160;</a></span>state_matrix_D() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::state_matrix_D </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>state matrix D </dd></dl>
+
+</div>
+</div>
 <a id="a88b828b067ed9804dcc61ca0815d1bf1" name="a88b828b067ed9804dcc61ca0815d1bf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88b828b067ed9804dcc61ca0815d1bf1">&#9670;&#160;</a></span>stiffness_matrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b828b067ed9804dcc61ca0815d1bf1">&#9670;&#160;</a></span>stiffness_matrix() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1226,8 +2223,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a5d2b7fc890848987f974ffca5bb5507e" name="a5d2b7fc890848987f974ffca5bb5507e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2b7fc890848987f974ffca5bb5507e">&#9670;&#160;</a></span>stiffness_matrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">MatrixXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::stiffness_matrix </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retun the diagonal matrix of joints stiffness </p>
+
+</div>
+</div>
 <a id="a5836d6ba2cd85c8c15d07cd65156f5aa" name="a5836d6ba2cd85c8c15d07cd65156f5aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5836d6ba2cd85c8c15d07cd65156f5aa">&#9670;&#160;</a></span>torque() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5836d6ba2cd85c8c15d07cd65156f5aa">&#9670;&#160;</a></span>torque() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1256,8 +2274,38 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a8f984d32be96aca81ac205663a3c0da5" name="a8f984d32be96aca81ac205663a3c0da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f984d32be96aca81ac205663a3c0da5">&#9670;&#160;</a></span>torque() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::torque </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Joint torque, without contact force, based on Recursive Newton-Euler formulation (RNE). </p>
+
+</div>
+</div>
 <a id="a204661988b4e949103ff1dfd3b7373d4" name="a204661988b4e949103ff1dfd3b7373d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a204661988b4e949103ff1dfd3b7373d4">&#9670;&#160;</a></span>torque() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a204661988b4e949103ff1dfd3b7373d4">&#9670;&#160;</a></span>torque() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1297,8 +2345,70 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a5eed5a2516f268173dd60ee910a940b4" name="a5eed5a2516f268173dd60ee910a940b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eed5a2516f268173dd60ee910a940b4">&#9670;&#160;</a></span>torque() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::torque </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qpp_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>Fext_</em>[ndof], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>Next_</em>[ndof]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Joint torque based on Recursive Newton-Euler (RNE) formulation. extenal forces and torques are taken into account. <br  />
+ </p>
+
+</div>
+</div>
 <a id="adcd793fb5122c8afa3a05711e7d0a880" name="adcd793fb5122c8afa3a05711e7d0a880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcd793fb5122c8afa3a05711e7d0a880">&#9670;&#160;</a></span>torque_centrifugal()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd793fb5122c8afa3a05711e7d0a880">&#9670;&#160;</a></span>torque_centrifugal() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::torque_centrifugal </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>qp_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>oint torque due to centrifugal and Corriolis based on Recursive Newton-Euler formulation. </p>
+
+</div>
+</div>
+<a id="adcd793fb5122c8afa3a05711e7d0a880" name="adcd793fb5122c8afa3a05711e7d0a880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd793fb5122c8afa3a05711e7d0a880">&#9670;&#160;</a></span>torque_centrifugal() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1319,7 +2429,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <a id="a7cddafd1c81738653f8835fb260cd087" name="a7cddafd1c81738653f8835fb260cd087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cddafd1c81738653f8835fb260cd087">&#9670;&#160;</a></span>torque_gravity()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cddafd1c81738653f8835fb260cd087">&#9670;&#160;</a></span>torque_gravity() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1339,8 +2449,29 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a66fbee85202eab0a883b4530874c8c38" name="a66fbee85202eab0a883b4530874c8c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fbee85202eab0a883b4530874c8c38">&#9670;&#160;</a></span>torque_gravity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::torque_gravity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Joint torque due to gravity based on Recursive Newton-Euler formulation (RNE). </p>
+
+</div>
+</div>
 <a id="a78d878a1294ad49a0fa5bfa495093e29" name="a78d878a1294ad49a0fa5bfa495093e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78d878a1294ad49a0fa5bfa495093e29">&#9670;&#160;</a></span>torque_novelocity()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d878a1294ad49a0fa5bfa495093e29">&#9670;&#160;</a></span>torque_novelocity() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1360,9 +2491,30 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
+<a id="a7f63f6ff62b3c03eb163cbd16f96ac38" name="a7f63f6ff62b3c03eb163cbd16f96ac38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f63f6ff62b3c03eb163cbd16f96ac38">&#9670;&#160;</a></span>torque_novelocity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int , size_t ndof&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VectorXd <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::torque_novelocity </td>
+          <td>(</td>
+          <td class="paramtype">const Real(&amp;)</td>          <td class="paramname"><span class="paramname"><em>q_</em>[ndof]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Joint torques. when joint velocity is 0, based on Recursive Newton-Euler formulation.(RNE). </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5f937089978113f7a28354dbe9a2cdd5" name="a5f937089978113f7a28354dbe9a2cdd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f937089978113f7a28354dbe9a2cdd5">&#9670;&#160;</a></span>a</h2>
+<a id="ab54e6ef2d029041c0573d129fd1e400f" name="ab54e6ef2d029041c0573d129fd1e400f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54e6ef2d029041c0573d129fd1e400f">&#9670;&#160;</a></span>a</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1373,7 +2525,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::a[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::a</td>
         </tr>
       </table>
   </td>
@@ -1385,8 +2537,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a8dafd07b1ee56f104d5137cec712c477" name="a8dafd07b1ee56f104d5137cec712c477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dafd07b1ee56f104d5137cec712c477">&#9670;&#160;</a></span>da</h2>
+<a id="afafd67ba666496cfd8dda42cb2451aa6" name="afafd67ba666496cfd8dda42cb2451aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafd67ba666496cfd8dda42cb2451aa6">&#9670;&#160;</a></span>da</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1397,7 +2549,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::da[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::da</td>
         </tr>
       </table>
   </td>
@@ -1409,8 +2561,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a8942186233fe2a87e55505c37ee0ac1d" name="a8942186233fe2a87e55505c37ee0ac1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8942186233fe2a87e55505c37ee0ac1d">&#9670;&#160;</a></span>dF</h2>
+<a id="a0e4ff50a1752103d9c5901fd5722fd7b" name="a0e4ff50a1752103d9c5901fd5722fd7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4ff50a1752103d9c5901fd5722fd7b">&#9670;&#160;</a></span>dF</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1421,7 +2573,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dF[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dF</td>
         </tr>
       </table>
   </td>
@@ -1433,8 +2585,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="ac0a6ce16b285688e51f68119607b8666" name="ac0a6ce16b285688e51f68119607b8666"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0a6ce16b285688e51f68119607b8666">&#9670;&#160;</a></span>df</h2>
+<a id="af8542ae1f72627fbfab355031ce276ff" name="af8542ae1f72627fbfab355031ce276ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8542ae1f72627fbfab355031ce276ff">&#9670;&#160;</a></span>df</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1445,7 +2597,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::df[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::df</td>
         </tr>
       </table>
   </td>
@@ -1457,8 +2609,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="aef1141198c98f85591dcc8d08223f32b" name="aef1141198c98f85591dcc8d08223f32b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef1141198c98f85591dcc8d08223f32b">&#9670;&#160;</a></span>dn</h2>
+<a id="a57d5983086e7705a8282e9121d0b8158" name="a57d5983086e7705a8282e9121d0b8158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d5983086e7705a8282e9121d0b8158">&#9670;&#160;</a></span>dn</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1469,7 +2621,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dn[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dn</td>
         </tr>
       </table>
   </td>
@@ -1481,8 +2633,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a96f87a7f21ab7dae29f15a0d7ae72b98" name="a96f87a7f21ab7dae29f15a0d7ae72b98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f87a7f21ab7dae29f15a0d7ae72b98">&#9670;&#160;</a></span>dN</h2>
+<a id="a582be2cf6f2b89226fea907c43538458" name="a582be2cf6f2b89226fea907c43538458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582be2cf6f2b89226fea907c43538458">&#9670;&#160;</a></span>dN</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1493,7 +2645,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dN[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dN</td>
         </tr>
       </table>
   </td>
@@ -1505,8 +2657,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a77eea3fe0220f78d014716761f7ade49" name="a77eea3fe0220f78d014716761f7ade49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77eea3fe0220f78d014716761f7ade49">&#9670;&#160;</a></span>dp</h2>
+<a id="a924ea40bad619d1cd7ec0acbb4570074" name="a924ea40bad619d1cd7ec0acbb4570074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924ea40bad619d1cd7ec0acbb4570074">&#9670;&#160;</a></span>dp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1517,7 +2669,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dp[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dp</td>
         </tr>
       </table>
   </td>
@@ -1529,8 +2681,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a02ad8ae169580dcb89c4d619d90f899d" name="a02ad8ae169580dcb89c4d619d90f899d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02ad8ae169580dcb89c4d619d90f899d">&#9670;&#160;</a></span>dvp</h2>
+<a id="a3245cb30ca6b5c377528708111ba4758" name="a3245cb30ca6b5c377528708111ba4758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3245cb30ca6b5c377528708111ba4758">&#9670;&#160;</a></span>dvp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1541,7 +2693,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dvp[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dvp</td>
         </tr>
       </table>
   </td>
@@ -1553,8 +2705,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a13526f50e7c5c9846060728834f52963" name="a13526f50e7c5c9846060728834f52963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13526f50e7c5c9846060728834f52963">&#9670;&#160;</a></span>dw</h2>
+<a id="aa7217590e1d05f8d2c44a1be157ceda1" name="aa7217590e1d05f8d2c44a1be157ceda1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7217590e1d05f8d2c44a1be157ceda1">&#9670;&#160;</a></span>dw</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1565,7 +2717,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dw[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dw</td>
         </tr>
       </table>
   </td>
@@ -1577,8 +2729,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a2d91f74a0ede2c22d9a192894d381932" name="a2d91f74a0ede2c22d9a192894d381932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d91f74a0ede2c22d9a192894d381932">&#9670;&#160;</a></span>dwp</h2>
+<a id="a379119fbc036b860d0ba058abf7532be" name="a379119fbc036b860d0ba058abf7532be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379119fbc036b860d0ba058abf7532be">&#9670;&#160;</a></span>dwp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1589,7 +2741,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dwp[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::dwp</td>
         </tr>
       </table>
   </td>
@@ -1601,8 +2753,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a1d77c22bd1ee8350a53dd77f23b9f813" name="a1d77c22bd1ee8350a53dd77f23b9f813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d77c22bd1ee8350a53dd77f23b9f813">&#9670;&#160;</a></span>f</h2>
+<a id="a32635ddfbb71cdf280a0fc509f44afd1" name="a32635ddfbb71cdf280a0fc509f44afd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32635ddfbb71cdf280a0fc509f44afd1">&#9670;&#160;</a></span>f</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1613,7 +2765,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::f[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::f</td>
         </tr>
       </table>
   </td>
@@ -1625,8 +2777,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a92ba20e365a9412cb297a3b93d34ebfe" name="a92ba20e365a9412cb297a3b93d34ebfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92ba20e365a9412cb297a3b93d34ebfe">&#9670;&#160;</a></span>F</h2>
+<a id="a5f654f89225e9aa5fdc80673a63a8362" name="a5f654f89225e9aa5fdc80673a63a8362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f654f89225e9aa5fdc80673a63a8362">&#9670;&#160;</a></span>F</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1637,7 +2789,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::F[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::F</td>
         </tr>
       </table>
   </td>
@@ -1649,8 +2801,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="ac1086c77bdd29d68848e6f4b61939edd" name="ac1086c77bdd29d68848e6f4b61939edd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1086c77bdd29d68848e6f4b61939edd">&#9670;&#160;</a></span>f_nv</h2>
+<a id="a94b427b0f8ed93871b66797bcccd364d" name="a94b427b0f8ed93871b66797bcccd364d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b427b0f8ed93871b66797bcccd364d">&#9670;&#160;</a></span>f_nv</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1661,7 +2813,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::f_nv[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::f_nv</td>
         </tr>
       </table>
   </td>
@@ -1721,8 +2873,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a88690b62e04d732e105ec1964eda8b54" name="a88690b62e04d732e105ec1964eda8b54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88690b62e04d732e105ec1964eda8b54">&#9670;&#160;</a></span>links</h2>
+<a id="ac7e4e2f810407f98d7171e95ff60dbcc" name="ac7e4e2f810407f98d7171e95ff60dbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e4e2f810407f98d7171e95ff60dbcc">&#9670;&#160;</a></span>links</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1733,7 +2885,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmanipulator_1_1_link.html">Link</a>&lt;Real, Int&gt; <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::links[ndof]</td>
+          <td class="memname"><a class="el" href="classmanipulator_1_1_link.html">Link</a>&lt; Real, Int &gt; <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::links</td>
         </tr>
       </table>
   </td>
@@ -1745,8 +2897,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a4acdcbaf612d7743917bf4f7428e3b9b" name="a4acdcbaf612d7743917bf4f7428e3b9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4acdcbaf612d7743917bf4f7428e3b9b">&#9670;&#160;</a></span>n</h2>
+<a id="ae3647f1bb765743c5f018c859d3e2d5d" name="ae3647f1bb765743c5f018c859d3e2d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3647f1bb765743c5f018c859d3e2d5d">&#9670;&#160;</a></span>n</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1757,7 +2909,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::n[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::n</td>
         </tr>
       </table>
   </td>
@@ -1769,8 +2921,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="af03d6fb48764fc089bdda2626925acfd" name="af03d6fb48764fc089bdda2626925acfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af03d6fb48764fc089bdda2626925acfd">&#9670;&#160;</a></span>N</h2>
+<a id="a508e8047fd8785d1060d6232deb072d2" name="a508e8047fd8785d1060d6232deb072d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508e8047fd8785d1060d6232deb072d2">&#9670;&#160;</a></span>N</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1781,7 +2933,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::N[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::N</td>
         </tr>
       </table>
   </td>
@@ -1793,8 +2945,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="aa339ef2891f12a91b7d95328ac5a01c0" name="aa339ef2891f12a91b7d95328ac5a01c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa339ef2891f12a91b7d95328ac5a01c0">&#9670;&#160;</a></span>n_nv</h2>
+<a id="acec8462aaa69cb4e6467d2e12a2a538b" name="acec8462aaa69cb4e6467d2e12a2a538b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec8462aaa69cb4e6467d2e12a2a538b">&#9670;&#160;</a></span>n_nv</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1805,7 +2957,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::n_nv[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::n_nv</td>
         </tr>
       </table>
   </td>
@@ -1817,8 +2969,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a75412fec29dc003a24d427786ee9e794" name="a75412fec29dc003a24d427786ee9e794"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75412fec29dc003a24d427786ee9e794">&#9670;&#160;</a></span>p</h2>
+<a id="a7147cff5aa8f633a088bac87b6e28c85" name="a7147cff5aa8f633a088bac87b6e28c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7147cff5aa8f633a088bac87b6e28c85">&#9670;&#160;</a></span>p</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1829,7 +2981,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::p[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::p</td>
         </tr>
       </table>
   </td>
@@ -1841,8 +2993,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="adef564acacf78963f08b48179ce1d4a1" name="adef564acacf78963f08b48179ce1d4a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adef564acacf78963f08b48179ce1d4a1">&#9670;&#160;</a></span>pp</h2>
+<a id="ab586b246a88f210bb4449b054bffd4c9" name="ab586b246a88f210bb4449b054bffd4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab586b246a88f210bb4449b054bffd4c9">&#9670;&#160;</a></span>pp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1853,7 +3005,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::pp[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::pp</td>
         </tr>
       </table>
   </td>
@@ -1889,8 +3041,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a9864bf17f84384db75885693118bb61f" name="a9864bf17f84384db75885693118bb61f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9864bf17f84384db75885693118bb61f">&#9670;&#160;</a></span>vp</h2>
+<a id="ad8a5ae6f4b87245b46bd05cf98ae15a9" name="ad8a5ae6f4b87245b46bd05cf98ae15a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a5ae6f4b87245b46bd05cf98ae15a9">&#9670;&#160;</a></span>vp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1901,7 +3053,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::vp[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::vp</td>
         </tr>
       </table>
   </td>
@@ -1913,8 +3065,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a214d39852b7e276f3e0b104bdb99ee7e" name="a214d39852b7e276f3e0b104bdb99ee7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a214d39852b7e276f3e0b104bdb99ee7e">&#9670;&#160;</a></span>w</h2>
+<a id="a55fa5b2ccf95f036521b5bbb24f0e257" name="a55fa5b2ccf95f036521b5bbb24f0e257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fa5b2ccf95f036521b5bbb24f0e257">&#9670;&#160;</a></span>w</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1925,7 +3077,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::w[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::w</td>
         </tr>
       </table>
   </td>
@@ -1937,8 +3089,8 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 
 </div>
 </div>
-<a id="a70a9037b5ea2ceb5e2c134b9fdd31e57" name="a70a9037b5ea2ceb5e2c134b9fdd31e57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70a9037b5ea2ceb5e2c134b9fdd31e57">&#9670;&#160;</a></span>wp</h2>
+<a id="acfa3ec9475358207307137658204cb08" name="acfa3ec9475358207307137658204cb08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa3ec9475358207307137658204cb08">&#9670;&#160;</a></span>wp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1949,7 +3101,7 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::wp[ndof]</td>
+          <td class="memname">Vector3d <a class="el" href="classmanipulator_1_1_robot.html">manipulator::Robot</a>&lt; Real, Int, ndof &gt;::wp</td>
         </tr>
       </table>
   </td>
@@ -1986,8 +3138,10 @@ template&lt;typename Real , typename Int , size_t ndof&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>DynaMapp/manipulator/<a class="el" href="robot_8hpp_source.html">robot.hpp</a></li>
-<li>DynaMapp/manipulator/<a class="el" href="robot_8cpp.html">robot.cpp</a></li>
+<li>dynaMapp/manipulator/<a class="el" href="robot_8hpp_source.html">robot.hpp</a></li>
+<li>dynaMapp/multibody/<a class="el" href="robot__model_8hpp_source.html">robot_model.hpp</a></li>
+<li>dynaMapp/manipulator/<a class="el" href="robot_8cpp.html">robot.cpp</a></li>
+<li>dynaMapp/multibody/<a class="el" href="robot__model_8cpp.html">robot_model.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['friction_0',['friction',['../namespacefriction.html',1,'']]]
+  ['damping_0',['damping',['../namespacedamping.html',1,'']]],
+  ['dynamics_1',['dynamics',['../namespacedynamics.html',1,'']]]
 ];

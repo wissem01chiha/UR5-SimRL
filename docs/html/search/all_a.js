@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['k_0',['K',['../classestimator_1_1_kalman.html#ac599cd12e135349cfd562569aa2e5514',1,'estimator::Kalman']]],
-  ['kalman_1',['Kalman',['../classestimator_1_1_kalman.html',1,'estimator::Kalman&lt; Real, Int, m, n &gt;'],['../classestimator_1_1_kalman.html#ae699b09ffd68a1f53b00dc7e672847da',1,'estimator::Kalman::Kalman()'],['../classestimator_1_1_kalman.html#a5828022d0e6b5c9f2e5e86c309c26bdc',1,'estimator::Kalman::Kalman(const MatrixXd &amp;A, const MatrixXd &amp;C, const MatrixXd &amp;Q, const MatrixXd &amp;R, const MatrixXd &amp;P)']]],
-  ['kalman_5ffilter_2ecpp_2',['kalman_filter.cpp',['../kalman__filter_8cpp.html',1,'']]],
-  ['kalman_5ffilter_2ehpp_3',['kalman_filter.hpp',['../kalman__filter_8hpp.html',1,'']]],
-  ['kalman_5ffilter_5ftest_2ecpp_4',['kalman_filter_test.cpp',['../kalman__filter__test_8cpp.html',1,'']]],
-  ['kinova_5',['Kinova',['../class_kinova.html',1,'']]],
-  ['kinova_6',['kinova',['../classmanipulator_1_1kinova.html',1,'manipulator::kinova&lt; Real, Int, ndof &gt;'],['../classmanipulator_1_1kinova.html#ac697a231127b4a01f15d1cfaa43e51c3',1,'manipulator::kinova::kinova()']]],
-  ['kinova_2ecpp_7',['kinova.cpp',['../kinova_8cpp.html',1,'']]],
-  ['kinova_2ehpp_8',['kinova.hpp',['../kinova_8hpp.html',1,'']]],
-  ['kt_9',['kt',['../classmanipulator_1_1_link.html#a0c53a95f8ec8ebb281fb0d8a1ce19083',1,'manipulator::Link']]],
-  ['kv_10',['kv',['../classmanipulator_1_1_link.html#a71864d69c8eab377d4886b2642fb6d43',1,'manipulator::Link']]]
+  ['jacobian_0',['jacobian',['../classmanipulator_1_1_robot.html#a352bc15e01f85c7a18164ca39e37b53e',1,'manipulator::Robot::jacobian(const Real(&amp;qpp_)[ndof])'],['../classmanipulator_1_1_robot.html#a85ae3be7f11334ad39b5fcef07de23ea',1,'manipulator::Robot::jacobian(const Real(&amp;qpp_)[ndof])']]],
+  ['jacobien_1',['jacobien',['../namespacekinematics.html#a42dfa0171dc57adea0c0078bff386e20',1,'kinematics']]],
+  ['jm_2',['Jm',['../class_b_l_d_c_1_1_b_l_d_c.html#a09947cb937400f59b262ab0ce4b17459',1,'BLDC.BLDC.Jm'],['../classmanipulator_1_1_link.html#ae623a7e4cfa603b86d4818662ba79817',1,'manipulator::Link::Jm']]],
+  ['joint_5foffset_3',['joint_offset',['../classmanipulator_1_1_link.html#a71592a28292bb5b0f950d2ca7d83d051',1,'manipulator::Link']]],
+  ['joint_5ftype_4',['joint_type',['../classmanipulator_1_1_link.html#a6fcb2e8c2300992fdc208622b46fb6a9',1,'manipulator::Link']]],
+  ['joint_5fvelocity_5',['joint_velocity',['../namespacevisualization_1_1velocity.html#af0c14e4595164c840561947238a665c9',1,'visualization::velocity']]]
 ];

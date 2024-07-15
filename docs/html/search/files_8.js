@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['riccati_2ecpp_1',['riccati.cpp',['../riccati_8cpp.html',1,'']]],
-  ['riccati_2ehpp_2',['riccati.hpp',['../riccati_8hpp.html',1,'']]],
-  ['riccati_5ftest_2ecpp_3',['riccati_test.cpp',['../riccati__test_8cpp.html',1,'']]],
-  ['robot_2ecpp_4',['robot.cpp',['../robot_8cpp.html',1,'']]],
-  ['robot_2ehpp_5',['robot.hpp',['../robot_8hpp.html',1,'']]],
-  ['robot_5ftest_2ecpp_6',['robot_test.cpp',['../robot__test_8cpp.html',1,'']]]
+  ['kalman_5ffilter_2ecpp_0',['kalman_filter.cpp',['../kalman__filter_8cpp.html',1,'']]],
+  ['kalman_5ffilter_2ehpp_1',['kalman_filter.hpp',['../kalman__filter_8hpp.html',1,'']]],
+  ['kalman_5ffilter_5ftest_2ecpp_2',['kalman_filter_test.cpp',['../kalman__filter__test_8cpp.html',1,'']]],
+  ['kinova_2ecpp_3',['kinova.cpp',['../kinova_8cpp.html',1,'']]],
+  ['kinova_2ehpp_4',['kinova.hpp',['../kinova_8hpp.html',1,'']]],
+  ['kinova_5fgen3_2ecpp_5',['kinova_gen3.cpp',['../kinova__gen3_8cpp.html',1,'']]],
+  ['kinova_5fgen3_2ehpp_6',['kinova_gen3.hpp',['../kinova__gen3_8hpp.html',1,'']]],
+  ['kinova_5fgen3_5ftest_2ecpp_7',['kinova_gen3_test.cpp',['../kinova__gen3__test_8cpp.html',1,'']]]
 ];

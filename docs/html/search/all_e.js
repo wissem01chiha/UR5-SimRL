@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['p_0',['P',['../classestimator_1_1_kalman.html#aa3c573179efb74c31fc113a4667a12dc',1,'estimator::Kalman']]],
-  ['p_1',['p',['../classmanipulator_1_1_link.html#a7500e48dae0b4008ed3c7321be6af820',1,'manipulator::Link::p'],['../classmanipulator_1_1_robot.html#a75412fec29dc003a24d427786ee9e794',1,'manipulator::Robot::p']]],
-  ['p0_2',['P0',['../classestimator_1_1_kalman.html#a4605d176fa0d40a59299f050746ec379',1,'estimator::Kalman']]],
-  ['particle_3',['Particle',['../classestimator_1_1_particle.html',1,'estimator']]],
-  ['particle_5ffilter_2ecpp_4',['particle_filter.cpp',['../particle__filter_8cpp.html',1,'']]],
-  ['particle_5ffilter_2ehpp_5',['particle_filter.hpp',['../particle__filter_8hpp.html',1,'']]],
-  ['particle_5ffilter_5ftest_2ecpp_6',['particle_filter_test.cpp',['../particle__filter__test_8cpp.html',1,'']]],
-  ['pi_7',['PI',['../namespaceconstant.html#ad7213a86a9f54d1fb7e7519341d77c5f',1,'constant']]],
-  ['plot_2ehpp_8',['plot.hpp',['../plot_8hpp.html',1,'']]],
-  ['plot2d_9',['Plot2d',['../class_plot2d.html',1,'Plot2d'],['../class_plot2d.html#a45c401a2f44c42f9436dac8a7d8ecdf4',1,'Plot2d::Plot2d()']]],
-  ['pp_10',['pp',['../classmanipulator_1_1_robot.html#adef564acacf78963f08b48179ce1d4a1',1,'manipulator::Robot']]]
+  ['n_0',['N',['../classmanipulator_1_1_robot.html#a508e8047fd8785d1060d6232deb072d2',1,'manipulator::Robot::N'],['../classdynamics_1_1_torque.html#a4bec187d86a7b706c7b72434fbf26974',1,'dynamics::Torque::N']]],
+  ['n_1',['n',['../classmanipulator_1_1_robot.html#ae3647f1bb765743c5f018c859d3e2d5d',1,'manipulator::Robot::n'],['../classdynamics_1_1_torque.html#aaf5bf86a7402293f38603811920c11c4',1,'dynamics::Torque::n']]],
+  ['n_5fnv_2',['n_nv',['../classmanipulator_1_1_robot.html#acec8462aaa69cb4e6467d2e12a2a538b',1,'manipulator::Robot']]],
+  ['name_3',['name',['../classrobot_1_1_robot.html#a24273c64e4c3266dd075ead7cd570c58',1,'robot::Robot']]],
+  ['nan_5freal_4',['NAN_REAL',['../constant_8hpp.html#a68ef4af92ce963f71e098ff6bef8bd8c',1,'constant.hpp']]],
+  ['ncurvesmax_5',['NCURVESMAX',['../plot_8hpp.html#aebd6dc8cb49e0363069f1f8c650d35fd',1,'plot.hpp']]],
+  ['nj_6',['nj',['../classrobot_1_1_robot.html#ad06a27d90c1692ab750ae7bb367ca7e2',1,'robot::Robot']]],
+  ['nl_7',['nl',['../classrobot_1_1_robot.html#afd4677cd047cf76c17339bd892d8abc4',1,'robot::Robot']]],
+  ['nlsim_8',['nlsim',['../class_b_l_d_c_1_1_b_l_d_c.html#a41b6fe6862f591afcdb3ee66ad68499c',1,'BLDC::BLDC']]]
 ];

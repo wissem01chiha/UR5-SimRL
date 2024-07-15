@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['compute_5fmotor_5ftorque_0',['compute_motor_torque',['../classmanipulator_1_1_link.html#a5e4c860525383f47845795c473881b12',1,'manipulator::Link']]],
-  ['compute_5fstiffness_1',['compute_stiffness',['../classmanipulator_1_1_link.html#a2df8778977ac41b35fe9b0291840b696',1,'manipulator::Link']]],
-  ['contact_5ffriction_2',['contact_friction',['../classmanipulator_1_1_link.html#a1e12357b3a6542b14df5b5beb384aa71',1,'manipulator::Link']]],
-  ['coriolis_5fmatrix_3',['coriolis_matrix',['../classmanipulator_1_1_robot.html#a71ad85636cb58e845d247c766e8f3662',1,'manipulator::Robot']]]
+  ['acceleration_0',['acceleration',['../classmanipulator_1_1_robot.html#ae278981fedc27600b40a65e1f4ee745d',1,'manipulator::Robot::acceleration(const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;tau_)[ndof], const Real(&amp;Next_)[ndof])'],['../classmanipulator_1_1_robot.html#a93cf6545fcb1b097e4793b953771db45',1,'manipulator::Robot::acceleration(const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof])'],['../classmanipulator_1_1_robot.html#a8a0f456b53f70eeedb5ab42758b44b3d',1,'manipulator::Robot::acceleration(const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof], const Real(&amp;tau_)[ndof], const Real(&amp;Next_)[ndof])'],['../classmanipulator_1_1_robot.html#a1bf62654a171413ba6ef36b1da377116',1,'manipulator::Robot::acceleration(const Real(&amp;q_)[ndof], const Real(&amp;qp_)[ndof])']]],
+  ['axis_5finertia_5fmoment_1',['axis_inertia_moment',['../classinertia_1_1_inertia.html#a87b4b6ee45e899f9400cb7ab3b61952c',1,'inertia::Inertia']]]
 ];

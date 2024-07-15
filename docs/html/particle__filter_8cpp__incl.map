@@ -1,7 +1,7 @@
-<map id="DynaMapp/estimator/particle_filter.cpp" name="DynaMapp/estimator/particle_filter.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,48"/>
-<area shape="rect" id="Node000002" href="$particle__filter_8hpp.html" title=" " alt="" coords="16,96,136,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,49,79,80,73,80,73,49"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="28,171,124,197"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,123,79,155,73,155,73,123"/>
+<map id="dynaMapp/estimator/particle_filter.cpp" name="dynaMapp/estimator/particle_filter.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,145,48"/>
+<area shape="rect" id="Node000002" href="$particle__filter_8hpp.html" title=" " alt="" coords="15,96,135,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,49,78,80,72,80,72,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,171,123,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,123,78,155,72,155,72,123"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DynaMapp: DynaMapp/manipulator/link.hpp Source File</title>
+<title>DynaMapp: dynaMapp/manipulator/link.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -137,7 +137,7 @@ $(function(){initNavTree('link_8hpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">const</span> Int      <a class="code hl_variable" href="classmanipulator_1_1_link.html#ac9adcccec47d1319ffd6e4cc5dc5ce2a">ratio</a>, </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">const</span> Real     couloumb,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">const</span> Real     <a class="code hl_variable" href="classmanipulator_1_1_link.html#adb533de8766532c37a87f357ccf98108">stribek</a>, </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">const</span> Real     <a class="code hl_variable" href="classmanipulator_1_1_link.html#af750a8d9e78e8f818ab936cff43bc022">damping</a>, </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">const</span> Real     <a class="code hl_namespace" href="namespacedamping.html">damping</a>, </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span>     <a class="code hl_variable" href="classmanipulator_1_1_link.html#a1b48a5e387a8b60dbe670cd3278e5490">static_</a> = <span class="keyword">false</span>, </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">const</span> Real     mx,</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">const</span> Real     my, </div>
@@ -150,7 +150,7 @@ $(function(){initNavTree('link_8hpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_function" href="classmanipulator_1_1_link.html#a15cd1b6c7263114342ce987b88f75d0a">~Link</a>();      </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmanipulator_1_1_link.html#aa870f9c1106573143616db03cf324ee2">transform</a>(<span class="keyword">const</span> Real&amp; q_);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_namespace" href="namespacetransform.html">transform</a>(<span class="keyword">const</span> Real&amp; q_);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classmanipulator_1_1_link.html#a9aaa276da421fb7bbc1f9f84be890cd7">   70</a></span>    Real <a class="code hl_function" href="classmanipulator_1_1_link.html#a9aaa276da421fb7bbc1f9f84be890cd7">get_alpha</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="classmanipulator_1_1_link.html#aca71dd6882401b897a058aee80770b4e">alpha</a>; }  </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
@@ -326,7 +326,6 @@ $(function(){initNavTree('link_8hpp_source.html',''); initResizable(); });
 <div class="ttc" id="aclassmanipulator_1_1_link_html_a9e93189da6465e83a286ebc662e36e45"><div class="ttname"><a href="classmanipulator_1_1_link.html#a9e93189da6465e83a286ebc662e36e45">manipulator::Link::t</a></div><div class="ttdeci">Real t</div><div class="ttdoc">time date, by default t0 = 0</div><div class="ttdef"><b>Definition</b> link.hpp:230</div></div>
 <div class="ttc" id="aclassmanipulator_1_1_link_html_a9ec4d7acdcdf1887d0ecbe0e6f36280d"><div class="ttname"><a href="classmanipulator_1_1_link.html#a9ec4d7acdcdf1887d0ecbe0e6f36280d">manipulator::Link::reset_time</a></div><div class="ttdeci">void reset_time()</div><div class="ttdoc">set time to t0</div><div class="ttdef"><b>Definition</b> link.cpp:196</div></div>
 <div class="ttc" id="aclassmanipulator_1_1_link_html_aa853aa280c539cc5880730c4c217caf5"><div class="ttname"><a href="classmanipulator_1_1_link.html#aa853aa280c539cc5880730c4c217caf5">manipulator::Link::get_ratio</a></div><div class="ttdeci">Real get_ratio() const</div><div class="ttdef"><b>Definition</b> link.hpp:82</div></div>
-<div class="ttc" id="aclassmanipulator_1_1_link_html_aa870f9c1106573143616db03cf324ee2"><div class="ttname"><a href="classmanipulator_1_1_link.html#aa870f9c1106573143616db03cf324ee2">manipulator::Link::transform</a></div><div class="ttdeci">void transform(const Real &amp;q_)</div><div class="ttdoc">this functions is used to reset the rotation matrix</div><div class="ttdef"><b>Definition</b> link.cpp:105</div></div>
 <div class="ttc" id="aclassmanipulator_1_1_link_html_aaa025c552db75b3f3c73d93796123755"><div class="ttname"><a href="classmanipulator_1_1_link.html#aaa025c552db75b3f3c73d93796123755">manipulator::Link::q</a></div><div class="ttdeci">Real q</div><div class="ttdoc">q DH parameter.</div><div class="ttdef"><b>Definition</b> link.hpp:197</div></div>
 <div class="ttc" id="aclassmanipulator_1_1_link_html_aab8cfa5e8df6ba16b78f519d2cf0abf1"><div class="ttname"><a href="classmanipulator_1_1_link.html#aab8cfa5e8df6ba16b78f519d2cf0abf1">manipulator::Link::t0</a></div><div class="ttdeci">Real t0</div><div class="ttdef"><b>Definition</b> link.hpp:230</div></div>
 <div class="ttc" id="aclassmanipulator_1_1_link_html_aaec8c8a468bf1e1b30c11a0f79f269a6"><div class="ttname"><a href="classmanipulator_1_1_link.html#aaec8c8a468bf1e1b30c11a0f79f269a6">manipulator::Link::update_qpm</a></div><div class="ttdeci">void update_qpm(Real current, Real voltage)</div><div class="ttdoc">update the motor shaft angular spped (RPM) given the voltage and current values</div><div class="ttdef"><b>Definition</b> link.cpp:199</div></div>
@@ -363,13 +362,15 @@ $(function(){initNavTree('link_8hpp_source.html',''); initResizable(); });
 <div class="ttc" id="aclassmanipulator_1_1_link_html_af9d257a45d55a4f2240d215d25471bce"><div class="ttname"><a href="classmanipulator_1_1_link.html#af9d257a45d55a4f2240d215d25471bce">manipulator::Link::c1</a></div><div class="ttdeci">Real c1</div><div class="ttdef"><b>Definition</b> link.hpp:222</div></div>
 <div class="ttc" id="aconstant_8hpp_html"><div class="ttname"><a href="constant_8hpp.html">constant.hpp</a></div></div>
 <div class="ttc" id="alugre_8hpp_html"><div class="ttname"><a href="lugre_8hpp.html">lugre.hpp</a></div></div>
+<div class="ttc" id="anamespacedamping_html"><div class="ttname"><a href="namespacedamping.html">damping</a></div><div class="ttdef"><b>Definition</b> damping_model.cpp:3</div></div>
 <div class="ttc" id="anamespacemanipulator_html"><div class="ttname"><a href="namespacemanipulator.html">manipulator</a></div><div class="ttdef"><b>Definition</b> kinova.hpp:5</div></div>
+<div class="ttc" id="anamespacetransform_html"><div class="ttname"><a href="namespacetransform.html">transform</a></div><div class="ttdef"><b>Definition</b> transform.py:1</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c18d500453e47dc241e193c247c607d.html">DynaMapp</a></li><li class="navelem"><a class="el" href="dir_9cc3dcdb1c3ade397aba953b4c4d541e.html">manipulator</a></li><li class="navelem"><a class="el" href="link_8hpp.html">link.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6ce2d150f824e6e0dcc2d141c602db35.html">dynaMapp</a></li><li class="navelem"><a class="el" href="dir_a95042fd2f6f446d899a8e58cae34029.html">manipulator</a></li><li class="navelem"><a class="el" href="link_8hpp.html">link.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>

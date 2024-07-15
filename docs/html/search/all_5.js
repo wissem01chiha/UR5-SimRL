@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['f_0',['F',['../classmanipulator_1_1_robot.html#a92ba20e365a9412cb297a3b93d34ebfe',1,'manipulator::Robot']]],
-  ['f_1',['f',['../classmanipulator_1_1_robot.html#a1d77c22bd1ee8350a53dd77f23b9f813',1,'manipulator::Robot']]],
-  ['f_5fnv_2',['f_nv',['../classmanipulator_1_1_robot.html#ac1086c77bdd29d68848e6f4b61939edd',1,'manipulator::Robot']]],
-  ['forward_5fdyanmic_2ehpp_3',['forward_dyanmic.hpp',['../forward__dyanmic_8hpp.html',1,'']]],
-  ['forward_5fkinematic_4',['forward_kinematic',['../classmanipulator_1_1_robot.html#a77d25ca8960eb2f7c4abf45c56dedcaa',1,'manipulator::Robot::forward_kinematic(const int j) const'],['../classmanipulator_1_1_robot.html#ae5ad4a18fbd74af695dc8753028ab61a',1,'manipulator::Robot::forward_kinematic()']]],
-  ['friction_5',['friction',['../namespacefriction.html',1,'']]],
-  ['friction_5ftorque_6',['friction_torque',['../classfriction_1_1_lugre.html#ae372cf5175606864fb810fff6d66142e',1,'friction::Lugre::friction_torque()'],['../classfriction_1_1_lugre_temp.html#a798900005e5635214bd62cb05174968c',1,'friction::LugreTemp::friction_torque()'],['../classmanipulator_1_1_robot.html#a6d0939eddb7e921a0f7d985effb9703a',1,'manipulator::Robot::friction_torque()']]]
+  ['epsilon_0',['EPSILON',['../namespaceconstant.html#ac7451df5d419deaf585da3ef64cc7ecc',1,'constant']]],
+  ['error_1',['Error',['../classerror_1_1_error.html',1,'error']]],
+  ['error_2',['error',['../namespaceerror.html',1,'error'],['../classestimator_1_1_luenberger.html#ac3a9fdca394f1f31c8c5377cc6b5e4c5',1,'estimator::Luenberger::error()']]],
+  ['error_3',['Error',['../classerror_1_1_error.html#affe30c6c98554605935c899ae5a2a0c4',1,'error::Error']]],
+  ['error_2ehpp_4',['error.hpp',['../error_8hpp.html',1,'']]],
+  ['error_5ftest_2ecpp_5',['error_test.cpp',['../error__test_8cpp.html',1,'']]],
+  ['estimator_6',['estimator',['../namespaceestimator.html',1,'']]],
+  ['estimator_2ehpp_7',['estimator.hpp',['../estimator_8hpp.html',1,'']]],
+  ['exist_5fok_8',['exist_ok',['../namespacevisualization_1_1plot__joint__data.html#af18289f3335343589ab89c8694ee8b44',1,'visualization::plot_joint_data']]],
+  ['extendedkalman_9',['ExtendedKalman',['../classestimator_1_1_extended_kalman.html',1,'estimator']]],
+  ['extendedkalman_10',['Extendedkalman',['../classestimator_1_1_extended_kalman.html#a36944736b3af53c45b07fd41ed4b8479',1,'estimator::ExtendedKalman']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['forward_5fkinematic_0',['forward_kinematic',['../classmanipulator_1_1_robot.html#a77d25ca8960eb2f7c4abf45c56dedcaa',1,'manipulator::Robot::forward_kinematic(const int j) const'],['../classmanipulator_1_1_robot.html#ae5ad4a18fbd74af695dc8753028ab61a',1,'manipulator::Robot::forward_kinematic()']]],
-  ['friction_5ftorque_1',['friction_torque',['../classfriction_1_1_lugre.html#ae372cf5175606864fb810fff6d66142e',1,'friction::Lugre::friction_torque()'],['../classfriction_1_1_lugre_temp.html#a798900005e5635214bd62cb05174968c',1,'friction::LugreTemp::friction_torque()'],['../classmanipulator_1_1_robot.html#a6d0939eddb7e921a0f7d985effb9703a',1,'manipulator::Robot::friction_torque()']]]
+  ['error_0',['error',['../classestimator_1_1_luenberger.html#ac3a9fdca394f1f31c8c5377cc6b5e4c5',1,'estimator::Luenberger']]],
+  ['error_1',['Error',['../classerror_1_1_error.html#affe30c6c98554605935c899ae5a2a0c4',1,'error::Error']]],
+  ['extendedkalman_2',['Extendedkalman',['../classestimator_1_1_extended_kalman.html#a36944736b3af53c45b07fd41ed4b8479',1,'estimator::ExtendedKalman']]]
 ];

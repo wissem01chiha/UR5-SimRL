@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DynaMapp: DynaMapp/math/riccati_solver.hpp Source File</title>
+<title>DynaMapp: dynaMapp/math/riccati_solver.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -114,40 +114,34 @@ $(function(){initNavTree('riccati__solver_8hpp_source.html',''); initResizable()
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>Eigen;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemath.html">math</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>riccati { </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>MatrixXd <a class="code hl_function" href="namespacemath_1_1riccati.html#ad869ef98b8ba761064e4951de4b48ea0">steady_riccati_equation</a>(</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; A, </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; B, </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; Q,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; R);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacemath_1_1riccati.html#a6df0e82717059b21f0f005df640ee3b8">   42</a></span>MatrixXd <a class="code hl_function" href="namespacemath_1_1riccati.html#a6df0e82717059b21f0f005df640ee3b8">state_depand_riccati_equation</a>(<span class="keyword">const</span> Ref&lt;const VectorXd&gt;&amp; state);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">[1] E. K.-W. Chu, H.-Y. Fan, W.-W. Lin &amp; C.-S. Wang &quot;Structure-Preserving</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    Algorithms for Periodic Discrete-Time Algebraic Riccati Equations&quot;,</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    International Journal of Control, 77:8, 767-788, 2004.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    DOI: 10.1080/00207170410001714988</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}; <span class="comment">// namespace riccati </span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}; <span class="comment">//namespace math </span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">// RICCATI_SOLVER_HPP</span></div>
-<div class="ttc" id="anamespacemath_1_1riccati_html_a6df0e82717059b21f0f005df640ee3b8"><div class="ttname"><a href="namespacemath_1_1riccati.html#a6df0e82717059b21f0f005df640ee3b8">math::riccati::state_depand_riccati_equation</a></div><div class="ttdeci">MatrixXd state_depand_riccati_equation(const Ref&lt; const VectorXd &gt; &amp;state)</div><div class="ttdoc">Computes numericlly a solution of the SDRE Problem given by :</div></div>
-<div class="ttc" id="anamespacemath_1_1riccati_html_ad869ef98b8ba761064e4951de4b48ea0"><div class="ttname"><a href="namespacemath_1_1riccati.html#ad869ef98b8ba761064e4951de4b48ea0">math::riccati::steady_riccati_equation</a></div><div class="ttdeci">MatrixXd steady_riccati_equation(const Ref&lt; const MatrixXd &gt; &amp;A, const Ref&lt; const MatrixXd &gt; &amp;B, const Ref&lt; const MatrixXd &gt; &amp;Q, const Ref&lt; const MatrixXd &gt; &amp;R)</div><div class="ttdoc">Computes the unique solution X of the discrete algebric riccati equation :</div><div class="ttdef"><b>Definition</b> riccati_solver.cpp:6</div></div>
-<div class="ttc" id="anamespacemath_html"><div class="ttname"><a href="namespacemath.html">math</a></div><div class="ttdef"><b>Definition</b> gradient.cpp:3</div></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="riccati__solver_8hpp.html#af131d4ff5f3823f8de14cab9dd80c21f">   20</a></span>MatrixXd <a class="code hl_function" href="riccati__solver_8hpp.html#af131d4ff5f3823f8de14cab9dd80c21f">steady_riccati_equation</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; A, </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; B, </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; Q,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">const</span> Ref&lt;const MatrixXd&gt;&amp; R);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="riccati__solver_8hpp.html#acb42aa8e99b467df9fb871394dfc6c35">   39</a></span>MatrixXd <a class="code hl_function" href="riccati__solver_8hpp.html#acb42aa8e99b467df9fb871394dfc6c35">state_depand_riccati_equation</a>(<span class="keyword">const</span> Ref&lt;const VectorXd&gt;&amp; state);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">[1] E. K.-W. Chu, H.-Y. Fan, W.-W. Lin &amp; C.-S. Wang &quot;Structure-Preserving</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    Algorithms for Periodic Discrete-Time Algebraic Riccati Equations&quot;,</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    International Journal of Control, 77:8, 767-788, 2004.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    DOI: 10.1080/00207170410001714988</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// RICCATI_SOLVER_HPP</span></div>
+<div class="ttc" id="ariccati__solver_8hpp_html_acb42aa8e99b467df9fb871394dfc6c35"><div class="ttname"><a href="riccati__solver_8hpp.html#acb42aa8e99b467df9fb871394dfc6c35">state_depand_riccati_equation</a></div><div class="ttdeci">MatrixXd state_depand_riccati_equation(const Ref&lt; const VectorXd &gt; &amp;state)</div><div class="ttdoc">Computes numericlly a solution of the SDRE Problem given by :</div></div>
+<div class="ttc" id="ariccati__solver_8hpp_html_af131d4ff5f3823f8de14cab9dd80c21f"><div class="ttname"><a href="riccati__solver_8hpp.html#af131d4ff5f3823f8de14cab9dd80c21f">steady_riccati_equation</a></div><div class="ttdeci">MatrixXd steady_riccati_equation(const Ref&lt; const MatrixXd &gt; &amp;A, const Ref&lt; const MatrixXd &gt; &amp;B, const Ref&lt; const MatrixXd &gt; &amp;Q, const Ref&lt; const MatrixXd &gt; &amp;R)</div><div class="ttdoc">Computes the unique solution X of the discrete algebric riccati equation :</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c18d500453e47dc241e193c247c607d.html">DynaMapp</a></li><li class="navelem"><a class="el" href="dir_3358ccb106c729bd9d762976e9a0bac1.html">math</a></li><li class="navelem"><a class="el" href="riccati__solver_8hpp.html">riccati_solver.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_6ce2d150f824e6e0dcc2d141c602db35.html">dynaMapp</a></li><li class="navelem"><a class="el" href="dir_aa16ca5b9c44c47afae35f3d28219856.html">math</a></li><li class="navelem"><a class="el" href="riccati__solver_8hpp.html">riccati_solver.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['observer_0',['observer',['../namespaceobserver.html',1,'']]]
+  ['friction_0',['friction',['../namespacefriction.html',1,'']]]
 ];

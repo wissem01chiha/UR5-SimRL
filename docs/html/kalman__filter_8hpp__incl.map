@@ -1,5 +1,5 @@
-<map id="DynaMapp/estimator/kalman_filter.hpp" name="DynaMapp/estimator/kalman_filter.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="85,5,226,48"/>
+<map id="dynaMapp/estimator/kalman_filter.hpp" name="dynaMapp/estimator/kalman_filter.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,5,225,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,84,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,51,76,89,72,85,125,46"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="108,96,203,123"/>

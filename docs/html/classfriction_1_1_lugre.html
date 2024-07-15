@@ -107,8 +107,10 @@ $(function(){initNavTree('classfriction_1_1_lugre.html',''); initResizable(); })
 </div><!--header-->
 <div class="contents">
 
-<p>this A New Model For Control of Systems with Friction - 1995  
+<p>this A New Model For Control of Systems with <a class="el" href="classfriction_1_1_friction.html">Friction</a> - 1995  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="lugre__model_8hpp_source.html">lugre_model.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -130,6 +132,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a745d70fc29650ed8d54970e09866cca1" id="r_a745d70fc29650ed8d54970e09866cca1"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a745d70fc29650ed8d54970e09866cca1">stribek</a> (Real velocity)</td></tr>
 <tr class="memdesc:a745d70fc29650ed8d54970e09866cca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the stribeck function value.  <br /></td></tr>
 <tr class="separator:a745d70fc29650ed8d54970e09866cca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05818b4f407922923ef1bb1ff5486e3" id="r_ac05818b4f407922923ef1bb1ff5486e3"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05818b4f407922923ef1bb1ff5486e3">steady_torque</a> (Real velocity)</td></tr>
+<tr class="memdesc:ac05818b4f407922923ef1bb1ff5486e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the torque value at steady state  <br /></td></tr>
+<tr class="separator:ac05818b4f407922923ef1bb1ff5486e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4af8eabe5697b3938e14d9a91e2cb8" id="r_a7c4af8eabe5697b3938e14d9a91e2cb8"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c4af8eabe5697b3938e14d9a91e2cb8">steady_state</a> (Real velocity)</td></tr>
+<tr class="memdesc:a7c4af8eabe5697b3938e14d9a91e2cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the avarage deflection z at steady state  <br /></td></tr>
+<tr class="separator:a7c4af8eabe5697b3938e14d9a91e2cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed18735765a52ceeeeaa830adcbae746" id="r_aed18735765a52ceeeeaa830adcbae746"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed18735765a52ceeeeaa830adcbae746">Lugre</a> (Real <a class="el" href="#a1cc95a87c4089310a6b8d6e0fe962f2e">sigma0</a>, Real <a class="el" href="#a98e7901a4710f492353a55557715e7fd">sigma1</a>, Real <a class="el" href="#a4d933b3c3053a80aa1374ba18f3255a1">sigma2</a>, Real <a class="el" href="#a116543310f199f6b05db1aa22dcb83ee">vs</a>, Real <a class="el" href="#ac443bf70830f9a67adb484106f086d0a">coulomb</a>, Real <a class="el" href="#af903aa276bd01bf780bbf980be0baa79">stiction</a>)</td></tr>
+<tr class="memdesc:aed18735765a52ceeeeaa830adcbae746"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <br /></td></tr>
+<tr class="separator:aed18735765a52ceeeeaa830adcbae746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a2ce5615eea843e087f49cd285afd7" id="r_a00a2ce5615eea843e087f49cd285afd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00a2ce5615eea843e087f49cd285afd7">init</a> ()</td></tr>
+<tr class="memdesc:a00a2ce5615eea843e087f49cd285afd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">intilize the model with null values  <br /></td></tr>
+<tr class="separator:a00a2ce5615eea843e087f49cd285afd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b0a1c843efed3b88ed52e02797a9c2" id="r_a16b0a1c843efed3b88ed52e02797a9c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16b0a1c843efed3b88ed52e02797a9c2">init</a> (Real <a class="el" href="#a3d84f353d59238a836ea89fa810392bc">t0</a>, Real <a class="el" href="#ad91a270103ee7945829997d4acb7db59">z0</a>, Real <a class="el" href="#a632de9171a84284e77e45797d403eded">z_dot0</a>)</td></tr>
+<tr class="memdesc:a16b0a1c843efed3b88ed52e02797a9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">initlize the model with given values  <br /></td></tr>
+<tr class="separator:a16b0a1c843efed3b88ed52e02797a9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae372cf5175606864fb810fff6d66142e" id="r_ae372cf5175606864fb810fff6d66142e"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae372cf5175606864fb810fff6d66142e">friction_torque</a> (Real velocity, Real <a class="el" href="#a47fda2482568add50fbce5bb854bbdf0">t</a>)</td></tr>
+<tr class="memdesc:ae372cf5175606864fb810fff6d66142e"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the friction torque at time date t  <br /></td></tr>
+<tr class="separator:ae372cf5175606864fb810fff6d66142e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e1d7f0e0d175f20d2758b2dfc783e2" id="r_a49e1d7f0e0d175f20d2758b2dfc783e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49e1d7f0e0d175f20d2758b2dfc783e2">update_state</a> (Real velocity)</td></tr>
+<tr class="memdesc:a49e1d7f0e0d175f20d2758b2dfc783e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the avarage deflection state z and it's first derivative by one step time.  <br /></td></tr>
+<tr class="separator:a49e1d7f0e0d175f20d2758b2dfc783e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3775b60729b5f826a0345eb12cd70cdf" id="r_a3775b60729b5f826a0345eb12cd70cdf"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3775b60729b5f826a0345eb12cd70cdf">stribek_force</a> (Real velocity)</td></tr>
+<tr class="memdesc:a3775b60729b5f826a0345eb12cd70cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the stribeck function value.  <br /></td></tr>
+<tr class="separator:a3775b60729b5f826a0345eb12cd70cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05818b4f407922923ef1bb1ff5486e3" id="r_ac05818b4f407922923ef1bb1ff5486e3"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05818b4f407922923ef1bb1ff5486e3">steady_torque</a> (Real velocity)</td></tr>
 <tr class="memdesc:ac05818b4f407922923ef1bb1ff5486e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the torque value at steady state  <br /></td></tr>
 <tr class="separator:ac05818b4f407922923ef1bb1ff5486e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,12 +194,58 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Real, typename Int&gt;<br />
-class friction::Lugre&lt; Real, Int &gt;</div><p>this A New Model For Control of Systems with Friction - 1995 </p>
+class friction::Lugre&lt; Real, Int &gt;</div><p>this A New Model For Control of Systems with <a class="el" href="classfriction_1_1_friction.html">Friction</a> - 1995 </p>
+<p>LuGre friction model class declaration. [1] A New Model For Control of Systems with <a class="el" href="classfriction_1_1_friction.html">Friction</a> - 1995.</p>
 <p>model class declaration. </p><dl class="section copyright"><dt>Copyright</dt><dd>(c) 2024 Dynamium </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>22-March-2024</dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed18735765a52ceeeeaa830adcbae746" name="aed18735765a52ceeeeaa830adcbae746"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed18735765a52ceeeeaa830adcbae746">&#9670;&#160;</a></span>Lugre()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed18735765a52ceeeeaa830adcbae746">&#9670;&#160;</a></span>Lugre() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::Lugre </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>sigma0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>sigma1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>sigma2</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>vs</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>coulomb</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>stiction</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default constructor </p>
+
+</div>
+</div>
+<a id="aed18735765a52ceeeeaa830adcbae746" name="aed18735765a52ceeeeaa830adcbae746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed18735765a52ceeeeaa830adcbae746">&#9670;&#160;</a></span>Lugre() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +291,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae372cf5175606864fb810fff6d66142e" name="ae372cf5175606864fb810fff6d66142e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae372cf5175606864fb810fff6d66142e">&#9670;&#160;</a></span>friction_torque()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae372cf5175606864fb810fff6d66142e">&#9670;&#160;</a></span>friction_torque() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,8 +331,70 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="ae372cf5175606864fb810fff6d66142e" name="ae372cf5175606864fb810fff6d66142e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae372cf5175606864fb810fff6d66142e">&#9670;&#160;</a></span>friction_torque() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::friction_torque </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>velocity</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compute the friction torque at time date t </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>- time date </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>friction torque computed <br  />
+ </dd></dl>
+
+</div>
+</div>
 <a id="a00a2ce5615eea843e087f49cd285afd7" name="a00a2ce5615eea843e087f49cd285afd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00a2ce5615eea843e087f49cd285afd7">&#9670;&#160;</a></span>init() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a2ce5615eea843e087f49cd285afd7">&#9670;&#160;</a></span>init() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>intilize the model with null values </p>
+
+</div>
+</div>
+<a id="a00a2ce5615eea843e087f49cd285afd7" name="a00a2ce5615eea843e087f49cd285afd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a2ce5615eea843e087f49cd285afd7">&#9670;&#160;</a></span>init() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +423,7 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="a16b0a1c843efed3b88ed52e02797a9c2" name="a16b0a1c843efed3b88ed52e02797a9c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b0a1c843efed3b88ed52e02797a9c2">&#9670;&#160;</a></span>init() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b0a1c843efed3b88ed52e02797a9c2">&#9670;&#160;</a></span>init() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,8 +468,75 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a16b0a1c843efed3b88ed52e02797a9c2" name="a16b0a1c843efed3b88ed52e02797a9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b0a1c843efed3b88ed52e02797a9c2">&#9670;&#160;</a></span>init() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::init </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>t0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>z0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>z_dot0</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initlize the model with given values </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t0</td><td>- Intial time value. </td></tr>
+    <tr><td class="paramname">z0</td><td>- Initial deflection state value. </td></tr>
+    <tr><td class="paramname">z_dot0</td><td>- Initial deflection derivative value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7c4af8eabe5697b3938e14d9a91e2cb8" name="a7c4af8eabe5697b3938e14d9a91e2cb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c4af8eabe5697b3938e14d9a91e2cb8">&#9670;&#160;</a></span>steady_state()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4af8eabe5697b3938e14d9a91e2cb8">&#9670;&#160;</a></span>steady_state() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::steady_state </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute the avarage deflection z at steady state </p>
+
+</div>
+</div>
+<a id="a7c4af8eabe5697b3938e14d9a91e2cb8" name="a7c4af8eabe5697b3938e14d9a91e2cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4af8eabe5697b3938e14d9a91e2cb8">&#9670;&#160;</a></span>steady_state() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,7 +565,36 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <a id="ac05818b4f407922923ef1bb1ff5486e3" name="ac05818b4f407922923ef1bb1ff5486e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac05818b4f407922923ef1bb1ff5486e3">&#9670;&#160;</a></span>steady_torque()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05818b4f407922923ef1bb1ff5486e3">&#9670;&#160;</a></span>steady_torque() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::steady_torque </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute the torque value at steady state </p>
+
+</div>
+</div>
+<a id="ac05818b4f407922923ef1bb1ff5486e3" name="ac05818b4f407922923ef1bb1ff5486e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05818b4f407922923ef1bb1ff5486e3">&#9670;&#160;</a></span>steady_torque() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,8 +653,39 @@ template&lt;typename Real , typename Int &gt; </div>
 
 </div>
 </div>
+<a id="a3775b60729b5f826a0345eb12cd70cdf" name="a3775b60729b5f826a0345eb12cd70cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3775b60729b5f826a0345eb12cd70cdf">&#9670;&#160;</a></span>stribek_force()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Real <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::stribek_force </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute the stribeck function value. </p>
+<dl class="section return"><dt>Returns</dt><dd>stribeck force <br  />
+ </dd></dl>
+
+</div>
+</div>
 <a id="a49e1d7f0e0d175f20d2758b2dfc783e2" name="a49e1d7f0e0d175f20d2758b2dfc783e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49e1d7f0e0d175f20d2758b2dfc783e2">&#9670;&#160;</a></span>update_state()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e1d7f0e0d175f20d2758b2dfc783e2">&#9670;&#160;</a></span>update_state() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -446,6 +707,27 @@ template&lt;typename Real , typename Int &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+<p>update the avarage deflection state z and it's first derivative by one step time. </p>
+
+</div>
+</div>
+<a id="a49e1d7f0e0d175f20d2758b2dfc783e2" name="a49e1d7f0e0d175f20d2758b2dfc783e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e1d7f0e0d175f20d2758b2dfc783e2">&#9670;&#160;</a></span>update_state() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Real , typename Int &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfriction_1_1_lugre.html">friction::Lugre</a>&lt; Real, Int &gt;::update_state </td>
+          <td>(</td>
+          <td class="paramtype">Real</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>update the avarage deflection state z and it's first derivative by one step time. </p>
@@ -766,8 +1048,10 @@ template&lt;typename Real , typename Int &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>DynaMapp/<a class="el" href="lugre_8hpp_source.html">lugre.hpp</a></li>
-<li>DynaMapp/<a class="el" href="lugre_8cpp.html">lugre.cpp</a></li>
+<li>dynaMapp/<a class="el" href="lugre_8hpp_source.html">lugre.hpp</a></li>
+<li>dynaMapp/multibody/<a class="el" href="lugre__model_8hpp_source.html">lugre_model.hpp</a></li>
+<li>dynaMapp/<a class="el" href="lugre_8cpp.html">lugre.cpp</a></li>
+<li>dynaMapp/multibody/<a class="el" href="lugre__model_8cpp_source.html">lugre_model.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
 var maxwell__model_8hpp =
 [
-    [ "friction::Maxwell", "classfriction_1_1_maxwell.html", "classfriction_1_1_maxwell" ]
+    [ "friction::Maxwell< Real, Int, N >", "classfriction_1_1_maxwell.html", "classfriction_1_1_maxwell" ]
 ];

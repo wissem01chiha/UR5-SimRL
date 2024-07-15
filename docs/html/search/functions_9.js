@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['kalman_0',['Kalman',['../classestimator_1_1_kalman.html#ae699b09ffd68a1f53b00dc7e672847da',1,'estimator::Kalman::Kalman()'],['../classestimator_1_1_kalman.html#a5828022d0e6b5c9f2e5e86c309c26bdc',1,'estimator::Kalman::Kalman(const MatrixXd &amp;A, const MatrixXd &amp;C, const MatrixXd &amp;Q, const MatrixXd &amp;R, const MatrixXd &amp;P)']]],
-  ['kinova_1',['kinova',['../classmanipulator_1_1kinova.html#ac697a231127b4a01f15d1cfaa43e51c3',1,'manipulator::kinova']]]
+  ['jacobian_0',['jacobian',['../classmanipulator_1_1_robot.html#a352bc15e01f85c7a18164ca39e37b53e',1,'manipulator::Robot::jacobian(const Real(&amp;qpp_)[ndof])'],['../classmanipulator_1_1_robot.html#a85ae3be7f11334ad39b5fcef07de23ea',1,'manipulator::Robot::jacobian(const Real(&amp;qpp_)[ndof])']]],
+  ['jacobien_1',['jacobien',['../namespacekinematics.html#a42dfa0171dc57adea0c0078bff386e20',1,'kinematics']]],
+  ['joint_5fvelocity_2',['joint_velocity',['../namespacevisualization_1_1velocity.html#af0c14e4595164c840561947238a665c9',1,'visualization::velocity']]]
 ];

@@ -1,5 +1,5 @@
-<map id="DynaMapp/multibody/lugre_model.hpp" name="DynaMapp/multibody/lugre_model.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="186,5,330,48"/>
+<map id="dynaMapp/multibody/lugre_model.hpp" name="dynaMapp/multibody/lugre_model.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="187,5,329,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,84,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,51,93,93,91,88,202,46"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="108,96,165,123"/>

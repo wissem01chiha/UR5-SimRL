@@ -1,11 +1,12 @@
-<map id="DynaMapp/utils/math.hpp" name="DynaMapp/utils/math.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="49,5,219,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,63,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,35,65,73,62,68,115,30"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="86,80,182,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,33,137,64,131,64,131,33"/>
-<area shape="rect" id="Node000004" href="$constant_8hpp.html" title=" " alt="" coords="206,80,302,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,30,221,69,219,74,154,35"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="228,155,280,181"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="257,107,257,139,251,139,251,107"/>
+<map id="dynaMapp/math/math.hpp" name="dynaMapp/math/math.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="96,5,268,32"/>
+<area shape="rect" id="Node000002" href="$gradient_8hpp.html" title=" " alt="" coords="5,80,98,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,35,89,74,87,70,158,30"/>
+<area shape="rect" id="Node000004" href="$riccati__solver_8hpp.html" title=" " alt="" coords="122,80,243,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,33,185,64,180,64,180,33"/>
+<area shape="rect" id="Node000005" href="$integrator_8hpp.html" title=" " alt="" coords="267,80,367,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="207,30,281,70,278,75,204,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="69,155,165,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,105,98,141,94,145,61,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="173,109,140,145,136,141,169,105"/>
 </map>

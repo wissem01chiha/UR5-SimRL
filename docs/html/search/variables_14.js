@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['x_5fhat_0',['x_hat',['../classestimator_1_1_kalman.html#a43be6651aeb70b3450c67145347736aa',1,'estimator::Kalman']]],
-  ['x_5fhat_5fnew_1',['x_hat_new',['../classestimator_1_1_kalman.html#aecf74070ff024a81f356e8372a11be1c',1,'estimator::Kalman']]],
-  ['x_5flabel_2',['x_label',['../class_plot2d.html#a77b05b519bb456c0a7d42b683406a408',1,'Plot2d']]],
-  ['xhat_5fk_3',['xhat_k',['../classestimator_1_1_luenberger.html#afdbfc6cc97af0c97d23f338780d7de37',1,'estimator::Luenberger']]],
-  ['xhat_5fk_5f1_4',['xhat_k_1',['../classestimator_1_1_luenberger.html#a01e181c589f70ea6f0d6aec757e493f2',1,'estimator::Luenberger']]]
+  ['w_0',['w',['../classmanipulator_1_1_robot.html#a55fa5b2ccf95f036521b5bbb24f0e257',1,'manipulator::Robot::w'],['../classdynamics_1_1_torque.html#a85856ae9ba251880281642a93bef801f',1,'dynamics::Torque::w']]],
+  ['wp_1',['wp',['../classmanipulator_1_1_robot.html#acfa3ec9475358207307137658204cb08',1,'manipulator::Robot::wp'],['../classdynamics_1_1_torque.html#a399d48ea84e2f2886c7fa5e266e94340',1,'dynamics::Torque::wp']]]
 ];

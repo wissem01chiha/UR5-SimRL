@@ -1,8 +1,26 @@
 var searchData=
 [
-  ['n_0',['N',['../classmanipulator_1_1_robot.html#af03d6fb48764fc089bdda2626925acfd',1,'manipulator::Robot']]],
-  ['n_1',['n',['../classmanipulator_1_1_robot.html#a4acdcbaf612d7743917bf4f7428e3b9b',1,'manipulator::Robot']]],
-  ['n_5fnv_2',['n_nv',['../classmanipulator_1_1_robot.html#aa339ef2891f12a91b7d95328ac5a01c0',1,'manipulator::Robot']]],
-  ['nan_5freal_3',['NAN_REAL',['../constant_8hpp.html#a68ef4af92ce963f71e098ff6bef8bd8c',1,'constant.hpp']]],
-  ['ncurvesmax_4',['NCURVESMAX',['../plot_8hpp.html#aebd6dc8cb49e0363069f1f8c650d35fd',1,'plot.hpp']]]
+  ['m_0',['m',['../classmanipulator_1_1_link.html#ad044c01ce00dff71d60c47af0b9e52f5',1,'manipulator::Link::m'],['../classdynamics_1_1_torque.html#a5edf7c8cdc3c6c20758ffc5884c9e325',1,'dynamics::Torque::m']]],
+  ['main_1',['main',['../link__model__test_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;link_model_test.cpp'],['../robot__model__test_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;robot_model_test.cpp'],['../namespacevisualization_1_1viz__static__robot.html#ad2ec36f2bda70932957bec32442b4866',1,'visualization.viz_static_robot.main()']]],
+  ['manipulator_2',['manipulator',['../namespacemanipulator.html',1,'']]],
+  ['manipulator_2ehpp_3',['manipulator.hpp',['../manipulator_8hpp.html',1,'']]],
+  ['mass_4',['mass',['../classmanipulator_1_1_link.html#a23175631fd1ae35d5309d6ec03ae256a',1,'manipulator::Link::mass'],['../classrobot_1_1_robot.html#acdf498e61a10518c32a62e527aee1425',1,'robot.Robot.mass']]],
+  ['mass_5fmat_5',['mass_mat',['../classrobot_1_1_robot.html#a8ffc90bbc60606721b1932e6dc609a1e',1,'robot::Robot']]],
+  ['math_6',['math',['../namespacemath.html',1,'']]],
+  ['math_2ehpp_7',['math.hpp',['../math_8hpp.html',1,'']]],
+  ['math_3a_3agradient_8',['gradient',['../namespacemath_1_1gradient.html',1,'math']]],
+  ['math_3a_3ariccati_9',['riccati',['../namespacemath_1_1riccati.html',1,'math']]],
+  ['matrix_10',['matrix',['../classtransform_1_1_transformation.html#a88bc97d2d732db4d98bfa76fd6bd13ab',1,'transform::Transformation']]],
+  ['matrix_5fto_5fvector_11',['matrix_to_vector',['../classinertia_1_1_inertia.html#ab3e70cb6dedff9032f6f3154ebd5b163',1,'inertia::Inertia']]],
+  ['maxwell_12',['Maxwell',['../classfriction_1_1_maxwell.html',1,'friction::Maxwell&lt; Real, Int, N &gt;'],['../classfriction_1_1_maxwell.html#ae6dd8ce3331279d565c8270ef052c8a6',1,'friction::Maxwell::Maxwell()']]],
+  ['maxwell_5fmodel_2ecpp_13',['maxwell_model.cpp',['../maxwell__model_8cpp.html',1,'']]],
+  ['maxwell_5fmodel_2ehpp_14',['maxwell_model.hpp',['../maxwell__model_8hpp.html',1,'']]],
+  ['mc_15',['mc',['../classmanipulator_1_1_link.html#a0110d39690c6fc2eb1cbd4dbdb7db428',1,'manipulator::Link']]],
+  ['model_5ftype_16',['model_type',['../classrobot_1_1_robot.html#a75d70aa7dcb15369c13bc55d33c6da58',1,'robot::Robot']]],
+  ['motor_5ffriction_17',['motor_friction',['../classmanipulator_1_1_link.html#a32e0cbfb3d5b262c2ae89bff79a27bc5',1,'manipulator::Link::motor_friction(Real current, Real volatge)'],['../classmanipulator_1_1_link.html#a32e0cbfb3d5b262c2ae89bff79a27bc5',1,'manipulator::Link::motor_friction(Real current, Real volatge)']]],
+  ['multibody_2ehpp_18',['multibody.hpp',['../multibody_8hpp.html',1,'']]],
+  ['multibody_5fdynamics_2ecpp_19',['multibody_dynamics.cpp',['../multibody__dynamics_8cpp.html',1,'']]],
+  ['multibody_5fdynamics_2ehpp_20',['multibody_dynamics.hpp',['../multibody__dynamics_8hpp.html',1,'']]],
+  ['multibody_5fkinemtics_2ecpp_21',['multibody_kinemtics.cpp',['../multibody__kinemtics_8cpp.html',1,'']]],
+  ['multibody_5fkinemtics_2ehpp_22',['multibody_kinemtics.hpp',['../multibody__kinemtics_8hpp.html',1,'']]]
 ];
