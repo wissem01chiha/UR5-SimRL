@@ -1,9 +1,0 @@
-PROJECT_NAME           = "dynamapp"
-PROJECT_NUMBER         = 1.0
-PROJECT_BRIEF          = "identification library control other stuff "
-OUTPUT_DIRECTORY       = ./docs
-OUTPUT_LANGUAGE        = English
-GENERATE_LATEX         = NO
-EXTRACT_ALL            = YES
-INPUT                  = .
-RECURSIVE              = YES
